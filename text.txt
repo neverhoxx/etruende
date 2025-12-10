@@ -1,0 +1,5 @@
+const rot = 0.01;
+                const vxOld = p.vx;
+                const vyOld = p.vy;
+                p.vx = vxOld * Math.cos(rot) - vyOld * Math.sin(rot);
+                p.vy = vxOld * Math.sin(rot) + vyOld * Math.cos(rot);
