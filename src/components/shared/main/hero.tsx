@@ -56,9 +56,14 @@ export default function HeroParticles() {
         }
 
         function resize() {
+            const canvas = canvasRef.current;
+            if (!canvas) return;
+
             DPR = Math.max(1, window.devicePixelRatio || 1);
+
             const w = Math.floor(window.innerWidth * DPR);
             const h = Math.floor(window.innerHeight * DPR);
+
             canvas.width = w;
             canvas.height = h;
             canvas.style.width = "100%";
@@ -67,6 +72,7 @@ export default function HeroParticles() {
             while (particles.length < PARTICLE_COUNT) particles.push(new Particle(w, h));
             while (particles.length > PARTICLE_COUNT) particles.pop();
         }
+
 
         const updateMouse = (e: any) => {
             const rect = canvas.getBoundingClientRect();
@@ -82,6 +88,8 @@ export default function HeroParticles() {
         let last = performance.now();
         function loop() {
             const dt = 0.5;
+            const canvas = canvasRef.current;
+            if (!canvas) return;
 
             const w = canvas.width;
             const h = canvas.height;
