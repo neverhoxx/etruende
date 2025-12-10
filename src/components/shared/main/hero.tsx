@@ -90,6 +90,7 @@ export default function HeroParticles() {
             const dt = 0.5;
             const canvas = canvasRef.current;
             if (!canvas) return;
+            if (!ctx) return;
 
             const w = canvas.width;
             const h = canvas.height;
@@ -125,6 +126,8 @@ export default function HeroParticles() {
 
             for (let i = 0; i < particles.length; i++) {
                 const a = particles[i];
+
+                if (!ctx) return;
 
                 ctx.beginPath();
                 ctx.fillStyle = "rgba(240,240,255,0.9)";
