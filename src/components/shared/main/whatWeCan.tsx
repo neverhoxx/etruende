@@ -6,8 +6,6 @@ import { TbWorldSearch } from "react-icons/tb";
 import { FaBriefcase } from "react-icons/fa";
 import { BsFillRocketTakeoffFill } from "react-icons/bs";
 
-// <BsFillRocketTakeoffFill />
-
 export default function WhatWeCanBlock() {
     return (
         <div className='py-20 bg-[#F4F8FD] border-y border-[#cae0fc]'>

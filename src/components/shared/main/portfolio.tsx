@@ -126,13 +126,10 @@ export default function PortfolioScrollCustom() {
                         <span className="text-[#ff3f81]">EtruendE</span>
                     </h2>
 
-                    <div className="md:max-w-[639px] md:w-full w-1/2 h-[3px] rounded bg-gradient-to-r from-[#ff3f81] to-[#fff] shadow-[0_0_12px_rgba(255,63,129,0.6)]"></div>
+                    <div className="md:max-w-[390px] md:w-full w-1/2 h-[3px] rounded bg-gradient-to-r from-[#ff3f81] to-[#fff] shadow-[0_0_12px_rgba(255,63,129,0.6)]"></div>
                 </div>
 
-                {/* ADAPTIVE WRAPPER */}
                 <div className="w-full sm:w-[85%] md:w-[70%] my-0 mx-auto select-none">
-
-                    {/* SCROLL AREA */}
                     <div
                         ref={scrollRef}
                         onScroll={handleScroll}
@@ -191,12 +188,10 @@ export default function PortfolioScrollCustom() {
                             </Link>
                         ))}
                     </div>
-
-                    {/* CUSTOM SCROLLBAR */}
                     <div className="relative w-full flex justify-center mt-6">
                         <div
                             ref={barRef}
-                            className="relative w-[85%] sm:w-[70%] md:w-[60%] h-1 bg-[#2a2f55] rounded-full"
+                            className="relative w-[85%] sm:w-[70%] md:w-[60%] h-1 bg-[#2a2f55]"
                         >
                             <div
                                 ref={thumbRef}
@@ -207,11 +202,11 @@ export default function PortfolioScrollCustom() {
                                     -translate-y-1/2 
                                     h-3 
                                     bg-[#ff3f81] 
-                                    rounded-full 
+                                   
                                     cursor-pointer
                                 "
                                 style={{
-                                    width: "70px", // phone
+                                    width: "70px",
                                     left: 0
                                 }}
                             ></div>
