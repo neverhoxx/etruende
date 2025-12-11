@@ -87,7 +87,7 @@ export default function HeroParticles() {
 
         let last = performance.now();
         function loop() {
-            const dt = 0.5;
+            const dt = 0.3;
             const canvas = canvasRef.current;
             if (!canvas) return;
             if (!ctx) return;

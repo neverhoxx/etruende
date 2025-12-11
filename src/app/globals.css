@@ -120,3 +120,30 @@
     @apply bg-background text-foreground;
   }
 }
+
+
+/* Показываем скролл, но убираем стрелки (Chrome/Edge) */
+.portfolio-scroll::-webkit-scrollbar-button {
+  display: none;
+}
+
+/* Размер и вид полосы */
+.portfolio-scroll::-webkit-scrollbar {
+  height: 8px;
+}
+
+.portfolio-scroll::-webkit-scrollbar-track {
+  background: #eee;
+  border-radius: 4px;
+}
+
+.portfolio-scroll::-webkit-scrollbar-thumb {
+  background: #e64b72; /* розовый как в макете */
+  border-radius: 4px;
+}
+
+/* Firefox */
+.portfolio-scroll {
+  scrollbar-width: thin;
+  scrollbar-color: #e64b72 #eee;
+}
