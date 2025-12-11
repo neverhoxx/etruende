@@ -38,7 +38,7 @@ export default function OurProcess() {
                             className="text-[#ff3f81] text-3xl drop-shadow-[0_0_18px_rgba(255,63,129,0.9)] brightness-125"
                         />
                         <span className="uppercase tracking-wide text-sm text-[#ff3f81] font-semibold">
-                            Our Services
+                            Our Process
                         </span>
                     </div>
 
@@ -67,7 +67,7 @@ export default function OurProcess() {
 
                     {steps.map((step, index) => {
                         return (
-                            <div key={step.id} className="relative flex flex-col">
+                            <div key={step.id} className="relative flex flex-col select-none">
                                 <div className="
                                     bg-white 
                                     p-6 

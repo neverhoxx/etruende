@@ -170,13 +170,7 @@ export default function PortfolioScrollCustom() {
                                         hover:shadow-[0_0_25px_rgba(255,63,129,0.35)]
                                     "
                                 >
-                                    <Image
-                                        src={item.image}
-                                        width={300}
-                                        height={300}
-                                        alt={item.title}
-                                        className="object-cover w-full h-full"
-                                    />
+
                                 </div>
 
                                 <h3 className="mt-4 sm:mt-5 md:mt-6 text-lg sm:text-xl font-semibold text-white">
