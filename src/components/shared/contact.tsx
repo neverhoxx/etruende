@@ -72,7 +72,7 @@ export default function ContactForm() {
                     <div className="flex flex-col">
                         <label className="text-sm font-semibold">Message *</label>
                         <textarea
-                            rows="4"
+                            rows={4}
                             className="border-b border-[#131632]/40 bg-transparent outline-none py-3 resize-none focus:border-[#131632] transition-all"
                         />
                     </div>
