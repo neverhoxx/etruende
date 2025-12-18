@@ -103,7 +103,7 @@ function MobileServicesDropdown({
             {open && (
                 <div className="mt-4 flex flex-col items-center gap-3 text-sm text-white/90">
                     <Link
-                        href="/services/corporate"
+                        href="/corporate"
                         onClick={onClose}
                         className="hover:text-[#ff3f81]"
                     >
@@ -111,7 +111,7 @@ function MobileServicesDropdown({
                     </Link>
 
                     <Link
-                        href="/services/ecommerce"
+                        href="/ecommerce"
                         onClick={onClose}
                         className="hover:text-[#ff3f81]"
                     >
@@ -119,7 +119,7 @@ function MobileServicesDropdown({
                     </Link>
 
                     <Link
-                        href="/services/landing"
+                        href="/landing"
                         onClick={onClose}
                         className="hover:text-[#ff3f81]"
                     >
@@ -127,7 +127,15 @@ function MobileServicesDropdown({
                     </Link>
 
                     <Link
-                        href="/services/web-app"
+                        href="/web-app"
+                        onClick={onClose}
+                        className="hover:text-[#ff3f81]"
+                    >
+                        Web Applications
+                    </Link>
+
+                    <Link
+                        href="/web-app"
                         onClick={onClose}
                         className="hover:text-[#ff3f81]"
                     >
