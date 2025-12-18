@@ -46,7 +46,7 @@ const items = [
     },
 ];
 
-export default function PortfolioScrollCustom() {
+export default function CorporatePortfolio() {
     const scrollRef = useRef<HTMLDivElement>(null);
     const barRef = useRef<HTMLDivElement>(null);
     const thumbRef = useRef<HTMLDivElement>(null);
@@ -110,23 +110,23 @@ export default function PortfolioScrollCustom() {
     });
 
     return (
-        <div className="py-20 bg-[#131632]">
+        <div className="py-20 bg-[#F4F8FD]">
             <Container>
                 <div className="w-full flex flex-col items-center gap-3">
 
                     <div className="flex items-center gap-2 justify-center">
                         <HiOutlineSparkles className="text-[#ff3f81] text-3xl drop-shadow-[0_0_18px_rgba(255,63,129,0.9)] brightness-125" />
                         <span className="uppercase tracking-wide text-sm text-[#ff3f81] font-semibold">
-                            Our Portfolio
+                            Corporate websites built by EtruendE
                         </span>
                     </div>
 
-                    <h2 className="text-4xl md:text-5xl font-bold text-[#fff] text-center">
+                    <h2 className="text-4xl md:text-5xl font-bold text-[#131632] text-center">
                         Built by{" "}
                         <span className="text-[#ff3f81]">EtruendE</span>
                     </h2>
 
-                    <div className="md:max-w-[390px] md:w-full w-1/2 h-[3px] rounded bg-gradient-to-r from-[#ff3f81] to-[#fff] shadow-[0_0_12px_rgba(255,63,129,0.6)]"></div>
+                    <div className="md:max-w-[390px] md:w-full w-1/2 h-[3px] rounded bg-gradient-to-r from-[#ff3f81] to-[#131632] shadow-[0_0_12px_rgba(255,63,129,0.6)]"></div>
                 </div>
 
                 <div className="w-full sm:w-[85%] md:w-[70%] my-0 mx-auto select-none">
