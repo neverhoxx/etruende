@@ -2,27 +2,26 @@
 
 import { motion } from 'motion/react';
 import { Sparkles, TrendingUp, Monitor } from 'lucide-react';
-
 import { Container } from '../container';
 
 const features = [
     {
         icon: Sparkles,
-        title: 'Company Image',
+        title: 'Strong Company Image',
         description:
-            'Build a professional online presence that reflects your brand values and establishes credibility in the digital marketplace.',
+            'Build a professional corporate website that reflects your brand values, strengthens credibility, and positions your business as a trusted industry leader.',
     },
     {
         icon: TrendingUp,
-        title: 'Business Tool',
+        title: 'Powerful Business Tool',
         description:
-            'Transform your website into a powerful asset that drives growth, generates leads, and converts visitors into customers.',
+            'Turn your corporate website into a growth-driven business asset that generates leads, supports marketing strategies, and increases conversions.',
     },
     {
         icon: Monitor,
-        title: 'Adaptive Interface',
+        title: 'Adaptive & Responsive Design',
         description:
-            'Deliver seamless experiences across all devices with responsive design that adapts perfectly to any screen size.',
+            'Deliver a seamless user experience across all devices with a responsive corporate website optimized for desktop, tablet, and mobile users.',
     },
 ];
 
@@ -64,21 +63,25 @@ export function CorporateSection() {
     return (
         <section className="py-14 sm:py-20">
             <Container className="flex flex-col md:flex-row gap-10 md:gap-5">
+
                 <div className="w-full relative text-center md:text-left">
                     <span className="uppercase tracking-wide text-sm text-[#ff3f81] font-semibold block mb-3 select-none">
-                        Corporate website
+                        Corporate website development
                     </span>
 
                     <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#1a1a1a] mb-6">
-                        Why do you need it?
+                        Why a Professional Corporate Website Is Essential for Your Company
                     </h2>
 
                     <p className="text-base sm:text-lg md:text-xl opacity-80 mb-10 max-w-full md:max-w-[750px] text-[#131632] mx-auto md:mx-0">
-                        In today’s digital-first world, your corporate website is
-                        more than just an online brochure — it’s the cornerstone
-                        of your digital strategy. Discover how a powerful web
-                        presence can transform your business and unlock new
-                        opportunities for growth.
+                        In today’s digital-first world, a corporate website is more than
+                        just an online presence - it is a strategic business tool that
+                        builds trust, strengthens your brand, and supports long-term
+                        growth.
+                        <br /><br />
+                        A professionally developed corporate website helps companies
+                        attract clients, communicate expertise, and stand out in
+                        competitive markets while reinforcing their reputation.
                     </p>
 
                     <div className="text-[72px] sm:text-[120px] md:text-[150px] font-bold select-none opacity-20 absolute left-1/2 md:left-0 -translate-x-1/2 md:translate-x-0 md:bottom-1/7 bottom-[-10%] pointer-events-none">
@@ -93,14 +96,11 @@ export function CorporateSection() {
                         <FeatureCard
                             key={index}
                             feature={feature}
-                            className={
-                                index === 2
-                                    ? 'md:col-span-2 w-full'
-                                    : 'w-full'
-                            }
+                            className={index === 2 ? 'md:col-span-2 w-full' : 'w-full'}
                         />
                     ))}
                 </div>
+
             </Container>
         </section>
     );

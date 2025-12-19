@@ -182,19 +182,27 @@ export default function HeroParticles() {
             <canvas ref={canvasRef} className="absolute inset-0 w-full h-full" />
 
             <div className="relative z-10 text-white flex flex-col items-center">
-                <h1 className="text-4xl sm:text-6xl font-bold mb-4 text-center max-w-[1000px]">
-                    Websites That Drive
+                <h1 className="text-4xl sm:text-6xl font-bold mb-4 text-center max-w-[1200px]">
+                    Web Development & SEO Websites That Drive
                     <span className="text-[#ff3f81]"> Traffic, Rankings, and Sales</span>
                 </h1>
                 <p className="text-lg sm:text-xl opacity-80 mb-6 max-w-[900px]">
                     At EtruendE, we design, develop, and upgrade websites optimized for SEO and conversions. Get a fast, modern website built to attract clients and grow your revenue.
                 </p>
 
+                <p className="sr-only">
+                    EtruendE is a professional web development and SEO studio specializing in
+                    custom websites, landing pages, e-commerce platforms, and SEO promotion.
+                    We help businesses grow traffic, improve Google rankings, and increase
+                    conversions through modern web technologies and performance-driven design.
+                </p>
+
+
                 <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
                     <Link href="" className="select-none px-6 py-3 rounded-xl bg-white/10 backdrop-blur text-white border border-white/20 hover:bg-white/20 transition">
                         Start your project with us
                     </Link>
-                    <Link href="" className="select-none px-6 py-3 rounded-xl bg-white text-black font-semibold shadow-xl hover:bg-gray-200 transition">
+                    <Link href="" className="select-none px-6 py-3 rounded-xl bg-white text-[#131632] font-semibold shadow-xl hover:bg-gray-200 transition">
                         View projects
                     </Link>
                 </div>

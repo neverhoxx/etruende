@@ -43,7 +43,7 @@ export default function OurProcess() {
                     </div>
 
                     <h2 className="text-4xl md:text-5xl font-bold text-[#1a1a1a] text-center md:text-left">
-                        How <span className="text-[#ff3f81]">We</span> Transform Ideas Into Reality
+                        How <span className="text-[#ff3f81]">EtruendE</span> Transforms Ideas Into High-Performing Websites
                     </h2>
 
                     <p className="text-center md:text-left text-[#444]">
@@ -52,6 +52,13 @@ export default function OurProcess() {
                     </p>
 
                     <div className="md:max-w-[838px] md:w-full w-1/2 h-[3px] rounded bg-gradient-to-r from-[#ff3f81] to-[#131632] shadow-[0_0_12px_rgba(255,63,129,0.6)]"></div>
+
+                    <p className="sr-only">
+                        EtruendE web development process includes discovery, UX design,
+                        modern website development, SEO optimization, testing and launch.
+                        We follow a proven workflow to deliver fast, scalable and conversion-focused websites.
+                    </p>
+
                 </div>
 
                 <div className="
@@ -103,6 +110,12 @@ export default function OurProcess() {
                                     <p className="text-[15px] text-[#7a7a7a] leading-relaxed">
                                         {step.text}
                                     </p>
+
+                                    <p className="sr-only">
+                                        {step.title} is part of EtruendE web development workflow focused on
+                                        performance, SEO optimization and business growth.
+                                    </p>
+
                                 </div>
 
                                 <Arrow index={index} />

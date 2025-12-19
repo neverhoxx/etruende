@@ -2,7 +2,6 @@
 
 import Link from "next/link";
 import { Container } from "./container";
-import Image from "next/image";
 
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
@@ -10,10 +9,15 @@ import { Menu, X } from "lucide-react";
 import { NavMenu } from "../ui/NavigationMenu";
 
 import { ChevronDown } from "lucide-react"
+import { usePathname } from "next/navigation";
+
 
 export default function Header() {
     const [isScrolled, setIsScrolled] = useState(false);
     const [menuOpen, setMenuOpen] = useState(false);
+
+    const pathname = usePathname();
+    const forceDarkHeader = pathname === "/portfolio";
 
     useEffect(() => {
         const handleScroll = () => {
@@ -25,8 +29,9 @@ export default function Header() {
 
     return (
         <header
-            className={`select-none h-[85px] fixed top-0 z-50 w-full transition-colors duration-300 text-white ${isScrolled ? "bg-[#131632d7] shadow-md backdrop-blur" : "bg-transparent"
-                }`}
+            className={`select-none h-[85px] fixed top-0 z-50 w-full transition-colors duration-300 text-white ${(isScrolled || forceDarkHeader)
+                ? "bg-[#131632d7] shadow-md backdrop-blur"
+                : "bg-transparent"}`}
         >
             <Container className="flex items-center justify-between h-[85px]">
                 <Link href="/" className="max-w-[200px] flex-shrink-0 font-bold text-3xl">
@@ -103,7 +108,7 @@ function MobileServicesDropdown({
             {open && (
                 <div className="mt-4 flex flex-col items-center gap-3 text-sm text-white/90">
                     <Link
-                        href="/corporate"
+                        href="/corporate-page-development"
                         onClick={onClose}
                         className="hover:text-[#ff3f81]"
                     >
@@ -111,7 +116,7 @@ function MobileServicesDropdown({
                     </Link>
 
                     <Link
-                        href="/ecommerce"
+                        href="/ecommerce-development"
                         onClick={onClose}
                         className="hover:text-[#ff3f81]"
                     >
@@ -119,7 +124,7 @@ function MobileServicesDropdown({
                     </Link>
 
                     <Link
-                        href="/landing"
+                        href="/landing-page-development"
                         onClick={onClose}
                         className="hover:text-[#ff3f81]"
                     >
@@ -127,7 +132,7 @@ function MobileServicesDropdown({
                     </Link>
 
                     <Link
-                        href="/web-app"
+                        href="/web-app-development"
                         onClick={onClose}
                         className="hover:text-[#ff3f81]"
                     >
@@ -135,7 +140,7 @@ function MobileServicesDropdown({
                     </Link>
 
                     <Link
-                        href="/web-app"
+                        href="/seo-promotion"
                         onClick={onClose}
                         className="hover:text-[#ff3f81]"
                     >

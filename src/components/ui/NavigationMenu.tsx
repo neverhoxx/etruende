@@ -18,24 +18,24 @@ import { cn } from "@/lib/utils"
 const services = [
     {
         title: "Corporate Website",
-        href: "/corporate",
+        href: "/corporate-page-development",
         description: "Corporate websites for companies and brands.",
     },
     {
         title: "E-commerce",
-        href: "/ecommerce",
+        href: "/ecommerce-development",
         description: "Online stores with payment and catalog systems.",
         width: "w-[188px]"
     },
     {
         title: "Landing Page",
-        href: "/landing",
+        href: "/landing-page-development",
         description: "High-converting landing pages for products.",
         width: "w-[188px]"
     },
     {
         title: "Web Applications",
-        href: "/web-app",
+        href: "/web-app-development",
         description: "Custom web applications for business needs.",
         width: "w-[188px]"
     },

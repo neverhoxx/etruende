@@ -33,7 +33,7 @@ export default function WebApplicationHero() {
                             <BreadcrumbSeparator className="text-white" />
                             <BreadcrumbItem>
                                 <BreadcrumbPage className="text-[#ff3f81] text-sm sm:text-base">
-                                    Web Application
+                                    Web Application Development
                                 </BreadcrumbPage>
                             </BreadcrumbItem>
                         </BreadcrumbList>
@@ -42,31 +42,32 @@ export default function WebApplicationHero() {
                     <div className="flex flex-col md:flex-row md:justify-between gap-12 mt-6">
                         <div className="w-full md:w-1/2 text-center md:text-left">
                             <h1 className="text-3xl sm:text-5xl md:text-6xl font-bold mb-6 text-white">
-                                Web Application Development
+                                Web Application Development Services
                             </h1>
 
                             <h3 className="text-xl sm:text-2xl md:text-3xl font-bold mb-6 text-white">
-                                What is it?
+                                Custom Web Applications for Business Growth
                             </h3>
 
                             <p className="text-base sm:text-lg md:text-xl opacity-80 mb-8 max-w-full md:max-w-[750px] text-white mx-auto md:mx-0">
-                                A web application is a custom digital system designed to automate,
-                                optimize, and scale business processes. Unlike standard websites,
-                                web applications handle complex logic, data management, and user
-                                interactions in real time.
+                                We build custom web applications that automate business processes,
+                                handle complex data, and scale together with your company. Our web
+                                application development services are designed for startups,
+                                growing businesses, and enterprises that need reliable and
+                                high-performance digital systems.
                                 <br /><br />
-                                From CRM systems and dashboards to SaaS platforms and internal
-                                business tools, a well-built web application improves efficiency,
-                                reduces operational costs, and gives you full control over your
-                                digital infrastructure.
+                                From SaaS platforms and dashboards to CRM systems, internal tools,
+                                and client portals - we develop secure, scalable, and fast web
+                                applications tailored to your workflows and business goals.
                                 <br /><br />
-                                Investing in a custom web application means building a solution
-                                tailored exactly to your business needs — scalable, secure, and
-                                ready for long-term growth together with{" "}
+                                Partner with{" "}
                                 <span className="text-[#ff3f81] underline font-bold opacity-100">
                                     EtruendE
-                                </span>.
+                                </span>{" "}
+                                to create a future-ready web application that drives efficiency,
+                                reduces costs, and supports long-term growth.
                             </p>
+
 
                             <Link
                                 href=""
@@ -124,14 +125,24 @@ export default function WebApplicationHero() {
 
                             <Link
                                 href=""
-                                className="select-none mb-5 lg:mb-0 px-6 py-3 rounded-xl bg-white text-black font-semibold shadow-xl hover:bg-gray-200 transition text-center"
+                                className="select-none mb-5 lg:mb-0 px-6 py-3 rounded-xl bg-white text-[#131632] font-semibold shadow-xl hover:bg-gray-200 transition text-center"
                             >
-                                Case studies
+                                Testimonials
                             </Link>
                         </div>
                     </div>
                 </div>
             </Container>
+
+            <p className="sr-only">
+                Web application development services by EtruendE.
+                We create custom web applications, SaaS platforms,
+                dashboards, CRM systems, internal business tools,
+                and scalable enterprise web solutions.
+                Our web apps are secure, high-performance,
+                SEO-friendly, and designed for long-term growth.
+            </p>
+
         </section>
     );
 }

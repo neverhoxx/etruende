@@ -6,43 +6,34 @@ import { Container } from "../container";
 
 import { HiOutlineSparkles } from "react-icons/hi2";
 
+import voltampPic from "@/images/projects/voltamp.png"
+
 import Link from "next/link";
 
 const items = [
     {
-        title: "Voltamp",
-        subtitle: "Landing Page",
-        image: "/images/life-comfort.png",
+        title: 'Voltamp',
+        subtitle: 'Corporate Landing Page',
+        image: voltampPic,
+        alt: 'Voltamp corporate landing page developed by EtruendE',
     },
     {
-        title: "Päikesemajad",
-        subtitle: "SEO promotion",
-        image: "/images/lazurit.png",
+        title: 'Päikesemajad',
+        subtitle: 'Corporate Website & SEO Promotion',
+        image: voltampPic,
+        alt: 'Päikesemajad corporate website with SEO promotion by EtruendE',
     },
     {
-        title: "Some site",
-        subtitle: "Интернет-магазин",
-        image: "/images/only-wine.png",
+        title: 'E-commerce Project',
+        subtitle: 'Online Store Development',
+        image: voltampPic,
+        alt: 'E-commerce website developed by EtruendE web studio',
     },
     {
-        title: "Some site",
-        subtitle: "Корпоративный сайт",
-        image: "/images/livingston.png",
-    },
-    {
-        title: "Some site",
-        subtitle: "Корпоративный сайт",
-        image: "/images/livingston.png",
-    },
-    {
-        title: "Some site",
-        subtitle: "Корпоративный сайт",
-        image: "/images/livingston.png",
-    },
-    {
-        title: "Some site",
-        subtitle: "Корпоративный сайт",
-        image: "/images/livingston.png",
+        title: 'Corporate Business Website',
+        subtitle: 'Corporate Website Development',
+        image: voltampPic,
+        alt: 'Corporate business website developed by EtruendE',
     },
 ];
 
@@ -122,66 +113,74 @@ export default function PortfolioScrollCustom() {
                     </div>
 
                     <h2 className="text-4xl md:text-5xl font-bold text-[#fff] text-center">
-                        Built by{" "}
-                        <span className="text-[#ff3f81]">EtruendE</span>
+                        Web Development & SEO Projects Built by <span className="text-[#ff3f81]">EtruendE</span>
                     </h2>
 
                     <div className="md:max-w-[390px] md:w-full w-1/2 h-[3px] rounded bg-gradient-to-r from-[#ff3f81] to-[#fff] shadow-[0_0_12px_rgba(255,63,129,0.6)]"></div>
+
+                    <p className="sr-only">
+                        Portfolio of web development, landing pages, e-commerce websites,
+                        corporate websites and SEO promotion projects created by EtruendE.
+                    </p>
                 </div>
 
-                <div className="w-full sm:w-[85%] md:w-[70%] my-0 mx-auto select-none">
+                <div className="w-full sm:w-[85%] md:w-[70%] my-0 mx-auto select-none mt-10">
                     <div
                         ref={scrollRef}
                         onScroll={handleScroll}
                         className="
-                            flex gap-8 sm:gap-12 md:gap-16 
-                            p-4 sm:p-6 md:p-10 
-                            overflow-x-scroll 
-                            pb-6 sm:pb-8 
-                            [&::-webkit-scrollbar]:hidden 
-                            [scrollbar-width:none] 
-                            -ms-overflow-style:none
-                        "
+              flex gap-8 sm:gap-12 md:gap-16
+              p-4 sm:p-6 md:p-10
+              overflow-x-scroll
+              pb-6 sm:pb-8
+              [&::-webkit-scrollbar]:hidden
+              [scrollbar-width:none]
+              -ms-overflow-style:none
+            "
                     >
                         {items.map((item, i) => (
                             <Link
-                                href=""
+                                href="#"
                                 key={i}
                                 className="
-                                    text-center 
-                                    w-[85%] 
-                                    sm:w-52 
-                                    md:w-64 
-                                    shrink-0 
-                                    mx-auto
-                                "
+                  text-center
+                  w-[85%]
+                  sm:w-52
+                  md:w-64
+                  shrink-0
+                  mx-auto
+                "
                             >
                                 <div
                                     className="
-                                        w-full aspect-square
-                                        sm:w-52 sm:h-52
-                                        md:w-64 md:h-64
-                                        rounded-full 
-                                        overflow-hidden 
-                                        shadow-lg 
-                                        transition-all 
-                                        duration-300
-                                        hover:scale-[1.03] 
-                                        hover:shadow-[0_0_25px_rgba(255,63,129,0.35)]
-                                    "
+                    w-full aspect-square
+                    sm:w-52 sm:h-52
+                    md:w-64 md:h-64
+                    rounded-full
+                    overflow-hidden
+                    shadow-lg
+                    transition-all
+                    duration-300
+                    hover:scale-[1.03]
+                    hover:shadow-[0_0_25px_rgba(255,63,129,0.35)]
+                  "
                                 >
-
+                                    <Image
+                                        src={item.image}
+                                        alt={item.alt}
+                                        className="object-cover w-full h-full rounded-full"
+                                        priority={i === 0}
+                                    />
                                 </div>
 
                                 <h3 className="mt-4 sm:mt-5 md:mt-6 text-lg sm:text-xl font-semibold text-white">
                                     {item.title}
                                 </h3>
-                                <p className="text-[#ff3f81] text-sm">
-                                    {item.subtitle}
-                                </p>
+                                <p className="text-[#ff3f81] text-sm">{item.subtitle}</p>
                             </Link>
                         ))}
                     </div>
+
                     <div className="relative w-full flex justify-center mt-6">
                         <div
                             ref={barRef}
@@ -190,25 +189,24 @@ export default function PortfolioScrollCustom() {
                             <div
                                 ref={thumbRef}
                                 onMouseDown={handleMouseDown}
-                                className="
-                                    absolute 
-                                    top-1/2 
-                                    -translate-y-1/2 
-                                    h-3 
-                                    bg-[#ff3f81] 
-                                   
-                                    cursor-pointer
-                                "
-                                style={{
-                                    width: "70px",
-                                    left: 0
-                                }}
-                            ></div>
+                                className="absolute top-1/2 -translate-y-1/2 h-3 bg-[#ff3f81] cursor-pointer"
+                                style={{ width: '70px', left: 0 }}
+                            />
                         </div>
                     </div>
-
                 </div>
             </Container>
+
+            <div className="sr-only">
+                <h3>EtruendE Portfolio</h3>
+                <p>
+                    Explore web development portfolio by EtruendE.
+                    We create landing pages, e-commerce websites,
+                    corporate websites and SEO optimized projects
+                    for businesses worldwide.
+                </p>
+            </div>
+
         </div>
     );
 }

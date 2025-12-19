@@ -14,7 +14,7 @@ export default function SeoPromotionBlock() {
                 </div>
 
                 <div>
-                    <h2 className="text-3xl md:text-4xl font-bold text-black mb-6 leading-tight">
+                    <h2 className="text-3xl md:text-4xl font-bold text-[#131632] mb-6 leading-tight">
                         Result-Driven <br />
                         <span className="text-[#ff3f81]">SEO Promotion</span> That Grows Traffic
                     </h2>

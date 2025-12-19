@@ -157,7 +157,7 @@ export default function SeoPortfolio() {
 
                                 </div>
 
-                                <h3 className="mt-4 sm:mt-5 md:mt-6 text-lg sm:text-xl font-semibold text-white">
+                                <h3 className="mt-4 sm:mt-5 md:mt-6 text-lg sm:text-xl font-semibold text-[#131632]">
                                     {item.title}
                                 </h3>
                                 <p className="text-[#ff3f81] text-sm">

@@ -40,44 +40,35 @@ export default function LandingHero() {
                     </Breadcrumb>
 
                     <div className="flex flex-col md:flex-row md:justify-between gap-12 mt-6">
-                        {/* Left */}
                         <div className="w-full md:w-1/2 text-center md:text-left">
                             <h1 className="text-3xl sm:text-5xl md:text-6xl font-bold mb-6 text-white">
-                                Landing Page
+                                High-Converting Landing Page Development for Business
+
                             </h1>
 
                             <h3 className="text-xl sm:text-2xl md:text-3xl font-bold mb-6 text-white">
-                                What is it?
+                                What Is a Landing Page and How It Increases Conversions
                             </h3>
 
                             <p className="text-base sm:text-lg md:text-xl opacity-80 mb-8 max-w-full md:max-w-[750px] text-white mx-auto md:mx-0">
-                                A landing page is a focused marketing tool designed to convert
-                                visitors into leads or customers. Unlike a traditional website,
-                                it is built around a single goal — capturing attention and
-                                driving action.
+                                A landing page is a conversion-focused web page designed to turn visitors into leads or customers. Unlike traditional websites, a professional landing page is built around a single goal - increasing conversions for marketing campaigns, product launches, and business growth.
                                 <br /><br />
-                                A professionally designed landing page delivers a clear message,
-                                highlights value, and guides users toward a specific action:
-                                purchase, registration, request, or contact. Every element —
-                                copy, visuals, structure, and speed — is optimized for
-                                conversion.
+                                High-performing landing page development combines persuasive copy, fast loading speed, mobile-first design, and clear call-to-action. Businesses that invest in custom landing pages achieve higher ROI, better lead quality, and measurable results.
                                 <br /><br />
-                                Launch high-performing landing pages that generate leads,
-                                increase conversion rates, and maximize ROI together with{" "}
-                                <span className="text-[#ff3f81] underline font-bold opacity-100">
+                                At <span className="text-[#ff3f81] underline font-bold opacity-100">
                                     EtruendE
-                                </span>.
+                                </span>, we build SEO-optimized, high-converting landing pages tailored to your business goals.
+
                             </p>
 
                             <Link
                                 href=""
                                 className="inline-block select-none px-6 py-3 rounded-xl bg-white/10 backdrop-blur text-white border border-white/20 hover:bg-white/20 transition"
                             >
-                                Launch your landing page
+                                Get a Custom Landing Page for Your Business
                             </Link>
                         </div>
 
-                        {/* Right */}
                         <div className="w-full md:w-[45%] flex flex-col gap-6 select-none">
                             <div className="bg-[#131632d7] shadow-md backdrop-blur w-full px-4 py-6 sm:p-6 rounded-2xl min-h-[180px] text-white
                                 hover:scale-[1.03] hover:shadow-[0_0_25px_rgba(255,63,129,0.35)]
@@ -126,9 +117,9 @@ export default function LandingHero() {
 
                             <Link
                                 href=""
-                                className="select-none mb-5 lg:mb-0 px-6 py-3 rounded-xl bg-white text-black font-semibold shadow-xl hover:bg-gray-200 transition text-center"
+                                className="select-none mb-5 lg:mb-0 px-6 py-3 rounded-xl bg-white text-[#131632] font-semibold shadow-xl hover:bg-gray-200 transition text-center"
                             >
-                                View case studies
+                                Testimonials
                             </Link>
                         </div>
                     </div>

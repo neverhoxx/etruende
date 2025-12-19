@@ -2,104 +2,86 @@ import { Container } from "../container";
 
 export default function CorporateContact() {
     return (
-        <section className="py-16 sm:py-20 second-scroll bg-[linear-gradient(to_bottom,#F4F8FD_50%,#e5e7eb_50%)]">
+        <section
+            className="py-16 sm:py-20 second-scroll bg-[linear-gradient(to_bottom,#F4F8FD_50%,#e5e7eb_50%)]"
+            aria-labelledby="corporate-contact-title"
+        >
             <div
                 className="
-                    max-w-[1140px] w-full
-                    px-6 sm:px-10 lg:px-[95px]
-                    py-10 sm:py-14 lg:py-[65px]
-                    mx-auto
-                    bg-[#ff3f81]
-                    rounded-2xl
-                "
+          max-w-[1140px] w-full
+          px-6 sm:px-10 lg:px-[95px]
+          py-10 sm:py-14 lg:py-[65px]
+          mx-auto
+          bg-[#ff3f81]
+          rounded-2xl
+        "
             >
                 <span className="uppercase tracking-wide text-sm text-[#131632] font-semibold block mb-2">
-                    Contact us
+                    Contact EtruendE
                 </span>
 
-                <h2 className="text-2xl sm:text-4xl md:text-5xl font-bold text-white mb-4 sm:mb-6">
-                    Let's discuss your project?
+                <h2
+                    id="corporate-contact-title"
+                    className="text-2xl sm:text-4xl md:text-5xl font-bold text-white mb-4 sm:mb-6"
+                >
+                    Let’s Discuss Project
                 </h2>
 
                 <p className="text-base sm:text-lg md:text-xl opacity-90 mb-8 sm:mb-10 max-w-[750px] text-white">
-                    Leave your contact information so we can get in touch!
-                    Take the first step toward growing your business.
+                    Looking for a professional website that builds trust and
+                    drives business growth? Leave your contact details - our web
+                    development team will reach out to discuss your project.
                 </p>
 
-                <form className="select-none">
+                <form className="select-none" aria-label="Corporate website contact form">
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-                        {["Name *", "Phone *", "Email *"].map((label, i) => (
+                        {["Name", "Phone", "Email"].map((label, i) => (
                             <div key={i} className="flex flex-col">
                                 <label className="text-sm font-semibold text-white">
-                                    {label}
+                                    {label} *
                                 </label>
                                 <input
                                     type="text"
+                                    required
                                     className="
-                                        border-b border-white/70
-                                        bg-transparent outline-none py-3
-                                        text-white
-                                        focus:border-white
-                                        transition-all
-                                    "
+                    border-b border-white/70
+                    bg-transparent outline-none py-3
+                    text-white
+                    focus:border-white
+                    transition-all
+                  "
                                 />
                             </div>
                         ))}
                     </div>
 
                     <div className="flex flex-col mt-5">
+                        <label className="sr-only">Project description</label>
                         <input
                             type="text"
+                            placeholder="Tell us about your project, goals or ideas"
                             className="
-                                border-b border-white/70
-                                bg-transparent outline-none py-3
-                                text-white
-                                placeholder:text-white/70
-                                focus:border-white
-                                focus:placeholder:text-white
-                                transition-all
-                            "
-                            placeholder="Ideas and comments"
+                border-b border-white/70
+                bg-transparent outline-none py-3
+                text-white
+                placeholder:text-white/70
+                focus:border-white
+                focus:placeholder:text-white
+                transition-all
+              "
                         />
                     </div>
 
                     <div
                         className="
-                            mt-6
-                            flex flex-col gap-4
-                            lg:flex-row lg:items-center lg:justify-between
-                        "
+              mt-6
+              flex flex-col gap-4
+              lg:flex-row lg:items-center lg:justify-between
+            "
                     >
-                        <label className="flex items-center gap-3 cursor-pointer group">
-                            <input type="checkbox" className="hidden peer" />
-
-                            <span
-                                className="
-                                    w-4 h-4 flex items-center justify-center
-                                    border border-white/70 rounded-sm
-                                    peer-checked:bg-white peer-checked:border-white
-                                    group-hover:border-white
-                                    transition-all
-                                "
-                            >
-                                <svg
-                                    className="w-3 h-3 text-[#ff3f81]"
-                                    viewBox="0 0 12 10"
-                                    fill="none"
-                                >
-                                    <path
-                                        d="M1 5L4.5 8.5L11 1.5"
-                                        stroke="currentColor"
-                                        strokeWidth="2"
-                                        strokeLinecap="round"
-                                        strokeLinejoin="round"
-                                    />
-                                </svg>
-                            </span>
-
-                            <span className="text-white/80 group-hover:text-white transition-colors text-sm sm:text-base">
-                                Consent to the processing of personal data
-                            </span>
+                        <label className="flex items-center gap-3 text-sm text-white cursor-pointer">
+                            <input type="checkbox" required className="accent-[#131632]" />
+                            I consent to the processing of personal data
                         </label>
 
                         <label className="flex items-center gap-2 cursor-pointer group">
@@ -118,22 +100,22 @@ export default function CorporateContact() {
                                 />
                             </svg>
                             <span className="text-white/80 group-hover:text-white transition-colors text-sm sm:text-base">
-                                Attach file
+                                Attach brief or files
                             </span>
                         </label>
 
                         <button
                             type="submit"
                             className="
-                                w-full lg:w-auto
-                                px-6 py-3 rounded-xl
-                                bg-white text-[#ff3f81]
-                                font-semibold
-                                hover:bg-white/90
-                                transition
-                            "
+                w-full lg:w-auto
+                px-6 py-3 rounded-xl
+                bg-white text-[#ff3f81]
+                font-semibold
+                hover:bg-white/90
+                transition
+              "
                         >
-                            Contact us
+                            Get a Free Consultation
                         </button>
                     </div>
                 </form>

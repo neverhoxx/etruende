@@ -66,18 +66,21 @@ export function LandingSection() {
             <Container className="flex flex-col md:flex-row gap-10 md:gap-5">
                 <div className="w-full relative text-center md:text-left">
                     <span className="uppercase tracking-wide text-sm text-[#ff3f81] font-semibold block mb-3 select-none">
-                        Landing page
+                        Landing page development
                     </span>
 
                     <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#1a1a1a] mb-6">
-                        Why does your business need it?
+                        Why Your Business Needs a Landing Page
                     </h2>
 
                     <p className="text-base sm:text-lg md:text-xl opacity-80 mb-10 max-w-full md:max-w-[750px] text-[#131632] mx-auto md:mx-0">
-                        A landing page is a powerful marketing tool designed to turn traffic into
-                        results. It delivers a focused message, highlights your value proposition,
-                        and encourages visitors to take action — whether it’s a purchase, sign-up,
-                        or request.
+                        A landing page is a powerful marketing tool designed to turn traffic into real business results.
+                        A professional landing page focuses on a single conversion goal, delivers a clear value proposition,
+                        and guides visitors toward action - purchase, sign-up, or request.
+                        <br />
+                        Well-built landing page development improves conversion rates, advertising efficiency,
+                        and ROI for digital marketing campaigns across all industries.
+
                     </p>
 
                     <div className="text-[72px] sm:text-[120px] md:text-[150px] font-bold select-none opacity-20 absolute left-1/2 md:left-0 -translate-x-1/2 md:translate-x-0 md:bottom-1/7 bottom-[-10%] pointer-events-none">

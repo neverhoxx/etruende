@@ -40,7 +40,6 @@ export default function SeoPromotionHero() {
                     </Breadcrumb>
 
                     <div className="flex flex-col md:flex-row md:justify-between gap-12 mt-6">
-                        {/* Left */}
                         <div className="w-full md:w-1/2 text-center md:text-left">
                             <h1 className="text-3xl sm:text-5xl md:text-6xl font-bold mb-6 text-white">
                                 SEO Promotion
@@ -120,7 +119,7 @@ export default function SeoPromotionHero() {
 
                             <Link
                                 href=""
-                                className="select-none mb-5 lg:mb-0 px-6 py-3 rounded-xl bg-white text-black font-semibold shadow-xl hover:bg-gray-200 transition text-center"
+                                className="select-none mb-5 lg:mb-0 px-6 py-3 rounded-xl bg-white text-[#131632] font-semibold shadow-xl hover:bg-gray-200 transition text-center"
                             >
                                 Testimonials
                             </Link>

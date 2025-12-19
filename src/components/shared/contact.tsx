@@ -1,5 +1,11 @@
 import { Container } from "./container";
-import Link from "next/link";
+
+import {
+    Mail,
+    Phone,
+    MapPin,
+    Clock,
+} from "lucide-react";
 
 export default function ContactForm() {
     return (
@@ -22,17 +28,40 @@ export default function ContactForm() {
                         Tell us about your project — we’ll help you turn it into something exceptional.
                     </p>
 
-                    <p className="text-white text-lg font-semibold mt-2">
-                        EtruendE Web Studio
-                    </p>
+                    <div className="mt-14 grid grid-cols-1 sm:grid-cols-2 gap-10 text-white/80">
 
-                    <Link href="" className="text-white underline text-lg">
-                        +372 5364 5159
-                    </Link>
+                        <div className="flex items-center gap-4">
+                            <Phone className="text-white" />
+                            <div>
+                                <p className="font-semibold text-white">Phone</p>
+                                <p>+372 5364 5159</p>
+                            </div>
+                        </div>
 
-                    <Link href="" className="text-white underline text-lg">
-                        info@etruende.com
-                    </Link>
+                        <div className="flex items-center gap-4">
+                            <Mail className="text-white" />
+                            <div>
+                                <p className="font-semibold text-white">Email</p>
+                                <p>hello@etruende.com</p>
+                            </div>
+                        </div>
+
+                        <div className="flex items-center gap-4">
+                            <MapPin className="text-white" />
+                            <div>
+                                <p className="font-semibold text-white">Location</p>
+                                <p>Tallinn, Estonia</p>
+                            </div>
+                        </div>
+
+                        <div className="flex items-center gap-4">
+                            <Clock className="text-white" />
+                            <div>
+                                <p className="font-semibold text-white">Working Hours</p>
+                                <p>Mon–Fri · 10:00–20:00</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
                 <div className="md:w-1/2 backdrop-blur-xl bg-white/80 rounded-2xl p-8 flex flex-col gap-7 text-[#131632] shadow-2xl border border-white/40">
@@ -62,7 +91,7 @@ export default function ContactForm() {
                     </div>
 
                     <div className="flex flex-col">
-                        <label className="text-sm font-semibold">Which service are you interested in? *</label>
+                        <label className="text-sm font-semibold">Which service are you interested in?</label>
                         <input
                             type="text"
                             className="border-b border-[#131632]/40 bg-transparent outline-none py-3 focus:border-[#131632] transition-all"
@@ -70,7 +99,7 @@ export default function ContactForm() {
                     </div>
 
                     <div className="flex flex-col">
-                        <label className="text-sm font-semibold">Message *</label>
+                        <label className="text-sm font-semibold">Message</label>
                         <textarea
                             rows={4}
                             className="border-b border-[#131632]/40 bg-transparent outline-none py-3 resize-none focus:border-[#131632] transition-all"

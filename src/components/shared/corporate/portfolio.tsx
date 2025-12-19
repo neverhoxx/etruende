@@ -1,48 +1,37 @@
-"use client";
+'use client';
 
-import Image from "next/image";
-import { useRef, useEffect, useState } from "react";
-import { Container } from "../container";
+import Image from 'next/image';
+import { useRef, useEffect, useState } from 'react';
+import { Container } from '../container';
+import { HiOutlineSparkles } from 'react-icons/hi2';
+import Link from 'next/link';
 
-import { HiOutlineSparkles } from "react-icons/hi2";
-
-import Link from "next/link";
+import voltampPic from '@/images/projects/voltamp.png';
 
 const items = [
     {
-        title: "Voltamp",
-        subtitle: "Landing Page",
-        image: "/images/life-comfort.png",
+        title: 'Voltamp',
+        subtitle: 'Corporate Landing Page',
+        image: voltampPic,
+        alt: 'Voltamp corporate landing page developed by EtruendE',
     },
     {
-        title: "Päikesemajad",
-        subtitle: "SEO promotion",
-        image: "/images/lazurit.png",
+        title: 'Päikesemajad',
+        subtitle: 'Corporate Website & SEO Promotion',
+        image: voltampPic,
+        alt: 'Päikesemajad corporate website with SEO promotion by EtruendE',
     },
     {
-        title: "Some site",
-        subtitle: "Интернет-магазин",
-        image: "/images/only-wine.png",
+        title: 'E-commerce Project',
+        subtitle: 'Online Store Development',
+        image: voltampPic,
+        alt: 'E-commerce website developed by EtruendE web studio',
     },
     {
-        title: "Some site",
-        subtitle: "Корпоративный сайт",
-        image: "/images/livingston.png",
-    },
-    {
-        title: "Some site",
-        subtitle: "Корпоративный сайт",
-        image: "/images/livingston.png",
-    },
-    {
-        title: "Some site",
-        subtitle: "Корпоративный сайт",
-        image: "/images/livingston.png",
-    },
-    {
-        title: "Some site",
-        subtitle: "Корпоративный сайт",
-        image: "/images/livingston.png",
+        title: 'Corporate Business Website',
+        subtitle: 'Corporate Website Development',
+        image: voltampPic,
+        alt: 'Corporate business website developed by EtruendE',
     },
 ];
 
@@ -74,7 +63,7 @@ export default function CorporatePortfolio() {
 
         setIsDragging(true);
         setDragStartX(e.clientX);
-        setInitialThumbLeft(parseFloat(thumb.style.left || "0"));
+        setInitialThumbLeft(parseFloat(thumb.style.left || '0'));
     };
 
     const handleMouseMove = (e: MouseEvent) => {
@@ -86,10 +75,9 @@ export default function CorporatePortfolio() {
         if (!bar || !thumb || !el) return;
 
         const delta = e.clientX - dragStartX;
-
         let newLeft = initialThumbLeft + delta;
-        newLeft = Math.max(0, Math.min(newLeft, bar.clientWidth - thumb.clientWidth));
 
+        newLeft = Math.max(0, Math.min(newLeft, bar.clientWidth - thumb.clientWidth));
         thumb.style.left = `${newLeft}px`;
 
         const maxThumb = bar.clientWidth - thumb.clientWidth;
@@ -101,19 +89,18 @@ export default function CorporatePortfolio() {
     const handleMouseUp = () => setIsDragging(false);
 
     useEffect(() => {
-        window.addEventListener("mousemove", handleMouseMove);
-        window.addEventListener("mouseup", handleMouseUp);
+        window.addEventListener('mousemove', handleMouseMove);
+        window.addEventListener('mouseup', handleMouseUp);
         return () => {
-            window.removeEventListener("mousemove", handleMouseMove);
-            window.removeEventListener("mouseup", handleMouseUp);
+            window.removeEventListener('mousemove', handleMouseMove);
+            window.removeEventListener('mouseup', handleMouseUp);
         };
     });
 
     return (
-        <div className="py-20 bg-[#F4F8FD]">
+        <section className="py-20 bg-[#F4F8FD]">
             <Container>
                 <div className="w-full flex flex-col items-center gap-3">
-
                     <div className="flex items-center gap-2 justify-center">
                         <HiOutlineSparkles className="text-[#ff3f81] text-3xl drop-shadow-[0_0_18px_rgba(255,63,129,0.9)] brightness-125" />
                         <span className="uppercase tracking-wide text-sm text-[#ff3f81] font-semibold">
@@ -122,66 +109,76 @@ export default function CorporatePortfolio() {
                     </div>
 
                     <h2 className="text-4xl md:text-5xl font-bold text-[#131632] text-center">
-                        Built by{" "}
+                        Corporate Website Projects by{' '}
                         <span className="text-[#ff3f81]">EtruendE</span>
                     </h2>
 
-                    <div className="md:max-w-[390px] md:w-full w-1/2 h-[3px] rounded bg-gradient-to-r from-[#ff3f81] to-[#131632] shadow-[0_0_12px_rgba(255,63,129,0.6)]"></div>
+                    <p className="text-center max-w-[720px] text-[#444]">
+                        Explore real corporate website projects developed by EtruendE. Each
+                        project is designed to strengthen brand image, improve usability,
+                        and support long-term business growth.
+                    </p>
+
+                    <div className="md:max-w-[390px] md:w-full w-1/2 h-[3px] rounded bg-gradient-to-r from-[#ff3f81] to-[#131632] shadow-[0_0_12px_rgba(255,63,129,0.6)]" />
                 </div>
 
-                <div className="w-full sm:w-[85%] md:w-[70%] my-0 mx-auto select-none">
+                <div className="w-full sm:w-[85%] md:w-[70%] my-0 mx-auto select-none mt-10">
                     <div
                         ref={scrollRef}
                         onScroll={handleScroll}
                         className="
-                            flex gap-8 sm:gap-12 md:gap-16 
-                            p-4 sm:p-6 md:p-10 
-                            overflow-x-scroll 
-                            pb-6 sm:pb-8 
-                            [&::-webkit-scrollbar]:hidden 
-                            [scrollbar-width:none] 
-                            -ms-overflow-style:none
-                        "
+              flex gap-8 sm:gap-12 md:gap-16
+              p-4 sm:p-6 md:p-10
+              overflow-x-scroll
+              pb-6 sm:pb-8
+              [&::-webkit-scrollbar]:hidden
+              [scrollbar-width:none]
+              -ms-overflow-style:none
+            "
                     >
                         {items.map((item, i) => (
                             <Link
-                                href=""
+                                href="#"
                                 key={i}
                                 className="
-                                    text-center 
-                                    w-[85%] 
-                                    sm:w-52 
-                                    md:w-64 
-                                    shrink-0 
-                                    mx-auto
-                                "
+                  text-center
+                  w-[85%]
+                  sm:w-52
+                  md:w-64
+                  shrink-0
+                  mx-auto
+                "
                             >
                                 <div
                                     className="
-                                        w-full aspect-square
-                                        sm:w-52 sm:h-52
-                                        md:w-64 md:h-64
-                                        rounded-full 
-                                        overflow-hidden 
-                                        shadow-lg 
-                                        transition-all 
-                                        duration-300
-                                        hover:scale-[1.03] 
-                                        hover:shadow-[0_0_25px_rgba(255,63,129,0.35)]
-                                    "
+                    w-full aspect-square
+                    sm:w-52 sm:h-52
+                    md:w-64 md:h-64
+                    rounded-full
+                    overflow-hidden
+                    shadow-lg
+                    transition-all
+                    duration-300
+                    hover:scale-[1.03]
+                    hover:shadow-[0_0_25px_rgba(255,63,129,0.35)]
+                  "
                                 >
-
+                                    <Image
+                                        src={item.image}
+                                        alt={item.alt}
+                                        className="object-cover w-full h-full rounded-full"
+                                        priority={i === 0}
+                                    />
                                 </div>
 
-                                <h3 className="mt-4 sm:mt-5 md:mt-6 text-lg sm:text-xl font-semibold text-white">
+                                <h3 className="mt-4 sm:mt-5 md:mt-6 text-lg sm:text-xl font-semibold text-[#131632]">
                                     {item.title}
                                 </h3>
-                                <p className="text-[#ff3f81] text-sm">
-                                    {item.subtitle}
-                                </p>
+                                <p className="text-[#ff3f81] text-sm">{item.subtitle}</p>
                             </Link>
                         ))}
                     </div>
+
                     <div className="relative w-full flex justify-center mt-6">
                         <div
                             ref={barRef}
@@ -190,25 +187,13 @@ export default function CorporatePortfolio() {
                             <div
                                 ref={thumbRef}
                                 onMouseDown={handleMouseDown}
-                                className="
-                                    absolute 
-                                    top-1/2 
-                                    -translate-y-1/2 
-                                    h-3 
-                                    bg-[#ff3f81] 
-                                   
-                                    cursor-pointer
-                                "
-                                style={{
-                                    width: "70px",
-                                    left: 0
-                                }}
-                            ></div>
+                                className="absolute top-1/2 -translate-y-1/2 h-3 bg-[#ff3f81] cursor-pointer"
+                                style={{ width: '70px', left: 0 }}
+                            />
                         </div>
                     </div>
-
                 </div>
             </Container>
-        </div>
+        </section>
     );
 }

@@ -14,7 +14,7 @@ export default function LandingPageBlock() {
                 </div>
 
                 <div>
-                    <h2 className="text-3xl md:text-4xl font-bold text-black mb-6 leading-tight">
+                    <h2 className="text-3xl md:text-4xl font-bold text-[#131632] mb-6 leading-tight">
                         High-Converting <br />
                         <span className="text-[#ff3f81]">Landing Pages</span> That Generate Leads
                     </h2>

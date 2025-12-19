@@ -14,7 +14,7 @@ export default function WebApplicationBlock() {
                 </div>
 
                 <div>
-                    <h2 className="text-3xl md:text-4xl font-bold text-black mb-6 leading-tight">
+                    <h2 className="text-3xl md:text-4xl font-bold text-[#131632] mb-6 leading-tight">
                         Custom <br />
                         <span className="text-[#ff3f81]">Web Applications</span> for Business Growth
                     </h2>

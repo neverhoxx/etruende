@@ -10,19 +10,19 @@ const features = [
         icon: ShoppingCart,
         title: 'Online Sales Channel',
         description:
-            'An e-commerce website enables your business to sell products and services online 24/7, reaching customers worldwide and removing geographical limitations.',
+            'An e-commerce website allows your business to sell products and services online 24/7, reach global customers, and remove geographical limitations.'
     },
     {
         icon: TrendingUp,
         title: 'Revenue Growth',
         description:
-            'A professionally built online store increases conversion rates, improves customer retention, and scales your sales performance multiple times.',
+            'A professionally developed e-commerce store increases conversion rates, improves customer retention, and scales online sales performance.'
     },
     {
         icon: ShieldCheck,
         title: 'Secure & Scalable',
         description:
-            'We develop secure, fast, and scalable e-commerce platforms with reliable payment systems, data protection, and future-ready architecture.',
+            'We build secure, fast, and scalable e-commerce platforms with reliable payment systems, data protection, and SEO-friendly architecture.'
     },
 ];
 
@@ -70,16 +70,19 @@ export function EcommerceSection() {
                     </span>
 
                     <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#1a1a1a] mb-6">
-                        Why does your business need it?
+                        Why does your business need an e-commerce website?
                     </h2>
 
                     <p className="text-base sm:text-lg md:text-xl opacity-80 mb-10 max-w-full md:max-w-[750px] text-[#131632] mx-auto md:mx-0">
-                        An e-commerce website is not just an online store — it is a complete
-                        sales ecosystem designed to grow your business. From attracting
-                        customers and processing payments to managing orders and scaling
-                        revenue, a powerful e-commerce platform becomes the engine of your
-                        digital growth strategy.
+                        An e-commerce website is not just an online store - it is a complete
+                        digital sales ecosystem designed to grow your business.
+                        <br /><br />
+                        Professional e-commerce development helps attract customers, process
+                        secure online payments, manage orders efficiently, and scale revenue.
+                        A well-built online store becomes the core of your digital growth
+                        strategy and long-term business success.
                     </p>
+
 
                     <div className="text-[72px] sm:text-[120px] md:text-[150px] font-bold select-none opacity-20 absolute left-1/2 md:left-0 -translate-x-1/2 md:translate-x-0 md:bottom-1/7 bottom-[-10%] pointer-events-none">
                         <span className="text-[#ff3f81]">E</span>
@@ -98,6 +101,15 @@ export function EcommerceSection() {
                     ))}
                 </div>
             </Container>
+
+            <p className="sr-only">
+                E-commerce website development services by EtruendE.
+                We create custom online stores, scalable e-commerce platforms,
+                and SEO-optimized e-commerce websites for businesses worldwide.
+                Our e-commerce solutions focus on performance, security,
+                conversion optimization, and long-term business growth.
+            </p>
+
         </section>
     );
 }

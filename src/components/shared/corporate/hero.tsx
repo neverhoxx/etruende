@@ -42,28 +42,37 @@ export default function CorporateHero() {
                     <div className="flex flex-col md:flex-row md:justify-between gap-12 mt-6">
                         <div className="w-full md:w-1/2 text-center md:text-left">
                             <h1 className="text-3xl sm:text-5xl md:text-6xl font-bold mb-6 text-white">
-                                Corporate Website
+                                Corporate Website Development for Business Growth
                             </h1>
 
+                            <p className="sr-only">
+                                EtruendE provides corporate website development services for businesses worldwide.
+                                We design and build professional corporate websites focused on brand authority,
+                                trust, SEO optimization and long-term business growth.
+                            </p>
+
+
                             <h3 className="text-xl sm:text-2xl md:text-3xl font-bold mb-6 text-white">
-                                What is it?
+                                What Is a Corporate Website and Why Your Business Needs One
                             </h3>
 
-                            <p className="text-base sm:text-lg md:text-xl opacity-80 mb-8 max-w-full md:max-w-[750px] text-white mx-auto md:mx-0">
+                            <p className="text-base sm:text-lg md:text-xl opacity-80 mb-8 max-w-full md:max-w-[750px] text-white">
                                 A corporate website is a company’s full-fledged
-                                presence in the digital world — the true face of
+                                presence in the digital world - the true face of
                                 your business online.
                                 <br /><br />
-                                Craft the right image, and the world will start
-                                talking about you. Inspire trust, spark emotion,
-                                and let millions fall in love with your brand.
-                                <br />
-                                Invest in the name and reputation of your
-                                business with{" "}
-                                <span className="text-[#ff3f81] underline font-bold opacity-100">
+                                It represents your brand, builds trust, communicates
+                                authority, and helps clients understand your values,
+                                services, and expertise.
+                                <br /><br />
+                                Invest in professional corporate website development
+                                with{" "}
+                                <span className="text-[#ff3f81] underline font-bold">
                                     EtruendE
-                                </span>.
+                                </span>{" "}
+                                and turn your website into a powerful business asset.
                             </p>
+
 
                             <Link
                                 href=""
@@ -110,8 +119,9 @@ export default function CorporateHero() {
                                 hover:scale-[1.03] hover:shadow-[0_0_25px_rgba(255,63,129,0.35)]
                                 transition-all duration-300">
                                 <p className="text-4xl sm:text-5xl font-bold text-[#ff3f81] mb-4">
-                                    300%
+                                    3× ROI
                                 </p>
+
                                 <p className="mb-2 font-bold text-lg sm:text-xl">
                                     RETURN ON INVESTMENT
                                 </p>
@@ -124,7 +134,7 @@ export default function CorporateHero() {
 
                             <Link
                                 href=""
-                                className="select-none mb-5 lg:mb-0 px-6 py-3 rounded-xl bg-white text-black font-semibold shadow-xl hover:bg-gray-200 transition text-center"
+                                className="select-none mb-5 lg:mb-0 px-6 py-3 rounded-xl bg-white text-[#131632] font-semibold shadow-xl hover:bg-gray-200 transition text-center"
                             >
                                 Testimonials
                             </Link>

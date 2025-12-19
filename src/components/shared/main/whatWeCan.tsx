@@ -1,8 +1,9 @@
+'use client';
+
 import { Container } from "../container";
 
 import { HiOutlineSparkles } from "react-icons/hi2";
 import { ImCart } from "react-icons/im";
-import { TbWorldSearch } from "react-icons/tb";
 import { FaBriefcase } from "react-icons/fa";
 import { BsFillRocketTakeoffFill } from "react-icons/bs";
 
@@ -10,9 +11,11 @@ export default function WhatWeCanBlock() {
     return (
         <div className='py-20 bg-[#F4F8FD] border-y border-[#cae0fc]'>
             <Container>
-                <div className="w-full flex flex-col items-center md:items-start  gap-3 ">
+                <div
+                    className="w-full flex flex-col items-center md:items-start gap-3"
+                >
 
-                    <div className="flex items-center gap-2">
+                    <div className="flex items-center gap-2" data-aos="fade-up">
                         <HiOutlineSparkles
                             className="
                                 text-[#ff3f81] 
@@ -26,13 +29,14 @@ export default function WhatWeCanBlock() {
                         </span>
                     </div>
 
-                    <h2 className="text-4xl md:text-5xl font-bold text-[#1a1a1a] text-center">
-                        What <span className="text-[#ff3f81]">we</span> create
+                    <h2 className="text-4xl md:text-5xl font-bold text-[#1a1a1a] text-center"
+                        data-aos="fade-up">
+                        What <span className="text-[#ff3f81]">we</span> create for business growth
                     </h2>
 
-                    <p className="text-center md:text-left">
+                    <p className="text-center md:text-left" data-aos="fade-up">
                         From concept to deployment, we build{" "}
-                        <span className="text-[#ff3f81]">Digital Solutions That Win Markets</span>
+                        <span className="text-[#ff3f81]">Digital Solutions That Drive Traffic, Sales, and Online Growth</span>
                     </p>
 
                     <div className="
@@ -49,8 +53,11 @@ export default function WhatWeCanBlock() {
                 </div>
 
                 <div className="flex flex-wrap gap-5 mt-10">
-                    <div className="w-full md:w-[48%] p-4 md:p-8 bg-white border border-[#2a2f552f] hover:shadow-[0_0_25px_rgba(255,63,129,0.35)]
-                        transition-all duration-300">
+                    <div
+                        data-aos="fade-right"
+                        className="w-full md:w-[48%] p-4 md:p-8 bg-white border border-[#2a2f552f] hover:shadow-[0_0_25px_rgba(255,63,129,0.35)]
+                        transition-all duration-300"
+                    >
                         <div className="w-15 h-15 bg-[#ff3f81] flex items-center justify-center mb-5">
                             <BsFillRocketTakeoffFill className="text-white text-3xl" />
                         </div>
@@ -59,7 +66,9 @@ export default function WhatWeCanBlock() {
                         </h3>
 
                         <p className="text-[14px] md:text-[18px] text-[#919191] mb-5">
-                            High-converting landing pages built with modern UI/UX practices. We create fast, responsive, and engaging pages designed to turn your visitors into customers.
+                            High-converting landing pages built to generate leads, sales,
+                            and real business results. We design fast, SEO-friendly pages
+                            optimized for conversions and performance.
                         </p>
 
                         <ul className="list-disc marker:text-[#ff3f81] list-inside">
@@ -75,8 +84,11 @@ export default function WhatWeCanBlock() {
                         </ul>
                     </div>
 
-                    <div className="w-full md:w-[48%] p-4 md:p-8 bg-white border border-[#2a2f552f] hover:shadow-[0_0_25px_#131632]
-                        transition-all duration-300">
+                    <div
+                        className="w-full md:w-[48%] p-4 md:p-8 bg-white border border-[#2a2f552f] hover:shadow-[0_0_25px_#131632]
+                        transition-all duration-300"
+                        data-aos="fade-left"
+                    >
                         <div className="w-15 h-15 bg-[#131632] flex items-center justify-center mb-5">
                             <ImCart className="text-white text-3xl" />
                         </div>
@@ -85,7 +97,9 @@ export default function WhatWeCanBlock() {
                         </h3>
 
                         <p className="text-[14px] md:text-[18px] text-[#919191] mb-5">
-                            We build high-performance e-commerce platforms designed to convert, scale, and deliver seamless shopping experiences. From product pages to checkout, every detail is optimized for growth.
+                            High-performance e-commerce development focused on sales,
+                            scalability, and user experience. We build secure online stores
+                            optimized for SEO, speed, and conversions.
                         </p>
 
                         <ul className="list-disc marker:text-[#131632] list-inside">
@@ -101,8 +115,11 @@ export default function WhatWeCanBlock() {
                         </ul>
                     </div>
 
-                    <div className="w-full md:w-[48%] p-4 md:p-8 bg-white border border-[#2a2f552f] hover:shadow-[0_0_25px_#131632]
-                        transition-all duration-300">
+                    <div
+                        className="w-full md:w-[48%] p-4 md:p-8 bg-white border border-[#2a2f552f] hover:shadow-[0_0_25px_#131632]
+                        transition-all duration-300"
+                        data-aos="fade-right"
+                    >
                         <div className="w-15 h-15 bg-[#131632] flex items-center justify-center mb-5">
                             <BsFillRocketTakeoffFill className="text-white text-3xl" />
                         </div>
@@ -111,7 +128,9 @@ export default function WhatWeCanBlock() {
                         </h3>
 
                         <p className="text-[14px] md:text-[18px] text-[#919191] mb-5">
-                            Comprehensive SEO strategies designed to increase visibility, boost organic traffic, and improve search engine rankings. We optimize every element to ensure long-term, sustainable growth.
+                            Professional SEO promotion services that improve Google rankings,
+                            increase organic traffic, and deliver long-term growth.
+                            From technical SEO to content strategy — we handle everything.
                         </p>
 
                         <ul className="list-disc marker:text-[#131632] list-inside">
@@ -122,8 +141,11 @@ export default function WhatWeCanBlock() {
 
                     </div>
 
-                    <div className="w-full md:w-[48%] p-4 md:p-8 bg-white border border-[#2a2f552f] hover:shadow-[0_0_25px_rgba(255,63,129,0.35)]
-                        transition-all duration-300">
+                    <div
+                        className="w-full md:w-[48%] p-4 md:p-8 bg-white border border-[#2a2f552f] hover:shadow-[0_0_25px_rgba(255,63,129,0.35)]
+                        transition-all duration-300"
+                        data-aos="fade-left"
+                    >
                         <div className="w-15 h-15 bg-[#ff3f81] flex items-center justify-center mb-5">
                             <FaBriefcase className="text-white text-3xl" />
                         </div>
@@ -132,7 +154,9 @@ export default function WhatWeCanBlock() {
                         </h3>
 
                         <p className="text-[14px] md:text-[18px] text-[#919191] mb-5">
-                            Professional corporate websites built to strengthen your brand credibility. We create clean, modern, and well-structured pages that clearly communicate your values and help you build trust with your audience.
+                            Corporate website development designed to build trust,
+                            brand authority, and online presence. Clean structure,
+                            modern UI/UX, and SEO-ready architecture.
                         </p>
 
                         <ul className="list-disc marker:text-[#ff3f81] list-inside">
@@ -142,6 +166,13 @@ export default function WhatWeCanBlock() {
                         </ul>
                     </div>
 
+                    <p className="sr-only">
+                        EtruendE is a professional web development and SEO agency
+                        providing landing page development, e-commerce solutions,
+                        corporate websites, and SEO promotion services.
+                        We help businesses grow online through high-performance,
+                        SEO-optimized websites and digital solutions.
+                    </p>
 
                 </div>
             </Container>

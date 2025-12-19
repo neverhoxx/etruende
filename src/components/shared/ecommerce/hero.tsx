@@ -42,12 +42,13 @@ export default function EcommerceHero() {
                     <div className="flex flex-col md:flex-row md:justify-between gap-12 mt-6">
                         <div className="w-full md:w-1/2 text-center md:text-left">
                             <h1 className="text-3xl sm:text-5xl md:text-6xl font-bold mb-6 text-white">
-                                E-commerce Website
+                                E-commerce Website Development for Business
                             </h1>
 
-                            <h3 className="text-xl sm:text-2xl md:text-3xl font-bold mb-6 text-white">
-                                What is it?
-                            </h3>
+                            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-6 text-white">
+                                What Is an E-commerce Website and How It Drives Sales
+                            </h2>
+
 
                             <p className="text-base sm:text-lg md:text-xl opacity-80 mb-8 max-w-full md:max-w-[750px] text-white mx-auto md:mx-0">
                                 An e-commerce website is a powerful digital sales channel that
@@ -59,7 +60,7 @@ export default function EcommerceHero() {
                                 increases conversion rates, and provides a seamless shopping
                                 experience across all devices. From intuitive navigation and
                                 secure payment systems to fast loading speeds and SEO-friendly
-                                architecture — every detail directly impacts revenue.
+                                architecture - every detail directly impacts revenue.
                                 <br /><br />
                                 Investing in a modern e-commerce platform means investing in
                                 long-term growth, brand authority, and measurable results.
@@ -74,7 +75,7 @@ export default function EcommerceHero() {
                                 href=""
                                 className="inline-block select-none px-6 py-3 rounded-xl bg-white/10 backdrop-blur text-white border border-white/20 hover:bg-white/20 transition"
                             >
-                                Start your project with us
+                                Get a Custom E-commerce Website
                             </Link>
                         </div>
 
@@ -113,7 +114,7 @@ export default function EcommerceHero() {
                 hover:scale-[1.03] hover:shadow-[0_0_25px_rgba(255,63,129,0.35)]
                 transition-all duration-300">
                                 <p className="text-4xl sm:text-5xl font-bold text-[#ff3f81] mb-4">
-                                    3–4x
+                                    3-4x
                                 </p>
                                 <p className="mb-2 font-bold text-lg sm:text-xl">
                                     SALES GROWTH
@@ -126,7 +127,7 @@ export default function EcommerceHero() {
 
                             <Link
                                 href=""
-                                className="select-none mb-5 lg:mb-0 px-6 py-3 rounded-xl bg-white text-black font-semibold shadow-xl hover:bg-gray-200 transition text-center"
+                                className="select-none mb-5 lg:mb-0 px-6 py-3 rounded-xl bg-white text-[#131632] font-semibold shadow-xl hover:bg-gray-200 transition text-center"
                             >
                                 Testimonials
                             </Link>
@@ -134,6 +135,16 @@ export default function EcommerceHero() {
                     </div>
                 </div>
             </Container>
+
+            <p className="sr-only">
+                E-commerce website development services by EtruendE.
+                We create custom online stores, scalable ecommerce platforms,
+                SEO optimized shopping websites, Shopify and custom solutions
+                for businesses worldwide. Our ecommerce websites focus on
+                conversion optimization, fast loading speed, secure payments,
+                and long-term growth.
+            </p>
+
         </section>
     );
 }
