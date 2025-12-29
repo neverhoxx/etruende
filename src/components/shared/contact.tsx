@@ -13,7 +13,7 @@ import {
 } from "lucide-react";
 
 export default function ContactForm() {
-    const formRef = useRef(null);
+    const formRef = useRef<HTMLFormElement | null>(null);
     const [loading, setLoading] = useState(false);
 
     const [toast, setToast] = useState({
@@ -22,28 +22,30 @@ export default function ContactForm() {
         type: "success",
     });
 
-    const sendEmail = (e) => {
+    const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         setLoading(true);
 
-        emailjs.sendForm(
-            process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
-            process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
-            formRef.current,
-            process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
-        ).then(() => {
-            setToast({ show: true, message: "Message sent successfully!", type: "success" });
-            formRef.current.reset();
-        }).catch(() => {
-            setToast({ show: true, message: "Something went wrong. Try again.", type: "error" });
-        }).finally(() => {
-            setLoading(false);
-            setTimeout(() => {
-                setToast({ show: false, message: "", type: "success" });
-            }, 3000);
-        });
-
+        emailjs
+            .sendForm(
+                process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
+                process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
+                formRef.current!,
+                process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!
+            )
+            .then(() => {
+                setToast({ show: true, message: "Message sent successfully!", type: "success" });
+                formRef.current?.reset();
+            })
+            .catch(() => {
+                setToast({ show: true, message: "Something went wrong. Try again.", type: "error" });
+            })
+            .finally(() => {
+                setLoading(false);
+                setTimeout(() => setToast({ show: false, message: "", type: "success" }), 3000);
+            });
     };
+
 
     return (
         <div className="py-20 bg-[#ff3f81] second-scroll">
@@ -157,7 +159,7 @@ export default function ContactForm() {
 
             {toast.show && (
                 <div
-                    className={`fixed top-6 left-1/2 -translate-x-1/2 z-[9999]
+                    className={`fixed top-6 left-1/2 -translate-x-1/2 z-999
                         px-6 py-3 rounded-full text-white font-medium shadow-lg
                         transition-all duration-500
                         ${toast.type === "success" ? "bg-green-500" : "bg-red-500"}`}
