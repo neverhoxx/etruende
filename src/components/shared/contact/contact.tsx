@@ -9,6 +9,8 @@ import {
     Send,
 } from "lucide-react";
 
+import Link from "next/link";
+
 export default function ContactSectionPage() {
     return (
         <section className="relative py-30 min-h-screen flex justify-center items-center bg-[#131632] overflow-hidden">
@@ -72,7 +74,9 @@ export default function ContactSectionPage() {
                         </p>
 
                         <div className="flex gap-6 text-white/70">
-                            <Instagram className="hover:text-[#ff3f81] transition cursor-pointer" />
+                            <Link target="_blank" href="https://www.instagram.com/etruende_webstudio/">
+                                <Instagram className="hover:text-[#ff3f81] transition cursor-pointer" />
+                            </Link>
                             <Facebook className="hover:text-[#ff3f81] transition cursor-pointer" />
                             <Send className="hover:text-[#ff3f81] transition cursor-pointer" />
                         </div>

@@ -13,7 +13,7 @@ import Link from "next/link";
 export default function CorporateHero() {
     return (
         <section
-            className="w-full min-h-screen overflow-hidden px-4 sm:px-6 pt-[90px] sm:pt-[100px]"
+            className="w-full min-h-screen overflow-hidden px-4 pb-5 sm:px-6 pt-[90px] sm:pt-[100px]"
             style={{
                 background: "linear-gradient(140deg, #131632 20%, #ff3f82b8 100%)",
             }}

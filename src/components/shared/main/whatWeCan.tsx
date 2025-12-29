@@ -54,7 +54,7 @@ export default function WhatWeCanBlock() {
 
                 <div className="flex flex-wrap gap-5 mt-10">
                     <div
-                        data-aos="fade-right"
+                        data-aos="fade-bottom"
                         className="w-full md:w-[48%] p-4 md:p-8 bg-white border border-[#2a2f552f] hover:shadow-[0_0_25px_rgba(255,63,129,0.35)]
                         transition-all duration-300"
                     >
@@ -87,7 +87,7 @@ export default function WhatWeCanBlock() {
                     <div
                         className="w-full md:w-[48%] p-4 md:p-8 bg-white border border-[#2a2f552f] hover:shadow-[0_0_25px_#131632]
                         transition-all duration-300"
-                        data-aos="fade-left"
+                        data-aos="fade-bottom"
                     >
                         <div className="w-15 h-15 bg-[#131632] flex items-center justify-center mb-5">
                             <ImCart className="text-white text-3xl" />
@@ -118,7 +118,7 @@ export default function WhatWeCanBlock() {
                     <div
                         className="w-full md:w-[48%] p-4 md:p-8 bg-white border border-[#2a2f552f] hover:shadow-[0_0_25px_#131632]
                         transition-all duration-300"
-                        data-aos="fade-right"
+                        data-aos="fade-up"
                     >
                         <div className="w-15 h-15 bg-[#131632] flex items-center justify-center mb-5">
                             <BsFillRocketTakeoffFill className="text-white text-3xl" />
@@ -144,7 +144,7 @@ export default function WhatWeCanBlock() {
                     <div
                         className="w-full md:w-[48%] p-4 md:p-8 bg-white border border-[#2a2f552f] hover:shadow-[0_0_25px_rgba(255,63,129,0.35)]
                         transition-all duration-300"
-                        data-aos="fade-left"
+                        data-aos="fade-up"
                     >
                         <div className="w-15 h-15 bg-[#ff3f81] flex items-center justify-center mb-5">
                             <FaBriefcase className="text-white text-3xl" />

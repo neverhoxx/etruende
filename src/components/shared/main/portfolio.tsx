@@ -6,35 +6,53 @@ import { Container } from "../container";
 
 import { HiOutlineSparkles } from "react-icons/hi2";
 
-import voltampPic from "@/images/projects/voltamp.png"
+import voltampPic from "@/images/projects/voltamp.png";
+import paikesemajadPic from "@/images/projects/solantra-solarhome.png";
+import LandingDemo1 from "@/images/projects/LandingDemo1.png";
+import fusion from "@/images/projects/fusion.png";
+import pic3dsdom from "@/images/projects/3dsdom.png";
+import ralest from "@/images/projects/ralest.png";
 
 import Link from "next/link";
 
 const items = [
     {
         title: 'Voltamp',
-        subtitle: 'Corporate Landing Page',
-        image: voltampPic,
-        alt: 'Voltamp corporate landing page developed by EtruendE',
-    },
-    {
-        title: 'Päikesemajad',
         subtitle: 'Corporate Website & SEO Promotion',
         image: voltampPic,
-        alt: 'Päikesemajad corporate website with SEO promotion by EtruendE',
+        alt: 'Voltamp corporate website with SEO Promotion developed by EtruendE Studio',
     },
     {
-        title: 'E-commerce Project',
-        subtitle: 'Online Store Development',
-        image: voltampPic,
-        alt: 'E-commerce website developed by EtruendE web studio',
+        title: 'Solantra Solarhome',
+        subtitle: 'Corporate Landing Page',
+        image: paikesemajadPic,
+        alt: 'Solantra Home сorporate landing page developed by EtruendE Studio',
     },
     {
-        title: 'Corporate Business Website',
-        subtitle: 'Corporate Website Development',
-        image: voltampPic,
-        alt: 'Corporate business website developed by EtruendE',
+        title: 'Landing Page Demo Project',
+        subtitle: 'Landing Page',
+        image: LandingDemo1,
+        alt: 'Landing page developed by EtruendE Studio',
     },
+    {
+        title: 'Fusionoff',
+        subtitle: 'E-commerce',
+        image: fusion,
+        alt: 'Fusion E-commerce developed by EtruendE Studio',
+    },
+    {
+        title: '3dsdom',
+        subtitle: 'Corporate Landing Page',
+        image: pic3dsdom,
+        alt: '3dsdom сorporate landing page developed by EtruendE Studio',
+    },
+    {
+        title: 'Ral Est',
+        subtitle: 'SEO Promotion',
+        image: ralest,
+        alt: 'Ral Est SEO Promotion developed by EtruendE Studio',
+    },
+
 ];
 
 export default function PortfolioScrollCustom() {
@@ -136,27 +154,27 @@ export default function PortfolioScrollCustom() {
               [&::-webkit-scrollbar]:hidden
               [scrollbar-width:none]
               -ms-overflow-style:none
+              h-[350px]
             "
                     >
                         {items.map((item, i) => (
                             <Link
-                                href="#"
+                                href="/portfolio"
                                 key={i}
                                 className="
                   text-center
-                  w-[85%]
-                  sm:w-52
-                  md:w-64
+                  w-[288px]
+                  h-[200px]
                   shrink-0
                   mx-auto
                 "
                             >
                                 <div
                                     className="
-                    w-full aspect-square
-                    sm:w-52 sm:h-52
-                    md:w-64 md:h-64
-                    rounded-full
+                    aspect-square
+                    w-[288px]
+                    h-[200px]
+                    rounded-t-[50px]
                     overflow-hidden
                     shadow-lg
                     transition-all
@@ -168,7 +186,7 @@ export default function PortfolioScrollCustom() {
                                     <Image
                                         src={item.image}
                                         alt={item.alt}
-                                        className="object-cover w-full h-full rounded-full"
+                                        className="w-[288px] h-[200px]"
                                         priority={i === 0}
                                     />
                                 </div>

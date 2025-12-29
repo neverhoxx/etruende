@@ -5,6 +5,11 @@ import Image from "next/image";
 import Link from "next/link";
 
 import voltampPic from "@/images/projects/voltamp.png";
+import paikesemajadPic from "@/images/projects/solantra-solarhome.png";
+import LandingDemo1 from "@/images/projects/LandingDemo1.png";
+import fusion from "@/images/projects/fusion.png";
+import pic3dsdom from "@/images/projects/3dsdom.png";
+import ralest from "@/images/projects/ralest.png";
 
 import { Container } from "@/components/shared/container";
 
@@ -23,49 +28,66 @@ const tabs: Category[] = ["Developed", "Designed", "Promoted"];
 
 const items = [
     {
-        title: "RED ROCKS SHUTTLE",
-        subtitle: "Корпоративный сайт",
+        title: "Voltamp",
+        subtitle: "Corporate Website & SEO Promotion",
         image: voltampPic,
-        category: "Developed",
+        alt: "Voltamp corporate website with SEO Promotion developed by EtruendE Studio",
+        categories: ["Developed", "Promoted", "Designed"],
+        link: "/portfolio/voltamp"
     },
     {
-        title: "LIVINGSTON",
-        subtitle: "Корпоративный сайт",
-        image: voltampPic,
-        category: "Developed",
+        title: "Solantra Solarhome",
+        subtitle: "Corporate Landing Page",
+        image: paikesemajadPic,
+        alt: "Solantra Home corporate landing page developed by EtruendE Studio",
+        categories: ["Developed", "Promoted", "Designed"],
+        link: "https://paikesemajad.vercel.app/"
     },
     {
-        title: "ONLY WINE",
-        subtitle: "Интернет-магазин",
-        image: voltampPic,
-        category: "Designed",
-    },
-    {
-        title: "SMART LIFE COMFORT",
+        title: "Landing Page Demo Project",
         subtitle: "Landing Page",
-        image: voltampPic,
-        category: "Promoted",
+        image: LandingDemo1,
+        alt: "Landing page developed by EtruendE Studio",
+        categories: ["Developed"],
+        link: "https://neverhoxx.github.io/etruende-demo/"
     },
     {
-        title: "DOCTOR KIDS",
-        subtitle: "Корпоративный сайт",
-        image: voltampPic,
-        category: "Promoted",
+        title: "Fusionoff",
+        subtitle: "E-commerce",
+        image: fusion,
+        alt: "Fusion E-commerce developed by EtruendE Studio",
+        categories: ["Developed", "Designed"],
+        link: "https://fusionoff.ru/"
+    },
+    {
+        title: "3dsdom",
+        subtitle: "Corporate Landing Page",
+        image: pic3dsdom,
+        alt: "3dsdom corporate landing page developed by EtruendE Studio",
+        categories: ["Developed", "Designed"],
+        link: "https://neverhoxx.github.io/3dsdom/en"
+    },
+    {
+        title: "Ral Est",
+        subtitle: "SEO Promotion",
+        image: ralest,
+        alt: "Ral Est SEO Promotion developed by EtruendE Studio",
+        categories: ["Promoted"],
+        link: "https://ralest.ee/"
     },
 ];
 
 export default function OurWorks() {
     const [activeTab, setActiveTab] = useState<Category>("Developed");
 
-    const filteredItems = items.filter(
-        (item) => item.category === activeTab
+    const filteredItems = items.filter((item) =>
+        item.categories.includes(activeTab)
     );
 
     return (
-        <section className="min-h-screen flex flex-col justify-center">
-
-            <Container >
-                <Breadcrumb className="select-none mb-6">
+        <section className="min-h-screen py-20">
+            <Container>
+                <Breadcrumb className="select-none mb-8 mt-3">
                     <BreadcrumbList>
                         <BreadcrumbItem>
                             <BreadcrumbLink
@@ -83,26 +105,28 @@ export default function OurWorks() {
                         </BreadcrumbItem>
                     </BreadcrumbList>
                 </Breadcrumb>
-                <div className="text-center">
-                    <h2 className="text-4xl font-bold">
+
+                <div className="text-center max-w-2xl mx-auto">
+                    <h2 className="text-3xl sm:text-4xl font-bold">
                         Results-Oriented Projects
                     </h2>
-                    <p className="mt-3 text-gray-500">
-                        Digital solutions designed to increase revenue, strengthen brands, and stay ahead of the market
+                    <p className="mt-4 text-gray-500 text-sm sm:text-base">
+                        Digital solutions designed to increase revenue,
+                        strengthen brands, and stay ahead of the market
                     </p>
                 </div>
 
-
-                <div className="mt-10 flex justify-center gap-10 select-none">
+                <div className="mt-10 flex flex-wrap justify-center gap-6 sm:gap-10 select-none">
                     {tabs.map((tab) => (
                         <button
                             key={tab}
                             onClick={() => setActiveTab(tab)}
-                            className={`relative text-lg font-medium transition-colors cursor-pointer
-                ${activeTab === tab
+                            className={`relative text-base sm:text-lg font-medium transition-colors
+                                ${activeTab === tab
                                     ? "text-[#ff3f81]"
-                                    : "text-gray-500 hover:text-gray-900"
-                                }`}
+                                    : "text-gray-500 hover:text-[#131632]"
+                                }
+                            `}
                         >
                             {tab}
                             {activeTab === tab && (
@@ -112,40 +136,64 @@ export default function OurWorks() {
                     ))}
                 </div>
 
-                <div className="mt-16 flex flex-wrap justify-center gap-x-12 gap-y-16 select-none">
-                    {filteredItems.map((item, i) => (
+                <div
+                    className="
+                        mt-14
+                        grid
+                        grid-cols-1
+                        sm:grid-cols-2
+                        lg:grid-cols-3
+                        xl:grid-cols-4
+                        gap-x-8
+                        gap-y-16
+                    "
+                >
+                    {filteredItems.map((item, index) => (
                         <Link
-                            href="#"
-                            key={i}
-                            className="w-[260px] text-center"
+                            href={item.link}
+                            key={item.title}
+                            className="group mx-auto w-full max-w-[320px] text-center"
+                            target="_blank"
                         >
-                            <div className="mx-auto aspect-square w-[220px] rounded-full overflow-hidden shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-[0_0_25px_rgba(255,63,129,0.35)]">
+                            <div
+                                className="
+                                    relative
+                                    aspect-[16/10]
+                                    overflow-hidden
+                                    rounded-t-[36px]
+                                    shadow-lg
+                                    transition-all
+                                    duration-300
+                                    group-hover:scale-[1.03]
+                                    group-hover:shadow-[0_0_25px_rgba(255,63,129,0.35)]
+                                "
+                            >
                                 <Image
                                     src={item.image}
-                                    alt={item.title}
-                                    width={220}
-                                    height={220}
-                                    className="h-full w-full object-cover"
+                                    alt={item.alt}
+                                    fill
+                                    className="object-cover"
+                                    priority={index === 0}
                                 />
                             </div>
 
-                            <h3 className="mt-6 font-semibold tracking-wide">
+                            <h3 className="mt-5 text-lg sm:text-xl font-semibold text-[#131632]">
                                 {item.title}
                             </h3>
-                            <p className="text-sm text-[#ff3f81]">
+                            <p className="mt-1 text-sm text-[#ff3f81]">
                                 {item.subtitle}
                             </p>
                         </Link>
                     ))}
                 </div>
             </Container>
-            <p className="sr-only">
-                EtruendE portfolio showcases professional web development, UI/UX design,
-                and SEO promotion projects. Our results-oriented digital solutions help
-                businesses grow traffic, conversions, and revenue through scalable and
-                modern technologies.
-            </p>
 
+            <p className="sr-only">
+                EtruendE portfolio showcases professional web development,
+                UI/UX design, and SEO promotion projects. Our results-oriented
+                digital solutions help businesses grow traffic, conversions,
+                and revenue through scalable and modern technologies.
+            </p>
         </section>
     );
 }
