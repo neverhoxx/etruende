@@ -1,6 +1,41 @@
-import { Container } from "../container";
+"use client";
+
+import emailjs from "@emailjs/browser";
+import { useRef, useState } from "react";
 
 export default function CorporateContact() {
+    const formRef = useRef(null);
+    const [loading, setLoading] = useState(false);
+
+    const [toast, setToast] = useState({
+        show: false,
+        message: "",
+        type: "success",
+    });
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+        setLoading(true);
+
+        emailjs.sendForm(
+            process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
+            process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
+            formRef.current,
+            process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
+        ).then(() => {
+            setToast({ show: true, message: "Message sent successfully!", type: "success" });
+            formRef.current.reset();
+        }).catch(() => {
+            setToast({ show: true, message: "Something went wrong. Try again.", type: "error" });
+        }).finally(() => {
+            setLoading(false);
+            setTimeout(() => {
+                setToast({ show: false, message: "", type: "success" });
+            }, 3000);
+        });
+
+    };
+
     return (
         <section
             className="py-16 sm:py-20 second-scroll bg-[linear-gradient(to_bottom,#F4F8FD_50%,#e5e7eb_50%)]"
@@ -33,93 +68,124 @@ export default function CorporateContact() {
                     development team will reach out to discuss your project.
                 </p>
 
-                <form className="select-none" aria-label="Corporate website contact form">
+                <form ref={formRef} onSubmit={sendEmail} encType="multipart/form-data" className="select-none" aria-label="Corporate website contact form">
+
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-                        {["Name", "Phone", "Email"].map((label, i) => (
-                            <div key={i} className="flex flex-col">
-                                <label className="text-sm font-semibold text-white">
-                                    {label} *
-                                </label>
-                                <input
-                                    type="text"
-                                    required
-                                    className="
-                    border-b border-white/70
-                    bg-transparent outline-none py-3
-                    text-white
-                    focus:border-white
-                    transition-all
-                  "
-                                />
-                            </div>
-                        ))}
+                        <div className="flex flex-col">
+                            <label className="text-sm font-semibold text-white">
+                                Name *
+                            </label>
+                            <input
+                                name="user_name"
+                                type="text"
+                                required
+                                className="
+                                        border-b border-white/70
+                                        bg-transparent outline-none py-3
+                                        text-white
+                                        focus:border-white
+                                        transition-all
+                                    "
+                            />
+                        </div>
+
+                        <div className="flex flex-col">
+                            <label className="text-sm font-semibold text-white">
+                                Phone *
+                            </label>
+                            <input
+                                name="user_phone"
+                                type="text"
+                                required
+                                className="
+                                        border-b border-white/70
+                                        bg-transparent outline-none py-3
+                                        text-white
+                                        focus:border-white
+                                        transition-all
+                                    "
+                            />
+                        </div>
+
+                        <div className="flex flex-col">
+                            <label className="text-sm font-semibold text-white">
+                                Email *
+                            </label>
+                            <input
+                                name="user_email"
+                                type="text"
+                                required
+                                className="
+                                        border-b border-white/70
+                                        bg-transparent outline-none py-3
+                                        text-white
+                                        focus:border-white
+                                        transition-all
+                                    "
+                            />
+                        </div>
                     </div>
 
                     <div className="flex flex-col mt-5">
-                        <label className="sr-only">Project description</label>
+                        <label className="sr-only">Project description or link to file</label>
                         <input
+                            name="user_msg"
                             type="text"
-                            placeholder="Tell us about your project, goals or ideas"
+                            placeholder="Describe your project or paste a Google Drive / Dropbox link"
                             className="
-                border-b border-white/70
-                bg-transparent outline-none py-3
-                text-white
-                placeholder:text-white/70
-                focus:border-white
-                focus:placeholder:text-white
-                transition-all
-              "
+                                border-b border-white/70
+                                bg-transparent outline-none py-3
+                                text-white
+                                placeholder:text-white/70
+                                focus:border-white
+                                focus:placeholder:text-white
+                                transition-all
+                            "
                         />
                     </div>
 
                     <div
                         className="
-              mt-6
-              flex flex-col gap-4
-              lg:flex-row lg:items-center lg:justify-between
-            "
+                            mt-6
+                            flex flex-col gap-4
+                            lg:flex-row lg:items-center lg:justify-between
+                        "
                     >
                         <label className="flex items-center gap-3 text-sm text-white cursor-pointer">
                             <input type="checkbox" required className="accent-[#131632]" />
                             I consent to the processing of personal data
                         </label>
 
-                        <label className="flex items-center gap-2 cursor-pointer group">
-                            <input type="file" className="hidden" />
-                            <svg
-                                className="w-4 h-4 text-white/70 group-hover:text-white transition-colors"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                            >
-                                <path
-                                    d="M21 12.5L12.5 21C10.567 22.933 7.433 22.933 5.5 21C3.567 19.067 3.567 15.933 5.5 14L14 5.5C15.381 4.119 17.619 4.119 19 5.5C20.381 6.881 20.381 9.119 19 10.5L11.5 18C10.671 18.829 9.329 18.829 8.5 18C7.671 17.171 7.671 15.829 8.5 15L15 8.5"
-                                    stroke="currentColor"
-                                    strokeWidth="1.5"
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                />
-                            </svg>
-                            <span className="text-white/80 group-hover:text-white transition-colors text-sm sm:text-base">
-                                Attach brief or files
-                            </span>
-                        </label>
+
 
                         <button
+                            disabled={loading}
                             type="submit"
                             className="
-                w-full lg:w-auto
-                px-6 py-3 rounded-xl
-                bg-white text-[#ff3f81]
-                font-semibold
-                hover:bg-white/90
-                transition
-              "
+                                w-full lg:w-auto
+                                px-6 py-3 rounded-xl
+                                bg-white text-[#ff3f81]
+                                font-semibold
+                                hover:bg-white/90
+                                transition
+                            "
                         >
-                            Get a Free Consultation
+                            {loading ? "Sending..." : "Get a Free Consultation"}
                         </button>
                     </div>
                 </form>
             </div>
+
+            {toast.show && (
+                <div
+                    className={`fixed top-6 left-1/2 -translate-x-1/2 z-[9999]
+                        px-6 py-3 rounded-full text-white font-medium shadow-lg
+                        transition-all duration-500
+                        ${toast.type === "success" ? "bg-green-500" : "bg-red-500"}`}
+                >
+                    {toast.message}
+                </div>
+            )}
         </section>
     );
 }

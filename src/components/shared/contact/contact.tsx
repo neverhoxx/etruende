@@ -1,3 +1,5 @@
+"use client";
+
 import { Container } from "@/components/shared/container";
 import {
     Mail,
@@ -9,9 +11,45 @@ import {
     Send,
 } from "lucide-react";
 
+import emailjs from "@emailjs/browser";
+import { useRef, useState } from "react";
+
 import Link from "next/link";
 
 export default function ContactSectionPage() {
+    const formRef = useRef(null);
+    const [loading, setLoading] = useState(false);
+
+    const [toast, setToast] = useState({
+        show: false,
+        message: "",
+        type: "success",
+    });
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+        setLoading(true);
+
+        emailjs.sendForm(
+            process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
+            process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
+            formRef.current,
+            process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
+        ).then(() => {
+            setToast({ show: true, message: "Message sent successfully!", type: "success" });
+            formRef.current.reset();
+        }).catch(() => {
+            setToast({ show: true, message: "Something went wrong. Try again.", type: "error" });
+        }).finally(() => {
+            setLoading(false);
+            setTimeout(() => {
+                setToast({ show: false, message: "", type: "success" });
+            }, 3000);
+        });
+
+    };
+
+
     return (
         <section className="relative py-30 min-h-screen flex justify-center items-center bg-[#131632] overflow-hidden">
             <div className="absolute -top-32 -right-32 w-[500px] h-[500px] bg-[#ff3f81]/30 rounded-full blur-[120px]" />
@@ -88,13 +126,19 @@ export default function ContactSectionPage() {
                         Get in Touch
                     </h3>
 
-                    <form className="space-y-8 select-none">
+                    <form
+                        ref={formRef}
+                        onSubmit={sendEmail}
+                        className="space-y-8 select-none"
+                    >
+
 
                         <div>
                             <label className="text-sm text-gray-600">
                                 Your name
                             </label>
                             <input
+                                name="user_name"
                                 type="text"
                                 placeholder="How should we call you?"
                                 className="w-full border-b border-gray-300 py-3 outline-none
@@ -107,6 +151,7 @@ export default function ContactSectionPage() {
                                 Phone number
                             </label>
                             <input
+                                name="user_phone"
                                 type="tel"
                                 placeholder="Your contact phone"
                                 className="w-full border-b border-gray-300 py-3 outline-none
@@ -119,6 +164,7 @@ export default function ContactSectionPage() {
                                 Email address
                             </label>
                             <input
+                                name="user_email"
                                 type="email"
                                 placeholder="Your business email"
                                 className="w-full border-b border-gray-300 py-3 outline-none
@@ -132,18 +178,30 @@ export default function ContactSectionPage() {
                         </label>
 
                         <button
+                            disabled={loading}
                             type="submit"
                             className="w-full mt-6 py-4 rounded-full
                             bg-[#ff3f81] text-white font-semibold text-lg
                             hover:scale-[1.03] hover:shadow-[0_0_30px_rgba(255,63,129,0.6)]
                             transition-all"
                         >
-                            Request a Consultation
+                            {loading ? "Sending..." : "Request a Consultation"}
                         </button>
                     </form>
                 </div>
 
             </Container>
+            {toast.show && (
+                <div
+                    className={`fixed top-6 left-1/2 -translate-x-1/2 z-[9999]
+                        px-6 py-3 rounded-full text-white font-medium shadow-lg
+                        transition-all duration-500
+                        ${toast.type === "success" ? "bg-green-500" : "bg-red-500"}`}
+                >
+                    {toast.message}
+                </div>
+            )}
+
         </section>
     );
 }

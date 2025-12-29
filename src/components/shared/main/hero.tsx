@@ -199,10 +199,10 @@ export default function HeroParticles() {
 
 
                 <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-                    <Link href="" className="select-none px-6 py-3 rounded-xl bg-white/10 backdrop-blur text-white border border-white/20 hover:bg-white/20 transition">
+                    <Link href="/contacts" className="select-none px-6 py-3 rounded-xl bg-white/10 backdrop-blur text-white border border-white/20 hover:bg-white/20 transition">
                         Start your project with us
                     </Link>
-                    <Link href="" className="select-none px-6 py-3 rounded-xl bg-white text-[#131632] font-semibold shadow-xl hover:bg-gray-200 transition">
+                    <Link href="/portfolio" className="select-none px-6 py-3 rounded-xl bg-white text-[#131632] font-semibold shadow-xl hover:bg-gray-200 transition">
                         View projects
                     </Link>
                 </div>

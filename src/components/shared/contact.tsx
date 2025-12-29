@@ -1,3 +1,8 @@
+"use client";
+
+import emailjs from "@emailjs/browser";
+import { useRef, useState } from "react";
+
 import { Container } from "./container";
 
 import {
@@ -8,6 +13,38 @@ import {
 } from "lucide-react";
 
 export default function ContactForm() {
+    const formRef = useRef(null);
+    const [loading, setLoading] = useState(false);
+
+    const [toast, setToast] = useState({
+        show: false,
+        message: "",
+        type: "success",
+    });
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+        setLoading(true);
+
+        emailjs.sendForm(
+            process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
+            process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
+            formRef.current,
+            process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
+        ).then(() => {
+            setToast({ show: true, message: "Message sent successfully!", type: "success" });
+            formRef.current.reset();
+        }).catch(() => {
+            setToast({ show: true, message: "Something went wrong. Try again.", type: "error" });
+        }).finally(() => {
+            setLoading(false);
+            setTimeout(() => {
+                setToast({ show: false, message: "", type: "success" });
+            }, 3000);
+        });
+
+    };
+
     return (
         <div className="py-20 bg-[#ff3f81] second-scroll">
             <Container className="flex flex-col md:flex-row gap-14 md:gap-20">
@@ -64,11 +101,12 @@ export default function ContactForm() {
                     </div>
                 </div>
 
-                <div className="md:w-1/2 backdrop-blur-xl bg-white/80 rounded-2xl p-8 flex flex-col gap-7 text-[#131632] shadow-2xl border border-white/40">
+                <form ref={formRef} onSubmit={sendEmail} encType="multipart/form-data" aria-label="Contact form" className="md:w-1/2 backdrop-blur-xl bg-white/80 rounded-2xl p-8 flex flex-col gap-7 text-[#131632] shadow-2xl border border-white/40">
 
                     <div className="flex flex-col">
                         <label className="text-sm font-semibold">Name *</label>
                         <input
+                            name="user_name"
                             type="text"
                             className="border-b border-[#131632]/40 bg-transparent outline-none py-3 focus:border-[#131632] transition-all"
                         />
@@ -77,6 +115,7 @@ export default function ContactForm() {
                     <div className="flex flex-col">
                         <label className="text-sm font-semibold">E-mail *</label>
                         <input
+                            name="user_email"
                             type="email"
                             className="border-b border-[#131632]/40 bg-transparent outline-none py-3 focus:border-[#131632] transition-all"
                         />
@@ -85,6 +124,7 @@ export default function ContactForm() {
                     <div className="flex flex-col">
                         <label className="text-sm font-semibold">Phone *</label>
                         <input
+                            name="user_phone"
                             type="tel"
                             className="border-b border-[#131632]/40 bg-transparent outline-none py-3 focus:border-[#131632] transition-all"
                         />
@@ -93,6 +133,7 @@ export default function ContactForm() {
                     <div className="flex flex-col">
                         <label className="text-sm font-semibold">Which service are you interested in?</label>
                         <input
+                            name="service"
                             type="text"
                             className="border-b border-[#131632]/40 bg-transparent outline-none py-3 focus:border-[#131632] transition-all"
                         />
@@ -101,17 +142,29 @@ export default function ContactForm() {
                     <div className="flex flex-col">
                         <label className="text-sm font-semibold">Message</label>
                         <textarea
+                            name="user_msg"
                             rows={4}
                             className="border-b border-[#131632]/40 bg-transparent outline-none py-3 resize-none focus:border-[#131632] transition-all"
                         />
                     </div>
 
-                    <button className="mt-4 bg-[#131632] hover:bg-[#0e1027] transition-all text-white py-4 rounded-xl w-full font-semibold text-lg shadow-lg hover:shadow-2xl active:scale-[0.98]">
-                        Send Request
+                    <button disabled={loading} type="submit" className="mt-4 bg-[#131632] hover:bg-[#0e1027] transition-all text-white py-4 rounded-xl w-full font-semibold text-lg shadow-lg hover:shadow-2xl active:scale-[0.98]">
+                        {loading ? "Sending..." : "Send Request"}
                     </button>
-                </div>
+                </form>
 
             </Container>
+
+            {toast.show && (
+                <div
+                    className={`fixed top-6 left-1/2 -translate-x-1/2 z-[9999]
+                        px-6 py-3 rounded-full text-white font-medium shadow-lg
+                        transition-all duration-500
+                        ${toast.type === "success" ? "bg-green-500" : "bg-red-500"}`}
+                >
+                    {toast.message}
+                </div>
+            )}
         </div>
     );
 }
