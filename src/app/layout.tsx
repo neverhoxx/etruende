@@ -17,16 +17,72 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://etruende.com"),
+
   title: {
-    default: "EtruendE - Web Development & SEO Agency",
+    default: "EtruendE – Web Development & SEO Agency",
     template: "%s | EtruendE",
   },
+
   description:
-    "EtruendE is a professional web development and SEO agency creating high-performing websites, landing pages, e-commerce platforms, and SEO strategies that drive traffic and sales.",
+    "EtruendE is a web development and SEO agency creating fast, conversion-focused websites, landing pages, and e-commerce solutions that help businesses grow.",
+
+  keywords: [
+    "web development agency",
+    "SEO agency",
+    "Next.js development",
+    "website design",
+    "e-commerce development",
+    "landing page development",
+    "digital agency",
+  ],
+
   alternates: {
     canonical: "https://etruende.com",
   },
+
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/apple-icon.png",
+  },
+
+  openGraph: {
+    type: "website",
+    url: "https://etruende.com",
+    title: "EtruendE – Web Development & SEO Agency",
+    description:
+      "High-performing websites, SEO, and e-commerce solutions for growing businesses.",
+    siteName: "EtruendE",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1080,
+        height: 1080,
+        alt: "EtruendE – Web Development & SEO Agency",
+      },
+    ],
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "EtruendE – Web Development & SEO Agency",
+    description:
+      "Web development & SEO agency focused on performance and conversions.",
+    images: ["/og-image.png"],
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+    },
+  },
 };
+
+
 
 export default function RootLayout({
   children,
@@ -47,20 +103,20 @@ export default function RootLayout({
                 {
                   "@type": "Organization",
                   "@id": "https://etruende.com/#organization",
-                  "name": "EtruendE",
-                  "url": "https://etruende.com",
-                  "logo": "https://etruende.com/logo.png",
-                  "sameAs": [
-                    "https://www.instagram.com/etruende",
-                    "https://www.linkedin.com/company/etruende",
+                  name: "EtruendE",
+                  url: "https://etruende.com",
+                  logo: "https://etruende.com/web-app-manifest-192x192.png",
+                  sameAs: [
+                    "https://www.instagram.com/etruende_webstudio/",
+                    "https://www.linkedin.com/in/etruende-studio",
                   ],
                 },
                 {
                   "@type": "WebSite",
                   "@id": "https://etruende.com/#website",
-                  "url": "https://etruende.com",
-                  "name": "EtruendE",
-                  "publisher": {
+                  url: "https://etruende.com",
+                  name: "EtruendE",
+                  publisher: {
                     "@id": "https://etruende.com/#organization",
                   },
                 },
@@ -68,6 +124,7 @@ export default function RootLayout({
             }),
           }}
         />
+
 
         <AOSProvider />
 

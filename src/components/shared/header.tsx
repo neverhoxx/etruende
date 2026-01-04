@@ -71,11 +71,19 @@ export default function Header() {
                         </Link>
 
                         <Link
-                            href="/testimonials"
+                            href="/reviews"
                             className="transition-colors hover:text-[#ff3f81]"
                             onClick={() => setMenuOpen(false)}
                         >
-                            Testimonials
+                            Reviews
+                        </Link>
+
+                        <Link
+                            href="/contacts"
+                            className="transition-colors hover:text-[#ff3f81]"
+                            onClick={() => setMenuOpen(false)}
+                        >
+                            Contacts
                         </Link>
                     </nav>
                 </div>
