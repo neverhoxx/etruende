@@ -75,7 +75,7 @@ export default function CorporateHero() {
 
 
                             <Link
-                                href=""
+                                href="/contacts"
                                 className="inline-block select-none px-6 py-3 rounded-xl bg-white/10 backdrop-blur text-white border border-white/20 hover:bg-white/20 transition"
                             >
                                 Start your project with us
@@ -87,7 +87,7 @@ export default function CorporateHero() {
                                 hover:scale-[1.03] hover:shadow-[0_0_25px_rgba(255,63,129,0.35)]
                                 transition-all duration-300">
                                 <p className="text-4xl sm:text-5xl font-bold text-[#ff3f81] mb-4">
-                                    67
+                                    13
                                 </p>
                                 <p className="mb-2 font-bold text-lg sm:text-xl">
                                     WEBSITES IMPLEMENTED
@@ -119,7 +119,7 @@ export default function CorporateHero() {
                                 hover:scale-[1.03] hover:shadow-[0_0_25px_rgba(255,63,129,0.35)]
                                 transition-all duration-300">
                                 <p className="text-4xl sm:text-5xl font-bold text-[#ff3f81] mb-4">
-                                    3× ROI
+                                    3×
                                 </p>
 
                                 <p className="mb-2 font-bold text-lg sm:text-xl">
@@ -133,7 +133,7 @@ export default function CorporateHero() {
                             </div>
 
                             <Link
-                                href=""
+                                href="/reviews"
                                 className="select-none mb-5 lg:mb-0 px-6 py-3 rounded-xl bg-white text-[#131632] font-semibold shadow-xl hover:bg-gray-200 transition text-center"
                             >
                                 Testimonials

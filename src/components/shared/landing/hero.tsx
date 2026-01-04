@@ -62,7 +62,7 @@ export default function LandingHero() {
                             </p>
 
                             <Link
-                                href=""
+                                href="/contacts"
                                 className="inline-block select-none px-6 py-3 rounded-xl bg-white/10 backdrop-blur text-white border border-white/20 hover:bg-white/20 transition"
                             >
                                 Get a Custom Landing Page for Your Business
@@ -116,7 +116,7 @@ export default function LandingHero() {
                             </div>
 
                             <Link
-                                href=""
+                                href="/reviews"
                                 className="select-none mb-5 lg:mb-0 px-6 py-3 rounded-xl bg-white text-[#131632] font-semibold shadow-xl hover:bg-gray-200 transition text-center"
                             >
                                 Testimonials

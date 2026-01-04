@@ -15,7 +15,7 @@ const faqs = [
     },
     {
         q: "How long does website development take?",
-        a: "On average, website development takes from 2 to 8 weeks depending on the scope and requirements of the project."
+        a: "On average, website development takes from 2 to 30 days depending on the scope and requirements of the project."
     },
     {
         q: "Do you offer SEO services?",

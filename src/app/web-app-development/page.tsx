@@ -51,7 +51,7 @@ export const metadata: Metadata = {
         images: ["https://etruende.com/og/web-application.jpg"],
     },
 };
-
+/*<WebAppPortfolio />*/
 export default function WebApplication() {
     return (
         <>
@@ -109,7 +109,7 @@ export default function WebApplication() {
 
             <WebApplicationHero />
             <WebApplicationSection />
-            <WebAppPortfolio />
+
             <CorporateContact />
             <WebApplicationBlock />
             <WebApplicationFAQ />

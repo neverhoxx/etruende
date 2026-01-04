@@ -19,7 +19,7 @@ const faqs = [
     },
     {
         q: "How long does corporate website development take?",
-        a: "Development usually takes from 3 to 8 weeks depending on the size and complexity of the project."
+        a: "Development usually takes from 1 to 3 weeks depending on the size and complexity of the project."
     },
     {
         q: "Can you redesign an existing corporate website?",

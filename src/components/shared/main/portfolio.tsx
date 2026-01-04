@@ -147,41 +147,32 @@ export default function PortfolioScrollCustom() {
                         ref={scrollRef}
                         onScroll={handleScroll}
                         className="
-              flex gap-8 sm:gap-12 md:gap-16
-              p-4 sm:p-6 md:p-10
-              overflow-x-scroll
-              pb-6 sm:pb-8
-              [&::-webkit-scrollbar]:hidden
-              [scrollbar-width:none]
-              -ms-overflow-style:none
-              h-[350px]
-            "
+                            flex gap-8 sm:gap-12 md:gap-16
+                            p-4 sm:p-6 md:p-10
+                            overflow-x-scroll
+                            pb-6 sm:pb-8
+                            [&::-webkit-scrollbar]:hidden
+                            [scrollbar-width:none]
+                            -ms-overflow-style:none
+                            h-[350px]
+                        "
                     >
                         {items.map((item, i) => (
                             <Link
                                 href="/portfolio"
                                 key={i}
                                 className="
-                  text-center
-                  w-[288px]
-                  h-[200px]
-                  shrink-0
-                  mx-auto
-                "
+                                    text-center
+                                    w-[288px]
+                                    h-[200px]
+                                    shrink-0
+                                    mx-auto
+                                "
                             >
-                                <div
-                                    className="
-                    aspect-square
-                    w-[288px]
-                    h-[200px]
-                    rounded-t-[50px]
-                    overflow-hidden
-                    shadow-lg
-                    transition-all
-                    duration-300
-                    hover:scale-[1.03]
-                    hover:shadow-[0_0_25px_rgba(255,63,129,0.35)]
-                  "
+                                <div className="aspect-square w-[288px] h-[200px] rounded-t-[50px] overflow-hidden shadow-lg transition-all duration-300
+                                        hover:scale-[1.03]
+                                        hover:shadow-[0_0_25px_rgba(255,63,129,0.35)]
+                                     "
                                 >
                                     <Image
                                         src={item.image}

@@ -41,7 +41,7 @@ function FeatureCard({
         <motion.div
             whileHover={{ scale: 1.05 }}
             transition={{ type: 'spring', stiffness: 300, damping: 20 }}
-            className={`relative group cursor-pointer select-none border rounded-2xl border-gray-200 hover:border-[#ff3f81] bg-white ${className}`}
+            className={`relative group select-none border rounded-2xl border-gray-200 hover:border-[#ff3f81] bg-white ${className}`}
         >
             <div className="h-full p-6 sm:p-8">
                 <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-xl bg-[#131632] flex items-center justify-center mb-4 sm:mb-6">

@@ -64,7 +64,7 @@ export default function ContactForm() {
                     <p className="text-[16px] md:text-[20px] text-[#131632]">
                         We design and build high-performance websites that attract clients,
                         strengthen your brand, and bring real results.
-                        Tell us about your project — we’ll help you turn it into something exceptional.
+                        Tell us about your project - we’ll help you turn it into something exceptional.
                     </p>
 
                     <div className="mt-14 grid grid-cols-1 sm:grid-cols-2 gap-10 text-white/80">
@@ -81,7 +81,7 @@ export default function ContactForm() {
                             <Mail className="text-white" />
                             <div>
                                 <p className="font-semibold text-white">Email</p>
-                                <p>hello@etruende.com</p>
+                                <p>etruendewebstudio@gmail.com</p>
                             </div>
                         </div>
 

@@ -22,7 +22,7 @@ const steps = [
     {
         id: 4,
         title: "Testing & Launch",
-        text: "We polish, test, optimize, and ship your project — fast, stable, and on time."
+        text: "We polish, test, optimize, and ship your project - fast, stable, and on time."
     }
 ];
 

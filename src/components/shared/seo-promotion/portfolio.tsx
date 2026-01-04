@@ -8,27 +8,33 @@ import { HiOutlineSparkles } from "react-icons/hi2";
 
 import Link from "next/link";
 
+import voltampPic from "@/images/projects/voltamp.png";
+import paikesemajadPic from "@/images/projects/solantra-solarhome.png";
+import LandingDemo1 from "@/images/projects/LandingDemo1.png";
+import fusion from "@/images/projects/fusion.png";
+import pic3dsdom from "@/images/projects/3dsdom.png";
+import ralest from "@/images/projects/ralest.png";
+
 const items = [
     {
-        title: "Voltamp",
-        subtitle: "Landing Page",
-        image: "/images/life-comfort.png",
+        title: 'Voltamp',
+        subtitle: 'Corporate Website & SEO Promotion',
+        image: voltampPic,
+        alt: 'Voltamp corporate website with SEO Promotion developed by EtruendE Studio',
     },
     {
-        title: "Päikesemajad",
-        subtitle: "Landing Page",
-        image: "/images/lazurit.png",
+        title: 'Fusionoff',
+        subtitle: 'E-commerce',
+        image: fusion,
+        alt: 'Fusion E-commerce developed by EtruendE Studio',
     },
     {
-        title: "Some site",
-        subtitle: "Landing Page",
-        image: "/images/only-wine.png",
+        title: 'Ral Est',
+        subtitle: 'SEO Promotion',
+        image: ralest,
+        alt: 'Ral Est SEO Promotion developed by EtruendE Studio',
     },
-    {
-        title: "Some site",
-        subtitle: "Landing Page",
-        image: "/images/livingston.png",
-    }
+
 ];
 
 export default function SeoPortfolio() {
@@ -118,51 +124,45 @@ export default function SeoPortfolio() {
                         ref={scrollRef}
                         onScroll={handleScroll}
                         className="
-                            flex gap-8 sm:gap-12 md:gap-16 
-                            p-4 sm:p-6 md:p-10 
-                            overflow-x-scroll 
-                            pb-6 sm:pb-8 
-                            [&::-webkit-scrollbar]:hidden 
-                            [scrollbar-width:none] 
+                            flex gap-8 sm:gap-12 md:gap-16
+                            p-4 sm:p-6 md:p-10
+                            overflow-x-scroll
+                            pb-6 sm:pb-8
+                            [&::-webkit-scrollbar]:hidden
+                            [scrollbar-width:none]
                             -ms-overflow-style:none
+                            h-[350px]
                         "
                     >
                         {items.map((item, i) => (
                             <Link
-                                href=""
+                                href="/portfolio"
                                 key={i}
                                 className="
-                                    text-center 
-                                    w-[85%] 
-                                    sm:w-52 
-                                    md:w-64 
-                                    shrink-0 
+                                    text-center
+                                    w-[288px]
+                                    h-[200px]
+                                    shrink-0
                                     mx-auto
                                 "
                             >
-                                <div
-                                    className="
-                                        w-full aspect-square
-                                        sm:w-52 sm:h-52
-                                        md:w-64 md:h-64
-                                        rounded-full 
-                                        overflow-hidden 
-                                        shadow-lg 
-                                        transition-all 
-                                        duration-300
-                                        hover:scale-[1.03] 
+                                <div className="aspect-square w-[288px] h-[200px] rounded-t-[50px] overflow-hidden shadow-lg transition-all duration-300
+                                        hover:scale-[1.03]
                                         hover:shadow-[0_0_25px_rgba(255,63,129,0.35)]
-                                    "
+                                     "
                                 >
-
+                                    <Image
+                                        src={item.image}
+                                        alt={item.alt}
+                                        className="w-[288px] h-[200px]"
+                                        priority={i === 0}
+                                    />
                                 </div>
 
-                                <h3 className="mt-4 sm:mt-5 md:mt-6 text-lg sm:text-xl font-semibold text-[#131632]">
+                                <h3 className="mt-4 sm:mt-5 md:mt-6 text-lg sm:text-xl font-semibold text-black">
                                     {item.title}
                                 </h3>
-                                <p className="text-[#ff3f81] text-sm">
-                                    {item.subtitle}
-                                </p>
+                                <p className="text-[#ff3f81] text-sm">{item.subtitle}</p>
                             </Link>
                         ))}
                     </div>

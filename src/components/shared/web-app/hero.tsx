@@ -70,7 +70,7 @@ export default function WebApplicationHero() {
 
 
                             <Link
-                                href=""
+                                href="/contacts"
                                 className="inline-block select-none px-6 py-3 rounded-xl bg-white/10 backdrop-blur text-white border border-white/20 hover:bg-white/20 transition"
                             >
                                 Start your project with us
@@ -124,7 +124,7 @@ export default function WebApplicationHero() {
                             </div>
 
                             <Link
-                                href=""
+                                href="/reviews"
                                 className="select-none mb-5 lg:mb-0 px-6 py-3 rounded-xl bg-white text-[#131632] font-semibold shadow-xl hover:bg-gray-200 transition text-center"
                             >
                                 Testimonials
