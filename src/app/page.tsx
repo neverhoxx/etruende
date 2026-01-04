@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     siteName: "EtruendE",
     images: [
       {
-        url: "https://etruende.com/og/home.jpg",
+        url: "https://etruende.com/og-image.png",
         width: 1200,
         height: 630,
         alt: "EtruendE Digital Agency",
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     title: "EtruendE - Web Development & SEO Agency",
     description:
       "We create scalable websites and SEO strategies that increase traffic, conversions, and revenue.",
-    images: ["https://etruende.com/og/home.jpg"],
+    images: ["https://etruende.com/og-image.png"],
   },
   alternates: {
     canonical: "https://etruende.com",
@@ -68,10 +68,10 @@ export default function Home() {
                 "@id": "https://etruende.com/#organization",
                 "name": "EtruendE",
                 "url": "https://etruende.com",
-                "logo": "https://etruende.com/logo.png",
+                "logo": "https://etruende.com/web-app-manifest-192x192.png",
                 "sameAs": [
-                  "https://www.linkedin.com/company/etruende",
-                  "https://www.instagram.com/etruende"
+                  "https://www.linkedin.com/in/etruend-studio",
+                  "https://www.instagram.com/etruende_webstudio/"
                 ]
               },
               {

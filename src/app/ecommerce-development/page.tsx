@@ -31,7 +31,7 @@ export const metadata: Metadata = {
         siteName: "EtruendE",
         images: [
             {
-                url: "https://etrunde.com/og/ecommerce.jpg",
+                url: "https://etrunde.com/og-image.png",
                 width: 1200,
                 height: 630,
                 alt: "E-commerce Website Development by EtruendE",
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
         title: "E-commerce Website Development - EtruendE",
         description:
             "We create scalable, SEO-friendly e-commerce websites that drive sales and growth.",
-        images: ["https://etrunde.com/og/ecommerce.jpg"],
+        images: ["https://etrunde.com/og-image.png"],
     },
     alternates: {
         canonical: "https://etrunde.com/ecommerce-development",
@@ -76,7 +76,7 @@ export default function Ecommerce() {
                             "@type": "Organization",
                             "name": "EtruendE",
                             "url": "https://etrunde.com",
-                            "logo": "https://etrunde.com/logo.png"
+                            "logo": "https://etrunde.com/web-app-manifest-192x192.png"
                         },
                         "areaServed": "Worldwide",
                         "serviceType": [

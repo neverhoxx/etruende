@@ -32,7 +32,7 @@ export const metadata: Metadata = {
         siteName: "EtruendE",
         images: [
             {
-                url: "https://etruende.com/og/corporate-website.jpg",
+                url: "https://etruende.com/og-image.png",
                 width: 1200,
                 height: 630,
                 alt: "Corporate Website Development by EtruendE",
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
         title: "Corporate Website Development | EtruendE",
         description:
             "Scalable corporate websites built for performance, SEO, and business growth.",
-        images: ["https://etruende.com/og/corporate-website.jpg"],
+        images: ["https://etruende.com/og-image.png"],
     },
 };
 

@@ -32,7 +32,7 @@ export const metadata: Metadata = {
         siteName: "EtruendE",
         images: [
             {
-                url: "https://etruende.com/og/landing-page.jpg",
+                url: "https://etruende.com/og-image.png",
                 width: 1200,
                 height: 630,
                 alt: "Landing Page Development by EtruendE",
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
         title: "Landing Page Development | EtruendE",
         description:
             "High-performing landing pages designed to convert visitors into customers. SEO-friendly, fast, and conversion-focused.",
-        images: ["https://etruende.com/og/landing-page.jpg"],
+        images: ["https://etruende.com/og-image.png"],
     },
 
     alternates: {

@@ -33,7 +33,7 @@ export const metadata: Metadata = {
         siteName: "EtruendE",
         images: [
             {
-                url: "https://etruende.com/og/web-application.jpg",
+                url: "https://etruende.com/og-image.png",
                 width: 1200,
                 height: 630,
                 alt: "Web Application Development by EtruendE",
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
         title: "Web Application Development | EtruendE",
         description:
             "Custom web applications built for performance, scalability, and business growth.",
-        images: ["https://etruende.com/og/web-application.jpg"],
+        images: ["https://etruende.com/og-image.png"],
     },
 };
 /*<WebAppPortfolio />*/

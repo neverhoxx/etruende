@@ -23,7 +23,7 @@ export const metadata: Metadata = {
         siteName: "EtruendE",
         images: [
             {
-                url: "https://etruende.com/og/portfolio.jpg",
+                url: "https://etruende.com/og-image.png",
                 width: 1200,
                 height: 630,
                 alt: "EtruendE Portfolio Projects",
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
         title: "EtruendE Portfolio - Real Digital Results",
         description:
             "Web development, design, and SEO projects built to scale businesses and increase revenue.",
-        images: ["https://etruende.com/og/portfolio.jpg"],
+        images: ["https://etruende.com/og-image.png"],
     },
     alternates: {
         canonical: "https://etruende.com/portfolio",

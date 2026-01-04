@@ -9,12 +9,12 @@ export const metadata: Metadata = {
         title: "Contact EtruendE",
         description:
             "Get in touch with EtruendE for web development, SEO promotion, and digital strategy.",
-        url: "https://etruende.com/contact",
+        url: "https://etruende.com/contacts",
         siteName: "EtruendE",
         type: "website",
     },
     alternates: {
-        canonical: "https://etruende.com/contact",
+        canonical: "https://etruende.com/contacts",
     },
 };
 

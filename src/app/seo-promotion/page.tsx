@@ -30,7 +30,7 @@ export const metadata: Metadata = {
         siteName: "EtruendE",
         images: [
             {
-                url: "https://etruende.com/og/seo-promotion.jpg",
+                url: "https://etruende.com/og-image.png",
                 width: 1200,
                 height: 630,
                 alt: "SEO Promotion Services by EtruendE",
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
         title: "SEO Promotion Services | EtruendE",
         description:
             "Full-cycle SEO promotion for businesses that want long-term organic growth and top Google rankings.",
-        images: ["https://etruende.com/og/seo-promotion.jpg"],
+        images: ["https://etruende.com/og-image.png"],
     },
     alternates: {
         canonical: "https://etruende.com/seo-promotion",
