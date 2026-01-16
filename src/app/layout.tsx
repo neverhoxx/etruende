@@ -105,11 +105,15 @@ export default function RootLayout({
                   "@id": "https://etruende.com/#organization",
                   name: "EtruendE",
                   url: "https://etruende.com",
-                  logo: "https://etruende.com/web-app-manifest-192x192.png",
+                  logo: "https://etruende.com/logo.png",
                   sameAs: [
                     "https://www.instagram.com/etruende_webstudio/",
                     "https://www.linkedin.com/in/etruende-studio",
                   ],
+                  icons: {
+                    icon: "/favicon.ico",
+                    apple: "/apple-icon.png",
+                  }
                 },
                 {
                   "@type": "WebSite",

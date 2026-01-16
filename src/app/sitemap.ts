@@ -13,6 +13,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         },
         {
             url: `${baseUrl}/contacts`,
+            changeFrequency: 'monthly',
             lastModified,
             priority: 0.6,
         },
@@ -24,42 +25,50 @@ export default function sitemap(): MetadataRoute.Sitemap {
         },
         {
             url: `${baseUrl}/reviews`,
+            changeFrequency: 'monthly',
             lastModified,
             priority: 0.6,
         },
         {
             url: `${baseUrl}/corporate-page-development`,
+            changeFrequency: 'monthly',
             lastModified,
             priority: 0.9,
         },
         {
             url: `${baseUrl}/ecommerce-development`,
+            changeFrequency: 'monthly',
             lastModified,
             priority: 0.9,
         },
         {
             url: `${baseUrl}/landing-page-development`,
             lastModified,
+            changeFrequency: 'monthly',
             priority: 0.9,
         },
         {
             url: `${baseUrl}/seo-promotion`,
             lastModified,
+            changeFrequency: 'monthly',
             priority: 0.9,
         },
         {
             url: `${baseUrl}/web-app-development`,
             lastModified,
+            changeFrequency: 'monthly',
             priority: 0.9,
         },
         {
             url: `${baseUrl}/portfolio`,
             lastModified,
+            changeFrequency: 'monthly',
             priority: 0.8,
         },
         {
             url: `${baseUrl}/portfolio/voltamp`,
             lastModified,
+            changeFrequency: 'monthly',
             priority: 0.75,
         },
     ]

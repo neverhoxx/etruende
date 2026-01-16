@@ -81,7 +81,7 @@ export default function OurProcess() {
                                     rounded-xl 
                                     transition-all 
                                     duration-300 
-                                    hover:scale-[1.03]
+                                   
                                     hover:shadow-[0_0_25px_rgba(255,63,129,0.35)] 
                                     shadow-[0_0_12px_rgba(255,63,129,0.2)]
                                     border border-[#f1c4d6]

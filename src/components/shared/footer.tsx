@@ -27,6 +27,10 @@ export default function Footer() {
                     <div className="font-semibold mt-10">
                         hello@etruende.com
                     </div>
+
+                    <p>
+                        EtruendE — Independent Web Development & SEO Studio
+                    </p>
                 </div>
             </Container>
         </div>
