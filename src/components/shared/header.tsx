@@ -146,14 +146,6 @@ function MobileServicesDropdown({
                     >
                         Web Applications
                     </Link>
-
-                    <Link
-                        href="/seo-promotion"
-                        onClick={onClose}
-                        className="hover:text-[#ff3f81]"
-                    >
-                        SEO Promotion
-                    </Link>
                 </div>
             )}
         </div>

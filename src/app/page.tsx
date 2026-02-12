@@ -23,6 +23,9 @@ export const metadata: Metadata = {
     "digital agency",
     "EtruendE",
   ],
+  other: {
+    freelancehunt: "b6196dfb59ba679",
+  },
   openGraph: {
     title: "EtruendE - Digital Solutions That Drive Growth",
     description:
