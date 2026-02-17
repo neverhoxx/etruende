@@ -115,13 +115,13 @@ export default function Header() {
 
                         <ul className="flex gap-4">
                             <li>
-                                <a href=""><FaInstagram className=" text-pink-700 hover:text-[#ff3f81] duration-300 text-2xl" /></a>
+                                <a href="https://www.instagram.com/etruende_webstudio/"><FaInstagram className=" text-pink-700 hover:text-[#ff3f81] duration-300 text-2xl" /></a>
                             </li>
                             <li>
-                                <a href="https://wa.me/qr/BXF3GMUNAKMHK1"><FaWhatsapp className="text-green-500 hover:text-[#ff3f81] duration-300 text-2xl" /></a>
+                                <a href="https://wa.me/37281274579"><FaWhatsapp className="text-green-500 hover:text-[#ff3f81] duration-300 text-2xl" /></a>
                             </li>
                             <li>
-                                <a href=""><FaTelegramPlane className="text-blue-400 hover:text-[#ff3f81] duration-300 text-2xl" /></a>
+                                <a href="https://t.me/Biznesmen1628"><FaTelegramPlane className="text-blue-400 hover:text-[#ff3f81] duration-300 text-2xl" /></a>
                             </li>
                         </ul>
                     </nav>
