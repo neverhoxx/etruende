@@ -42,30 +42,22 @@ export default function LandingHero() {
                     <div className="flex flex-col md:flex-row md:justify-between gap-12 mt-6">
                         <div className="w-full md:w-1/2 text-center md:text-left">
                             <h1 className="text-3xl sm:text-5xl md:text-6xl font-bold mb-6 text-white">
-                                High-Converting Landing Page Development for Business
-
+                                Landing Page Development
                             </h1>
 
-                            <h3 className="text-xl sm:text-2xl md:text-3xl font-bold mb-6 text-white">
-                                What Is a Landing Page and How It Increases Conversions
-                            </h3>
-
                             <p className="text-base sm:text-lg md:text-xl opacity-80 mb-8 max-w-full md:max-w-[750px] text-white mx-auto md:mx-0">
-                                A landing page is a conversion-focused web page designed to turn visitors into leads or customers. Unlike traditional websites, a professional landing page is built around a single goal - increasing conversions for marketing campaigns, product launches, and business growth.
+                                A landing page is a focused one-page website built around a single offer(for example: a service, product, or campaign).
+                                It helps visitors quickly understand the value and take action.
                                 <br /><br />
-                                High-performing landing page development combines persuasive copy, fast loading speed, mobile-first design, and clear call-to-action. Businesses that invest in custom landing pages achieve higher ROI, better lead quality, and measurable results.
-                                <br /><br />
-                                At <span className="text-[#ff3f81] underline font-bold opacity-100">
-                                    EtruendE
-                                </span>, we build SEO-optimized, high-converting landing pages tailored to your business goals.
-
+                                We build mobile-first landing pages with a clear structure, clean design, and fast performance.
+                                SEO best practices are included during development (metadata, headings, and indexing setup).
                             </p>
 
                             <Link
                                 href="/contacts"
                                 className="inline-block select-none px-6 py-3 rounded-xl bg-white/10 backdrop-blur text-white border border-white/20 hover:bg-white/20 transition"
                             >
-                                Get a Custom Landing Page for Your Business
+                                Get a quote
                             </Link>
                         </div>
 
@@ -77,49 +69,40 @@ export default function LandingHero() {
                                     80+
                                 </p>
                                 <p className="mb-2 font-bold text-lg sm:text-xl">
-                                    LANDING PAGES BUILT
+                                    PAGES DELIVERED
                                 </p>
                                 <p className="text-base sm:text-lg opacity-80">
-                                    We’ve launched landing pages for products, services, startups,
-                                    and marketing campaigns across multiple industries.
+                                    Landing pages for services, products, and campaigns.
                                 </p>
                             </div>
 
-                            <div className="bg-[#131632d7] shadow-md backdrop-blur w-full px-4 py-6 sm:p-6 rounded-2xl min-h-[180px] text-white
+                            <div className="bg-[#131632d7] shadow-md backdrop-blur w-full px-4 py-6 sm:p-6 rounded-2xl text-white
                                 hover:scale-[1.03] hover:shadow-[0_0_25px_rgba(255,63,129,0.35)]
                                 transition-all duration-300">
-                                <p className="text-4xl sm:text-5xl font-bold text-[#ff3f81] mb-4">
-                                    95%
-                                </p>
                                 <p className="mb-2 font-bold text-lg sm:text-xl">
-                                    CONVERSION-FOCUSED DESIGN
+                                    CLEAR STRUCTURE
                                 </p>
                                 <p className="text-base sm:text-lg opacity-80">
-                                    Every landing page is designed with user behavior,
-                                    psychology, and performance metrics in mind.
+                                    One offer, one message, one call-to-action without distractions.
                                 </p>
                             </div>
 
-                            <div className="bg-[#131632d7] shadow-md backdrop-blur w-full px-4 py-6 sm:p-6 rounded-2xl min-h-[180px] text-white
+                            <div className="bg-[#131632d7] shadow-md backdrop-blur w-full px-4 py-6 sm:p-6 rounded-2xl text-white
                                 hover:scale-[1.03] hover:shadow-[0_0_25px_rgba(255,63,129,0.35)]
                                 transition-all duration-300">
-                                <p className="text-4xl sm:text-5xl font-bold text-[#ff3f81] mb-4">
-                                    2–5x
-                                </p>
                                 <p className="mb-2 font-bold text-lg sm:text-xl">
-                                    LEAD INCREASE
+                                    FAST PERFORMANCE
                                 </p>
                                 <p className="text-base sm:text-lg opacity-80">
-                                    Optimized landing pages significantly increase lead generation
-                                    and marketing campaign efficiency.
+                                    Mobile-first layout and optimized loading speed.
                                 </p>
                             </div>
 
                             <Link
-                                href="/reviews"
+                                href="/portfolio"
                                 className="select-none mb-5 lg:mb-0 px-6 py-3 rounded-xl bg-white text-[#131632] font-semibold shadow-xl hover:bg-gray-200 transition text-center"
                             >
-                                Testimonials
+                                View portfolio
                             </Link>
                         </div>
                     </div>

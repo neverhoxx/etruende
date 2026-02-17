@@ -60,13 +60,12 @@ export default function CorporateContact() {
                     id="corporate-contact-title"
                     className="text-2xl sm:text-4xl md:text-5xl font-bold text-white mb-4 sm:mb-6"
                 >
-                    Let’s Discuss Project
+                    Let’s discuss your website
                 </h2>
 
                 <p className="text-base sm:text-lg md:text-xl opacity-90 mb-8 sm:mb-10 max-w-[750px] text-white">
-                    Looking for a professional website that builds trust and
-                    drives business growth? Leave your contact details - our web
-                    development team will reach out to discuss your project.
+                    Tell us what you need and we’ll reply with a clear plan, timeline, and estimate.
+                    No pressure - just a quick and honest conversation.
                 </p>
 
                 <form ref={formRef} onSubmit={sendEmail} encType="multipart/form-data" className="select-none" aria-label="Corporate website contact form">
@@ -92,12 +91,11 @@ export default function CorporateContact() {
 
                         <div className="flex flex-col">
                             <label className="text-sm font-semibold text-white">
-                                Phone *
+                                Phone (optional)
                             </label>
                             <input
                                 name="user_phone"
-                                type="text"
-                                required
+                                type="tel"
                                 className="
                                         border-b border-white/70
                                         bg-transparent outline-none py-3
@@ -114,7 +112,7 @@ export default function CorporateContact() {
                             </label>
                             <input
                                 name="user_email"
-                                type="text"
+                                type="email"
                                 required
                                 className="
                                         border-b border-white/70
@@ -171,8 +169,12 @@ export default function CorporateContact() {
                                 transition
                             "
                         >
-                            {loading ? "Sending..." : "Get a Free Consultation"}
+                            {loading ? "Sending..." : "Get a Quote"}
                         </button>
+
+                        <p>
+                            We usually reply within 24 hours (Mon–Fri).
+                        </p>
                     </div>
                 </form>
             </div>

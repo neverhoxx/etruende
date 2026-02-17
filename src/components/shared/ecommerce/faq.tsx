@@ -6,38 +6,39 @@ import { useState } from "react";
 
 const faqItems = [
     {
-        q: "What is an e-commerce website?",
-        a: "An e-commerce website is an online platform that allows businesses to sell products or services directly to customers with integrated payments, product catalogs, and order management."
+        q: "What is an online store website?",
+        a: "An online store is a website where customers can browse products and place orders. Depending on your needs, it can include payments, delivery options, and an admin panel."
     },
     {
-        q: "How much does e-commerce website development cost?",
-        a: "The cost depends on project complexity, features, and integrations. EtruendE builds scalable e-commerce solutions tailored to your business goals and budget."
+        q: "How much does an online store cost?",
+        a: "Pricing depends on the number of products, design complexity, and integrations (payments, delivery, CRM). After a short brief, we provide a fixed quote and timeline."
     },
     {
-        q: "How long does it take to build an online store?",
-        a: "On average, e-commerce website development takes 4–8 weeks depending on design, functionality, and integrations."
+        q: "How long does it take to build?",
+        a: "Simple stores usually take 1-3 weeks. More complex projects can take longer depending on features and content readiness."
     },
     {
-        q: "Will my e-commerce website be SEO optimized?",
-        a: "Yes. We build SEO-friendly e-commerce websites with clean architecture, fast loading speed, and technical SEO best practices."
+        q: "Is SEO included?",
+        a: "Yes. We include SEO best practices: clean structure, metadata, sitemap, and indexing setup. Product pages are built to be easy to crawl and maintain."
     },
     {
-        q: "Can you redesign an existing e-commerce website?",
-        a: "Yes. We improve existing online stores by optimizing performance, SEO, user experience, and conversion rates."
+        q: "Can you redesign an existing store?",
+        a: "Yes. We can refresh design, improve structure, and optimize performance. We’ll first review your current website and suggest the best approach."
     },
     {
-        q: "What platforms do you use for e-commerce development?",
-        a: "We develop custom e-commerce websites and work with platforms like Shopify, headless CMS solutions, and custom stacks."
+        q: "Do you build with Shopify or custom solutions?",
+        a: "We can work with Shopify or build custom online stores using modern stacks (Next.js + headless CMS) depending on your goals and budget."
     },
     {
-        q: "Is the e-commerce website mobile-friendly?",
-        a: "Absolutely. All e-commerce websites we build are fully responsive and optimized for all devices."
+        q: "Will the store work well on mobile?",
+        a: "Absolutely. All stores we build are mobile-first and responsive for phones, tablets, and desktops."
     },
     {
         q: "Do you provide support after launch?",
-        a: "Yes. We offer ongoing support, updates, maintenance, and growth consulting after launch."
+        a: "Yes. We can help with updates, improvements, and maintenance after launch when you need it."
     }
 ];
+
 
 export default function EcommerceFAQ() {
     const [open, setOpen] = useState<number | null>(null);
@@ -52,7 +53,7 @@ export default function EcommerceFAQ() {
                     </span>
                 </div>
                 <h2 className="text-3xl md:text-4xl font-bold text-[#131632] mb-10 text-center">
-                    Corporate Website Development FAQ
+                    Online Store FAQ
                 </h2>
 
                 <div className="flex flex-col select-none">

@@ -9,27 +9,27 @@ import HomeFAQ from "@/components/shared/main/HomeFAQ";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "EtruendE - Web Development, Design & SEO Agency",
+  title: "EtruendE - Web Development Studio",
   description:
-    "EtruendE is a full-cycle digital agency specializing in web development, UI/UX design, and SEO promotion. We build high-performing websites that drive traffic, leads, and revenue.",
+    "EtruendE is an independent web development studio. We design and build modern, fast websites with a clear process, honest estimates, and reliable delivery.",
   keywords: [
-    "web development agency",
-    "SEO agency",
-    "website development",
-    "landing page development",
-    "e-commerce development",
-    "corporate websites",
-    "SEO promotion",
-    "digital agency",
+    "web development studio",
+    "next.js development",
+    "react development",
+    "website design",
+    "landing page",
+    "business website",
+    "online store",
+    "estonian web studio",
     "EtruendE",
   ],
   other: {
     freelancehunt: "b6196dfb59ba679",
   },
   openGraph: {
-    title: "EtruendE - Digital Solutions That Drive Growth",
+    title: "EtruendE - Web Development Studio",
     description:
-      "Web development, design, and SEO promotion focused on business growth, conversions, and long-term results.",
+      "Modern websites built with clarity, performance, and a transparent process.",
     url: "https://etruende.com",
     siteName: "EtruendE",
     images: [
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
         url: "https://etruende.com/og-image.png",
         width: 1200,
         height: 630,
-        alt: "EtruendE Digital Agency",
+        alt: "EtruendE Web Development Studio",
       },
     ],
     locale: "en_US",
@@ -45,15 +45,16 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "EtruendE - Web Development & SEO Agency",
+    title: "EtruendE - Web Development Studio",
     description:
-      "We create scalable websites and SEO strategies that increase traffic, conversions, and revenue.",
+      "We build modern, fast websites with a clear process and reliable delivery.",
     images: ["https://etruende.com/og-image.png"],
   },
   alternates: {
     canonical: "https://etruende.com",
   },
 };
+
 
 
 
@@ -73,7 +74,6 @@ export default function Home() {
                 "url": "https://etruende.com",
                 "logo": "https://etruende.com/web-app-manifest-192x192.png",
                 "sameAs": [
-                  "https://www.linkedin.com/in/etruend-studio",
                   "https://www.instagram.com/etruende_webstudio/"
                 ]
               },
@@ -82,28 +82,26 @@ export default function Home() {
                 "@id": "https://etruende.com/#website",
                 "url": "https://etruende.com",
                 "name": "EtruendE",
-                "publisher": {
-                  "@id": "https://etruende.com/#organization"
-                }
+                "publisher": { "@id": "https://etruende.com/#organization" }
               },
               {
                 "@type": "Service",
-                "@id": "https://etruende.com/#services",
+                "@id": "https://etruende.com/#service-web-development",
+                "name": "Web Development",
                 "serviceType": [
                   "Web Development",
                   "UI/UX Design",
                   "Landing Page Development",
-                  "E-commerce Development",
-                  "SEO Promotion",
-                  "Corporate Websites"
+                  "Business Websites",
+                  "Online Stores",
+                  "SEO Setup"
                 ],
-                "provider": {
-                  "@id": "https://etruende.com/#organization"
-                },
+                "provider": { "@id": "https://etruende.com/#organization" },
                 "areaServed": "Worldwide"
               }
             ]
-          }),
+          }
+          ),
         }}
       />
 

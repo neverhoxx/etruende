@@ -12,6 +12,11 @@ import { ChevronDown } from "lucide-react"
 import { usePathname } from "next/navigation";
 
 
+import { FaWhatsapp } from "react-icons/fa";
+import { FaTelegramPlane } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
+
+
 export default function Header() {
     const [isScrolled, setIsScrolled] = useState(false);
     const [menuOpen, setMenuOpen] = useState(false);
@@ -40,6 +45,20 @@ export default function Header() {
 
                 <NavMenu />
 
+                <div className="md:block hidden">
+                    <ul className="flex gap-4">
+                        <li>
+                            <a href="https://www.instagram.com/etruende_webstudio/"><FaInstagram className=" text-pink-700 hover:text-[#ff3f81] duration-300 text-2xl" /></a>
+                        </li>
+                        <li>
+                            <a href="https://wa.me/37281274579"><FaWhatsapp className="text-green-500 hover:text-[#ff3f81] duration-300 text-2xl" /></a>
+                        </li>
+                        <li>
+                            <a href="https://t.me/Biznesmen1628"><FaTelegramPlane className="text-blue-400 hover:text-[#ff3f81] duration-300 text-2xl" /></a>
+                        </li>
+                    </ul>
+                </div>
+
                 <button
                     className="md:hidden p-2"
                     onClick={() => setMenuOpen((prev) => !prev)}
@@ -60,6 +79,14 @@ export default function Header() {
                             onClick={() => setMenuOpen(false)}
                         >
                             Portfolio
+                        </Link>
+
+                        <Link
+                            href="/about"
+                            className="transition-colors hover:text-[#ff3f81]"
+                            onClick={() => setMenuOpen(false)}
+                        >
+                            About
                         </Link>
 
                         <Link
@@ -85,6 +112,18 @@ export default function Header() {
                         >
                             Contacts
                         </Link>
+
+                        <ul className="flex gap-4">
+                            <li>
+                                <a href=""><FaInstagram className=" text-pink-700 hover:text-[#ff3f81] duration-300 text-2xl" /></a>
+                            </li>
+                            <li>
+                                <a href="https://wa.me/qr/BXF3GMUNAKMHK1"><FaWhatsapp className="text-green-500 hover:text-[#ff3f81] duration-300 text-2xl" /></a>
+                            </li>
+                            <li>
+                                <a href=""><FaTelegramPlane className="text-blue-400 hover:text-[#ff3f81] duration-300 text-2xl" /></a>
+                            </li>
+                        </ul>
                     </nav>
                 </div>
             )}
@@ -116,35 +155,27 @@ function MobileServicesDropdown({
             {open && (
                 <div className="mt-4 flex flex-col items-center gap-3 text-sm text-white/90">
                     <Link
-                        href="/corporate-page-development"
+                        href="/business-website"
                         onClick={onClose}
                         className="hover:text-[#ff3f81]"
                     >
-                        Corporate website
+                        Business Website
                     </Link>
 
                     <Link
-                        href="/ecommerce-development"
+                        href="/online-store"
                         onClick={onClose}
                         className="hover:text-[#ff3f81]"
                     >
-                        E-commerce
+                        Online Store
                     </Link>
 
                     <Link
-                        href="/landing-page-development"
+                        href="/landing-page"
                         onClick={onClose}
                         className="hover:text-[#ff3f81]"
                     >
-                        Landing page
-                    </Link>
-
-                    <Link
-                        href="/web-app-development"
-                        onClick={onClose}
-                        className="hover:text-[#ff3f81]"
-                    >
-                        Web Applications
+                        Landing Page
                     </Link>
                 </div>
             )}

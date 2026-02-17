@@ -13,9 +13,9 @@ import fusion from "@/images/projects/fusion.png";
 const items = [
     {
         title: 'Fusionoff',
-        subtitle: 'E-commerce',
+        subtitle: 'Online store',
         image: fusion,
-        alt: 'Fusion E-commerce developed by EtruendE Studio',
+        alt: 'Fusionoff online store built by EtruendE'
     }
 ];
 
@@ -89,13 +89,16 @@ export default function EcommercePortfolio() {
                     <div className="flex items-center gap-2 justify-center">
                         <HiOutlineSparkles className="text-[#ff3f81] text-3xl drop-shadow-[0_0_18px_rgba(255,63,129,0.9)] brightness-125" />
                         <span className="uppercase tracking-wide text-sm text-[#ff3f81] font-semibold">
-                            E-commerce websites built for growth
+                            Selected store project
                         </span>
                     </div>
 
                     <h2 className="text-4xl md:text-5xl font-bold text-[#131632] text-center">
-                        Built by <span className="text-[#ff3f81]">EtruendE</span>
+                        Online store projects by <span className="text-[#ff3f81]">EtruendE</span>
                     </h2>
+                    <p className="text-center max-w-[720px] text-[#444]">
+                        A sample of our e-commerce work focused on structure, speed, and mobile-first UX.
+                    </p>
 
                     <div className="md:max-w-[390px] md:w-full w-1/2 h-[3px] rounded bg-gradient-to-r from-[#ff3f81] to-[#131632] shadow-[0_0_12px_rgba(255,63,129,0.6)]"></div>
                 </div>

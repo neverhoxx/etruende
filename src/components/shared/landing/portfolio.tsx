@@ -14,24 +14,25 @@ import pic3dsdom from "@/images/projects/3dsdom.png";
 
 const items = [
     {
-        title: 'Solantra Solarhome',
-        subtitle: 'Corporate Landing Page',
+        title: "Solantra Solarhome",
+        subtitle: "Landing page",
         image: paikesemajadPic,
-        alt: 'Solantra Home сorporate landing page developed by EtruendE Studio',
+        alt: "Solantra Solarhome landing page built by EtruendE"
     },
     {
-        title: 'Landing Page Demo Project',
-        subtitle: 'Landing Page',
+        title: "Landing Page Demo Project",
+        subtitle: "Landing page concept",
         image: LandingDemo1,
-        alt: 'Landing page developed by EtruendE Studio',
+        alt: "Landing page demo concept built by EtruendE"
     },
     {
-        title: '3dsdom',
-        subtitle: 'Corporate Landing Page',
+        title: "3dsdom",
+        subtitle: "Landing page",
         image: pic3dsdom,
-        alt: '3dsdom сorporate landing page developed by EtruendE Studio',
-    }
+        alt: "3dsdom landing page built by EtruendE"
+    },
 ];
+
 
 export default function LandingPortfolio() {
     const scrollRef = useRef<HTMLDivElement>(null);
@@ -103,12 +104,12 @@ export default function LandingPortfolio() {
                     <div className="flex items-center gap-2 justify-center">
                         <HiOutlineSparkles className="text-[#ff3f81] text-3xl drop-shadow-[0_0_18px_rgba(255,63,129,0.9)] brightness-125" />
                         <span className="uppercase tracking-wide text-sm text-[#ff3f81] font-semibold">
-                            Landing pages built for growth
+                            Selected landing page projects
                         </span>
                     </div>
 
-                    <h2 className="text-4xl md:text-5xl font-bold text-[#131632] text-center">
-                        Built by <span className="text-[#ff3f81]">EtruendE</span>
+                    <h2 className="text-4xl md:text-5xl font-bold text-[#131632] text-center mb-5">
+                        Landing pages by <span className="text-[#ff3f81]">EtruendE</span>
                     </h2>
 
                     <div className="md:max-w-[390px] md:w-full w-1/2 h-[3px] rounded bg-gradient-to-r from-[#ff3f81] to-[#131632] shadow-[0_0_12px_rgba(255,63,129,0.6)]"></div>
@@ -132,7 +133,7 @@ export default function LandingPortfolio() {
                     >
                         {items.map((item, i) => (
                             <Link
-                                href="/portfolio"
+                                href={(item as any).href ?? "/portfolio"}
                                 key={i}
                                 className="
                                     text-center

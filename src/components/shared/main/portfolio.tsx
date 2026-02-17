@@ -17,42 +17,47 @@ import Link from "next/link";
 
 const items = [
     {
-        title: 'Voltamp',
-        subtitle: 'Corporate Website & SEO Promotion',
+        title: "Voltamp",
+        subtitle: "Business website",
         image: voltampPic,
-        alt: 'Voltamp corporate website with SEO Promotion developed by EtruendE Studio',
+        alt: "Voltamp business website built by EtruendE",
+        href: "/portfolio/voltamp",
     },
     {
-        title: 'Solantra Solarhome',
-        subtitle: 'Corporate Landing Page',
+        title: "Solantra Solarhome",
+        subtitle: "Landing page",
         image: paikesemajadPic,
-        alt: 'Solantra Home сorporate landing page developed by EtruendE Studio',
+        alt: "Solantra Solarhome landing page built by EtruendE",
+        href: "/portfolio/solantra-solarhome",
     },
     {
-        title: 'Landing Page Demo Project',
-        subtitle: 'Landing Page',
+        title: "Landing Page Demo Project",
+        subtitle: "Landing page concept",
         image: LandingDemo1,
-        alt: 'Landing page developed by EtruendE Studio',
+        alt: "Landing page concept built by EtruendE",
+        href: "/portfolio",
     },
     {
-        title: 'Fusionoff',
-        subtitle: 'E-commerce',
+        title: "Fusionoff",
+        subtitle: "Online store",
         image: fusion,
-        alt: 'Fusion E-commerce developed by EtruendE Studio',
+        alt: "Fusionoff online store built by EtruendE",
+        href: "/portfolio/fusionoff",
     },
     {
-        title: '3dsdom',
-        subtitle: 'Corporate Landing Page',
+        title: "3dsdom",
+        subtitle: "Landing page",
         image: pic3dsdom,
-        alt: '3dsdom сorporate landing page developed by EtruendE Studio',
+        alt: "3dsdom landing page built by EtruendE",
+        href: "/portfolio/3dsdom",
     },
     {
-        title: 'Ral Est',
-        subtitle: 'SEO Promotion',
+        title: "Ral Est",
+        subtitle: "SEO setup",
         image: ralest,
-        alt: 'Ral Est SEO Promotion developed by EtruendE Studio',
+        alt: "Ral Est SEO setup project by EtruendE",
+        href: "/portfolio",
     },
-
 ];
 
 export default function PortfolioScrollCustom() {
@@ -130,8 +135,8 @@ export default function PortfolioScrollCustom() {
                         </span>
                     </div>
 
-                    <h2 className="text-4xl md:text-5xl font-bold text-[#fff] text-center">
-                        Web Development & SEO Projects Built by <span className="text-[#ff3f81]">EtruendE</span>
+                    <h2 className="text-4xl md:text-5xl font-bold text-[#fff] text-center mb-5">
+                        Selected projects by <span className="text-[#ff3f81]">EtruendE</span>
                     </h2>
 
                     <div className="md:max-w-[390px] md:w-full w-1/2 h-[3px] rounded bg-gradient-to-r from-[#ff3f81] to-[#fff] shadow-[0_0_12px_rgba(255,63,129,0.6)]"></div>
@@ -159,7 +164,7 @@ export default function PortfolioScrollCustom() {
                     >
                         {items.map((item, i) => (
                             <Link
-                                href="/portfolio"
+                                href={(item as any).href ?? "/portfolio"}
                                 key={i}
                                 className="
                                     text-center
@@ -207,12 +212,11 @@ export default function PortfolioScrollCustom() {
             </Container>
 
             <div className="sr-only">
-                <h3>EtruendE Portfolio</h3>
+                <p className="sr-only">
+                    Portfolio of websites built by EtruendE: business websites, landing pages, and online stores.
+                </p>
                 <p>
-                    Explore web development portfolio by EtruendE.
-                    We create landing pages, e-commerce websites,
-                    corporate websites and SEO optimized projects
-                    for businesses worldwide.
+                    Explore website projects by EtruendE: landing pages, online stores, and business websites.
                 </p>
             </div>
 

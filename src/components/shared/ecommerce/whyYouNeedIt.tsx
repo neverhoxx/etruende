@@ -8,23 +8,24 @@ import { Container } from '../container';
 const features = [
     {
         icon: ShoppingCart,
-        title: 'Online Sales Channel',
+        title: "Orders made simple",
         description:
-            'An e-commerce website allows your business to sell products and services online 24/7, reach global customers, and remove geographical limitations.'
+            "Customers can browse products, understand details, and place orders without long messages or confusion."
     },
     {
         icon: TrendingUp,
-        title: 'Revenue Growth',
+        title: "Clear structure",
         description:
-            'A professionally developed e-commerce store increases conversion rates, improves customer retention, and scales online sales performance.'
+            "A well-organized catalog and product pages help users find what they need quickly - on mobile and desktop."
     },
     {
         icon: ShieldCheck,
-        title: 'Secure & Scalable',
+        title: "Reliable setup",
         description:
-            'We build secure, fast, and scalable e-commerce platforms with reliable payment systems, data protection, and SEO-friendly architecture.'
+            "We build fast, secure stores and set up the essentials: performance optimization, basic SEO, and a stable foundation for future updates."
     },
 ];
+
 
 type Feature = (typeof features)[number];
 
@@ -39,7 +40,6 @@ function FeatureCard({
 
     return (
         <motion.div
-            whileHover={{ scale: 1.05 }}
             transition={{ type: 'spring', stiffness: 300, damping: 20 }}
             className={`relative group select-none border rounded-2xl border-gray-200 hover:border-[#ff3f81] bg-white ${className}`}
         >
@@ -66,21 +66,18 @@ export function EcommerceSection() {
             <Container className="flex flex-col md:flex-row gap-10 md:gap-5">
                 <div className="w-full relative text-center md:text-left">
                     <span className="uppercase tracking-wide text-sm text-[#ff3f81] font-semibold block mb-3 select-none">
-                        E-commerce website
+                        Online store development
                     </span>
 
                     <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#1a1a1a] mb-6">
-                        Why does your business need an e-commerce website?
+                        Why an online store matters
                     </h2>
 
                     <p className="text-base sm:text-lg md:text-xl opacity-80 mb-10 max-w-full md:max-w-[750px] text-[#131632] mx-auto md:mx-0">
-                        An e-commerce website is not just an online store - it is a complete
-                        digital sales ecosystem designed to grow your business.
+                        An online store makes it easy for customers to browse products and place orders - on any device.
+                        It also helps you manage products and requests in one clear system.
                         <br /><br />
-                        Professional e-commerce development helps attract customers, process
-                        secure online payments, manage orders efficiently, and scale revenue.
-                        A well-built online store becomes the core of your digital growth
-                        strategy and long-term business success.
+                        We build stores with a clean structure, mobile-first UX, and fast performance - and include SEO best practices during development.
                     </p>
 
 
@@ -103,12 +100,10 @@ export function EcommerceSection() {
             </Container>
 
             <p className="sr-only">
-                E-commerce website development services by EtruendE.
-                We create custom online stores, scalable e-commerce platforms,
-                and SEO-optimized e-commerce websites for businesses worldwide.
-                Our e-commerce solutions focus on performance, security,
-                conversion optimization, and long-term business growth.
+                EtruendE builds modern online stores with clear structure, mobile-first design, and fast performance.
+                We include SEO best practices and a reliable technical foundation for future updates.
             </p>
+
 
         </section>
     );

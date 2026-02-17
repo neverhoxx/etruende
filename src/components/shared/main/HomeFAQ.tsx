@@ -6,26 +6,44 @@ import { useState } from "react";
 
 const faqs = [
     {
-        q: "What services does EtruendE provide?",
-        a: "EtruendE is a full-cycle web development and SEO studio. We create corporate websites, landing pages, e-commerce platforms, and provide SEO optimization to help businesses grow online."
+        q: "What do you build?",
+        a: "We build modern websites for growing businesses: landing pages, business websites (4-7 pages), and simple catalogs. We focus on clear structure, mobile-first design, and fast performance."
     },
     {
-        q: "How much does it cost to build a website?",
-        a: "The cost depends on the project type, design complexity, and functionality. We calculate each project individually based on your business goals."
+        q: "How much does a website cost?",
+        a: "Pricing depends on the number of pages, design complexity, and integrations. After a short call or brief, we send a fixed quote with what’s included and the timeline."
     },
     {
-        q: "How long does website development take?",
-        a: "On average, website development takes from 2 to 30 days depending on the scope and requirements of the project."
+        q: "How long does it take?",
+        a: "Most landing pages take 7-10 days. Business websites usually take 10–14 days. Larger projects can take 2–4 weeks depending on content and requirements."
     },
     {
-        q: "Do you offer SEO services?",
-        a: "Yes. We build SEO-friendly websites and offer ongoing SEO optimization to improve visibility, traffic, and conversions."
+        q: "Do you require an upfront payment?",
+        a: "We don’t require full payment upfront. Usually we work in steps: first we agree on structure and design, then we continue with development. Payment can be split by stages so it feels safe and transparent."
     },
     {
-        q: "Can you redesign an existing website?",
-        a: "Absolutely. We redesign websites to improve design, performance, SEO, and conversion rates."
+        q: "What do you need from me to start?",
+        a: "A short description of your business, services, contact details, and any photos/logos you have. If you don’t have text content yet, we can help you structure it and suggest what to include."
+    },
+    {
+        q: "Can you redesign my existing website?",
+        a: "Yes. We can refresh design, improve structure, update content blocks, and optimize performance. We’ll first review your current site and suggest the best approach."
+    },
+    {
+        q: "Is SEO included?",
+        a: "Yes! We include SEO best practices: clean structure, headings, metadata, sitemap, and indexing setup. Ongoing SEO work (content strategy, long-term optimization) can be added if needed."
+    },
+    {
+        q: "How many revisions are included?",
+        a: "We include 1–2 revision rounds during the design stage. This keeps the process fast and predictable. Extra changes can be added if needed."
+    },
+    {
+        q: "Do you help with domain and hosting?",
+        a: "Yes. We can help you connect a domain, set up hosting (Vercel), and publish the website. If you already have hosting, we can work with that too."
     }
+
 ];
+
 
 export default function HomeFAQ() {
     const [open, setOpen] = useState<number | null>(null);
@@ -51,7 +69,7 @@ export default function HomeFAQ() {
                     </p>
                 </div>
 
-                <div className="flex flex-col select-none">
+                <div className="flex flex-col select-none gap-1 max-w-[1200px] my-0 mx-auto">
                     {faqs.map((item, i) => {
                         const isOpen = open === i;
 

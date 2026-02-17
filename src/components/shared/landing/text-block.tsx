@@ -15,49 +15,32 @@ export default function LandingPageBlock() {
 
                 <div>
                     <h2 className="text-3xl md:text-4xl font-bold text-[#131632] mb-6 leading-tight">
-                        High-Converting <br />
-                        <span className="text-[#ff3f81]">Landing Pages</span> That Generate Leads
+                        <span className="text-[#ff3f81]">Landing Pages</span>  Built for Clarity and Performance
                     </h2>
 
                     <div className="max-h-[420px] overflow-y-auto pr-4 scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-transparent">
                         <p className="text-base md:text-lg text-gray-700 mb-5">
-                            A landing page is not just a website - it is a focused marketing tool
-                            designed to convert visitors into leads and customers. At EtruendE,
-                            we create landing pages that communicate value instantly and guide users
-                            toward a single clear action.
+                            A landing page is a focused one-page website built around a single offer - a service, product, or campaign.
+                            Its goal is simple: help visitors quickly understand the value and take one clear action.
                         </p>
 
                         <p className="text-base md:text-lg text-gray-700 mb-5">
-                            We design landing pages with a strong visual hierarchy, persuasive copy,
-                            and conversion-driven layouts. Every element - headlines, visuals,
-                            call-to-action buttons, and forms - works together to increase engagement
-                            and maximize conversion rates.
+                            We design landing pages with a clean structure, strong visual hierarchy, and an easy-to-follow layout, so the message is clear and the page feels trustworthy.
                         </p>
 
                         <p className="text-base md:text-lg text-gray-700 mb-5">
-                            Performance matters. Our landing pages are fast, responsive, and optimized
-                            for all devices. Whether your audience comes from paid ads, social media,
-                            or organic search, users get a seamless experience on desktop, tablet,
-                            and mobile.
+                            Performance matters. Our landing pages are mobile-first, fast-loading, and responsive across devices, so users get a smooth experience from ads, social media, or search.
                         </p>
 
                         <p className="text-base md:text-lg text-gray-700 mb-5">
-                            SEO and marketing optimization are built in from the start. We structure
-                            landing pages for search engines, integrate analytics, and ensure your
-                            page is ready for A/B testing and advertising campaigns.
-                        </p>
-
-                        <p className="text-base md:text-lg text-gray-700 mb-5">
-                            Our landing pages are scalable and adaptable. You can easily update
-                            content, launch new campaigns, test offers, and optimize performance
-                            without rebuilding everything from scratch.
+                            We include essential setup such as forms, analytics (optional), and SEO best practices
+                            (metadata, headings, sitemap/indexing when needed).
                         </p>
 
                         <p className="text-base md:text-lg text-gray-500">
-                            Choosing EtruendE means choosing measurable results. We don’t just design
-                            landing pages - we build conversion systems that help businesses capture
-                            leads, grow revenue, and scale marketing efforts effectively.
+                            After launch, you can easily update content and iterate on the offer without rebuilding everything from scratch.
                         </p>
+
                     </div>
                 </div>
 

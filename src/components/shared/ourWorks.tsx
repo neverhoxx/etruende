@@ -33,7 +33,7 @@ const items = [
         image: voltampPic,
         alt: "Voltamp corporate website with SEO Promotion developed by EtruendE Studio",
         categories: ["Developed", "Promoted", "Designed"],
-        link: "/portfolio/voltamp"
+        link: "https://voltamp.ee/"
     },
     {
         title: "Solantra Solarhome",

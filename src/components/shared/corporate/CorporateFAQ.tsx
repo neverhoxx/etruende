@@ -6,30 +6,31 @@ import { useState } from "react";
 
 const faqs = [
     {
-        q: "What is a corporate website?",
-        a: "A corporate website is an official digital platform that represents a company, its services, values, and brand identity, helping build trust and attract clients."
+        q: "What is a business website?",
+        a: "A business website is a multi-page site that presents your company, services, and contact details in a clear and professional way."
     },
     {
-        q: "Why does my business need a corporate website?",
-        a: "A corporate website increases credibility, improves online visibility, and serves as a powerful tool for lead generation and brand positioning."
+        q: "Why does my business need a website?",
+        a: "A website builds trust, helps customers understand what you do, and makes it easy for them to contact you."
     },
     {
-        q: "Is SEO included in corporate website development?",
-        a: "Yes. Every corporate website we build includes SEO-friendly structure, optimized content, and performance best practices."
+        q: "Is SEO included?",
+        a: "Yes. We include SEO best practices: clean structure, headings, metadata, sitemap, and indexing setup."
     },
     {
-        q: "How long does corporate website development take?",
-        a: "Development usually takes from 1 to 3 weeks depending on the size and complexity of the project."
+        q: "How long does it take?",
+        a: "Most business websites take around 10–14 days. Larger projects can take 2–4 weeks depending on requirements and content."
     },
     {
-        q: "Can you redesign an existing corporate website?",
-        a: "Yes. We redesign corporate websites to improve design, usability, SEO performance, and conversions."
+        q: "Can you redesign an existing website?",
+        a: "Yes. We can refresh design, improve structure, update content blocks, and optimize performance."
     },
     {
         q: "Do you provide support after launch?",
-        a: "Absolutely. We offer ongoing support, updates, and scaling options after the website goes live."
+        a: "Yes. We can help with updates and improvements after launch when you need it."
     }
 ];
+
 
 export default function CorporateFAQ() {
     const [open, setOpen] = useState<number | null>(null);
@@ -44,7 +45,7 @@ export default function CorporateFAQ() {
                     </span>
                 </div>
                 <h2 className="text-3xl md:text-4xl font-bold text-[#131632] mb-10 text-center">
-                    Corporate Website Development FAQ
+                    Business Website Development FAQ
                 </h2>
 
                 <div className="flex flex-col select-none">

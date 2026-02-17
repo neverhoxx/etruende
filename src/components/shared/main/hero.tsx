@@ -182,12 +182,14 @@ export default function HeroParticles() {
             <canvas ref={canvasRef} className="absolute inset-0 w-full h-full" />
 
             <div className="relative z-10 text-white flex flex-col items-center">
-                <h1 className="text-4xl sm:text-6xl font-bold mb-4 text-center max-w-[1200px]">
-                    Web Development & SEO Websites That Drive
-                    <span className="text-[#ff3f81]"> Traffic, Rankings, and Sales</span>
+                <h1 className="text-4xl sm:text-6xl font-bold mb-4 text-center ">
+                    Modern websites built for
+
+                    <span className="text-[#ff3f81]"> clarity and performance</span>
                 </h1>
                 <p className="text-lg sm:text-xl opacity-80 mb-6 max-w-[900px]">
-                    At EtruendE, we design, develop, and upgrade websites optimized for SEO and conversions. Get a fast, modern website built to attract clients and grow your revenue.
+                    We help businesses present their services online
+                    with fast, scalable and easy-to-use websites.
                 </p>
 
                 <p className="sr-only">

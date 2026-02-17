@@ -20,58 +20,46 @@ export default function CorporateWebsiteBlock() {
                         id="corporate-about-title"
                         className="text-3xl md:text-4xl font-bold text-[#131632] mb-6 leading-tight"
                     >
-                        <span className="text-[#ff3f81]">E</span>truend
-                        <span className="text-[#ff3f81]">E</span> - Corporate Website Development That Builds Trust
+                        <span className="text-[#ff3f81]">E</span>truend<span className="text-[#ff3f81]">E</span> - Business Websites That Build Trust
                     </h2>
 
                     <div className="max-h-[420px] overflow-y-auto pr-4 scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-transparent">
                         <p className="text-base md:text-lg text-gray-700 mb-5">
-                            EtruendE is a professional web studio specializing in
-                            <strong> corporate website development </strong>
-                            for businesses that want to build a strong digital presence.
-                            A modern website is not just an online brochure - it is the
-                            foundation of your brand, reputation, and growth strategy.
+                            A business website is your main online presence - it explains what you do, builds trust,
+                            and makes it easy for customers to contact you.
                         </p>
 
-                        <p className="text-base md:text-lg text-gray-700 mb-5">
-                            We design and develop corporate websites, landing pages,
-                            e-commerce platforms, and custom web solutions that help companies
-                            stand out in competitive markets and convert visitors into clients.
+                        <p className="text-base md:text-lg text-gray-700 mb-6">
+                            We design and develop modern multi-page websites with a clear structure, clean design,
+                            and fast performance - with a transparent process from start to launch.
                         </p>
 
-                        <h3 className="text-xl font-semibold text-[#131632]">
-                            Strategic Approach to Corporate Websites
+                        <h3 className="text-xl font-semibold text-[#131632] mb-3">
+                            What’s included
                         </h3>
 
-                        <p className="text-base md:text-lg text-gray-700 mb-5">
-                            A well-built corporate website communicates your values,
-                            highlights your services, and builds trust with your audience.
-                            We analyze your business goals, competitors, and target users
-                            to deliver solutions that work strategically, not just visually.
-                        </p>
+                        <ul className="text-base md:text-lg text-gray-700 mb-6 list-disc list-inside">
+                            <li>Clear site structure and navigation</li>
+                            <li>Mobile-first responsive layout</li>
+                            <li>Fast loading and performance optimization</li>
+                            <li>Contact form and quick-contact buttons</li>
+                            <li>Basic SEO setup (metadata, sitemap, indexing)</li>
+                            <li>Analytics setup (optional)</li>
+                        </ul>
 
-                        <h3 className="text-xl font-semibold text-[#131632]">
-                            Performance, SEO & Scalability
+                        <h3 className="text-xl font-semibold text-[#131632] mb-3">
+                            SEO best practices (no hype)
                         </h3>
 
-                        <p className="text-base md:text-lg text-gray-700">
-                            Our development process includes UX/UI design, responsive layouts,
-                            performance optimization, SEO-friendly structure, and clean,
-                            scalable code. Every website is built for speed, accessibility,
-                            and future growth.
-                        </p>
-
-                        <p className="text-base md:text-lg text-gray-700">
-                            SEO is a core part of our workflow. We create websites that are
-                            easy to index, logically structured, and optimized for relevant
-                            search queries to help your business attract organic traffic
-                            and achieve long-term results.
+                        <p className="text-base md:text-lg text-gray-700 mb-6">
+                            We set up the technical foundation for search visibility: proper headings, metadata,
+                            sitemap, and clean structure - so your website is easy to index and ready for future content.
                         </p>
 
                         <p className="text-base md:text-lg text-gray-500">
-                            By choosing EtruendE, you choose a reliable web development partner
-                            focused on transparency, strategy, and measurable business growth.
+                            You always see progress step by step - first structure and design, then development and launch.
                         </p>
+
                     </div>
                 </div>
 

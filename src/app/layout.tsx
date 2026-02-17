@@ -20,21 +20,22 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://etruende.com"),
 
   title: {
-    default: "EtruendE – Web Development & SEO Agency",
+    default: "EtruendE - Web Development Studio",
     template: "%s | EtruendE",
   },
 
   description:
-    "EtruendE is a web development and SEO agency creating fast, conversion-focused websites, landing pages, and e-commerce solutions that help businesses grow.",
+    "EtruendE is an independent web development studio. We design and build modern, fast websites with a clear process and honest estimates.",
 
   keywords: [
-    "web development agency",
-    "SEO agency",
-    "Next.js development",
+    "web development studio",
+    "next.js development",
+    "react development",
     "website design",
-    "e-commerce development",
-    "landing page development",
-    "digital agency",
+    "landing page",
+    "business website",
+    "online store",
+    "EtruendE",
   ],
 
   alternates: {
@@ -50,25 +51,23 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://etruende.com",
-    title: "EtruendE – Web Development & SEO Agency",
-    description:
-      "High-performing websites, SEO, and e-commerce solutions for growing businesses.",
+    title: "EtruendE — Web Development Studio",
+    description: "Modern websites built with clarity, performance, and a transparent process.",
     siteName: "EtruendE",
     images: [
       {
         url: "/og-image.png",
-        width: 1080,
-        height: 1080,
-        alt: "EtruendE – Web Development & SEO Agency",
+        width: 1200,
+        height: 630,
+        alt: "EtruendE — Web Development Studio",
       },
     ],
   },
 
   twitter: {
     card: "summary_large_image",
-    title: "EtruendE – Web Development & SEO Agency",
-    description:
-      "Web development & SEO agency focused on performance and conversions.",
+    title: "EtruendE — Web Development Studio",
+    description: "We build modern, fast websites with a clear process and reliable delivery.",
     images: ["/og-image.png"],
   },
 
@@ -81,6 +80,7 @@ export const metadata: Metadata = {
     },
   },
 };
+
 
 
 
@@ -103,29 +103,25 @@ export default function RootLayout({
                 {
                   "@type": "Organization",
                   "@id": "https://etruende.com/#organization",
-                  name: "EtruendE",
-                  url: "https://etruende.com",
-                  logo: "https://etruende.com/logo.png",
-                  sameAs: [
-                    "https://www.instagram.com/etruende_webstudio/",
-                    "https://www.linkedin.com/in/etruende-studio",
-                  ],
-                  icons: {
-                    icon: "/favicon.ico",
-                    apple: "/apple-icon.png",
-                  }
+                  "name": "EtruendE",
+                  "url": "https://etruende.com",
+                  "logo": "https://etruende.com/web-app-manifest-192x192.png",
+                  "sameAs": [
+                    "https://www.instagram.com/etruende_webstudio/"
+                  ]
                 },
                 {
                   "@type": "WebSite",
                   "@id": "https://etruende.com/#website",
-                  url: "https://etruende.com",
-                  name: "EtruendE",
-                  publisher: {
-                    "@id": "https://etruende.com/#organization",
-                  },
-                },
-              ],
-            }),
+                  "url": "https://etruende.com",
+                  "name": "EtruendE",
+                  "publisher": {
+                    "@id": "https://etruende.com/#organization"
+                  }
+                }
+              ]
+            }
+            ),
           }}
         />
 

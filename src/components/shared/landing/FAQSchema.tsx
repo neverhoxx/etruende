@@ -13,7 +13,7 @@ export function LandingFAQSchema() {
                             "acceptedAnswer": {
                                 "@type": "Answer",
                                 "text":
-                                    "A landing page is a focused web page designed to convert visitors into leads or customers. It is built around a single goal, such as collecting contact information or promoting a product or service."
+                                    "A landing page is a focused one-page website designed around a single offer or action, such as requesting a quote, booking a call, or leaving contact details."
                             }
                         },
                         {
@@ -22,16 +22,16 @@ export function LandingFAQSchema() {
                             "acceptedAnswer": {
                                 "@type": "Answer",
                                 "text":
-                                    "A landing page focuses on one specific action, while a regular website contains multiple pages and goals. Landing pages are optimized for conversions and marketing campaigns."
+                                    "A landing page focuses on one message and one call-to-action, while a regular website usually contains multiple pages and goals."
                             }
                         },
                         {
                             "@type": "Question",
-                            "name": "Do landing pages increase conversion rates?",
+                            "name": "When should I choose a landing page?",
                             "acceptedAnswer": {
                                 "@type": "Answer",
                                 "text":
-                                    "Yes. Professionally designed landing pages significantly improve conversion rates by guiding users through a clear message, strong call to action, and optimized structure."
+                                    "Landing pages work best for a single service, product, or campaign where visitors need to quickly understand the offer and take action."
                             }
                         },
                         {
@@ -40,16 +40,16 @@ export function LandingFAQSchema() {
                             "acceptedAnswer": {
                                 "@type": "Answer",
                                 "text":
-                                    "The development time depends on complexity and requirements, but most landing pages take from a few days to two weeks, including design, development, and optimization."
+                                    "Most landing pages take from a few days to one or two weeks, depending on content readiness, design complexity, and integrations."
                             }
                         },
                         {
                             "@type": "Question",
-                            "name": "Is a landing page optimized for SEO?",
+                            "name": "Is SEO included?",
                             "acceptedAnswer": {
                                 "@type": "Answer",
                                 "text":
-                                    "Yes. Our landing pages are built with SEO-friendly structure, fast loading speed, clean code, and optimized content to help them rank in search engines."
+                                    "Yes. We include SEO best practices such as clean structure, headings, metadata, and fast performance. Long-term SEO results depend on content and strategy."
                             }
                         },
                         {
@@ -58,7 +58,7 @@ export function LandingFAQSchema() {
                             "acceptedAnswer": {
                                 "@type": "Answer",
                                 "text":
-                                    "The cost of a landing page depends on design complexity, functionality, and business goals. We provide custom landing page development tailored to each project."
+                                    "Pricing depends on design complexity, number of sections, and integrations. After a short brief, we provide a fixed quote and timeline."
                             }
                         }
                     ]

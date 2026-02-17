@@ -7,49 +7,47 @@ import CorporateFAQ from "@/components/shared/corporate/CorporateFAQ";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: "Corporate Website Development Services | Scalable Business Websites - EtruendE",
+    title: "Business Website Development | EtruendE - Web Development Studio",
     description:
-        "Corporate website development services focused on trust, performance, and SEO. We build scalable, high-performance corporate websites that strengthen brands and grow businesses.",
-
+        "EtruendE builds modern business websites - clear structure, clean design, mobile-first layout, and strong performance with SEO best practices included.",
     keywords: [
-        "corporate website development",
-        "corporate website design",
         "business website development",
-        "corporate web design services",
-        "SEO corporate website",
-        "professional corporate website",
+        "company website",
+        "website design",
+        "next.js website",
+        "react website",
+        "service business website",
+        "EtruendE",
     ],
-
     alternates: {
-        canonical: "https://etruende.com/corporate-website-development",
+        canonical: "https://etruende.com/business-website",
     },
-
     openGraph: {
-        title: "Corporate Website Development Services - EtruendE",
+        title: "Business Website Development | EtruendE",
         description:
-            "We design and develop professional corporate websites focused on performance, SEO, and brand trust. Scalable solutions for growing businesses.",
-        url: "https://etruende.com/corporate-website-development",
+            "Modern business websites built with clarity, performance, and a transparent process.",
+        url: "https://etruende.com/business-website",
         siteName: "EtruendE",
         images: [
             {
                 url: "https://etruende.com/og-image.png",
                 width: 1200,
                 height: 630,
-                alt: "Corporate Website Development by EtruendE",
+                alt: "Business Website Development by EtruendE",
             },
         ],
         locale: "en_US",
         type: "website",
     },
-
     twitter: {
         card: "summary_large_image",
-        title: "Corporate Website Development | EtruendE",
+        title: "Business Website Development | EtruendE",
         description:
-            "Scalable corporate websites built for performance, SEO, and business growth.",
+            "Modern business websites built with a clear process and reliable delivery.",
         images: ["https://etruende.com/og-image.png"],
     },
 };
+
 
 export default function Corporate() {
     return (
@@ -63,48 +61,57 @@ export default function Corporate() {
                         "mainEntity": [
                             {
                                 "@type": "Question",
-                                "name": "What is a corporate website?",
+                                "name": "What is a business website?",
                                 "acceptedAnswer": {
                                     "@type": "Answer",
-                                    "text": "A corporate website is an official online platform that represents a company, its services, values, and brand identity."
+                                    "text": "A business website is a multi-page site that presents your company, services, and contact details in a clear and professional way."
                                 }
                             },
                             {
                                 "@type": "Question",
-                                "name": "Why does my business need a corporate website?",
+                                "name": "Why does my business need a website?",
                                 "acceptedAnswer": {
                                     "@type": "Answer",
-                                    "text": "A corporate website increases credibility, improves online visibility, and helps generate leads."
+                                    "text": "A website builds trust, helps customers understand what you do, and makes it easy for them to contact you."
                                 }
                             },
                             {
                                 "@type": "Question",
-                                "name": "How much does a corporate website cost?",
+                                "name": "Is SEO included?",
                                 "acceptedAnswer": {
                                     "@type": "Answer",
-                                    "text": "The cost depends on design complexity, functionality, and project requirements."
+                                    "text": "Yes. We include SEO best practices: clean structure, headings, metadata, sitemap, and indexing setup."
                                 }
                             },
                             {
                                 "@type": "Question",
-                                "name": "How long does it take to build a corporate website?",
+                                "name": "How long does it take?",
                                 "acceptedAnswer": {
                                     "@type": "Answer",
-                                    "text": "Corporate website development usually takes from 3 to 8 weeks depending on project scope."
+                                    "text": "Most business websites take around 10–14 days. Larger projects can take 2–4 weeks depending on requirements and content."
                                 }
                             },
                             {
                                 "@type": "Question",
-                                "name": "Is SEO included in corporate website development?",
+                                "name": "Can you redesign an existing website?",
                                 "acceptedAnswer": {
                                     "@type": "Answer",
-                                    "text": "Yes, SEO-friendly structure and optimization are included in every corporate website we build."
+                                    "text": "Yes. We can refresh design, improve structure, update content blocks, and optimize performance."
+                                }
+                            },
+                            {
+                                "@type": "Question",
+                                "name": "Do you provide support after launch?",
+                                "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "Yes. We can help with updates and improvements after launch when you need it."
                                 }
                             }
                         ]
-                    })
+                    }),
                 }}
             />
+
 
             <CorporateHero />
             <CorporateSection />

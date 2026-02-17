@@ -17,35 +17,26 @@ import { cn } from "@/lib/utils"
 
 const services = [
     {
-        title: "Corporate Website",
-        href: "/corporate-page-development",
-        description: "Corporate websites for companies and brands.",
+        title: "Business Website",
+        href: "/business-website",
+        description: "Multi-page websites that clearly present your services, pricing, and contact details.",
     },
-    {
-        title: "E-commerce",
-        href: "/ecommerce-development",
-        description: "Online stores with payment and catalog systems.",
-        width: "w-[188px]"
-    },
+
     {
         title: "Landing Page",
-        href: "/landing-page-development",
-        description: "High-converting landing pages for products.",
-        width: "w-[188px]"
+        href: "/landing-page",
+        description: "Focused one-page websites designed to explain your offer and guide users to contact you.",
+
     },
+
     {
-        title: "Web Applications",
-        href: "/web-app-development",
-        description: "Custom web applications for business needs.",
-        width: "w-[188px]"
+        title: "Online Store",
+        href: "/online-store",
+        description: "Simple and reliable online stores with product catalog and checkout setup.",
+        width: "w-[380px]",
     },
-    {
-        title: "SEO Promotion",
-        href: "/seo-promotion",
-        description: "SEO Promotion for business needs.",
-        width: "w-[387px]"
-    }
-]
+];
+
 
 export function NavMenu() {
     return (
@@ -67,6 +58,12 @@ export function NavMenu() {
                             ))}
                         </ul>
                     </NavigationMenuContent>
+                </NavigationMenuItem>
+
+                <NavigationMenuItem>
+                    <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
+                        <Link href="/about">About us</Link>
+                    </NavigationMenuLink>
                 </NavigationMenuItem>
 
                 <NavigationMenuItem>

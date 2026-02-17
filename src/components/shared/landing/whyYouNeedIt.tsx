@@ -8,23 +8,24 @@ import { Container } from '../container';
 const features = [
     {
         icon: Target,
-        title: 'Focused Conversion',
+        title: "One clear goal",
         description:
-            'A landing page is built around a single goal — converting visitors into leads or customers through a clear message and strong call to action.',
+            "A landing page is built around a single offer and a single action, so visitors understand the message quickly and know what to do next.",
     },
     {
         icon: TrendingUp,
-        title: 'Higher Conversion Rates',
+        title: "Clear structure",
         description:
-            'Professionally designed landing pages significantly increase conversion rates by guiding users through a structured and persuasive user journey.',
+            "We design a clean layout with a logical flow: headline → benefits → proof → call-to-action without distractions.",
     },
     {
         icon: Zap,
-        title: 'Fast & Optimized',
+        title: "Fast & mobile-first",
         description:
-            'We create fast-loading, lightweight landing pages optimized for performance, SEO, and marketing campaigns across all devices.',
+            "Lightweight pages with strong performance across devices. We include SEO best practices and essential setup for forms and tracking (optional).",
     },
 ];
+
 
 type Feature = (typeof features)[number];
 
@@ -39,7 +40,6 @@ function FeatureCard({
 
     return (
         <motion.div
-            whileHover={{ scale: 1.05 }}
             transition={{ type: 'spring', stiffness: 300, damping: 20 }}
             className={`relative group select-none border rounded-2xl border-gray-200 hover:border-[#ff3f81] bg-white ${className}`}
         >
@@ -70,18 +70,16 @@ export function LandingSection() {
                     </span>
 
                     <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#1a1a1a] mb-6">
-                        Why Your Business Needs a Landing Page
+                        Why a landing page matters
                     </h2>
 
                     <p className="text-base sm:text-lg md:text-xl opacity-80 mb-10 max-w-full md:max-w-[750px] text-[#131632] mx-auto md:mx-0">
-                        A landing page is a powerful marketing tool designed to turn traffic into real business results.
-                        A professional landing page focuses on a single conversion goal, delivers a clear value proposition,
-                        and guides visitors toward action - purchase, sign-up, or request.
-                        <br />
-                        Well-built landing page development improves conversion rates, advertising efficiency,
-                        and ROI for digital marketing campaigns across all industries.
-
+                        A landing page is a focused one-page website built for a single offer - a service, product, or campaign.
+                        It helps visitors quickly understand the value and take one clear action (request, sign-up, or purchase).
+                        <br /><br />
+                        We build landing pages with clean structure, mobile-first design, and fast performance with SEO best practices included.
                     </p>
+
 
                     <div className="text-[72px] sm:text-[120px] md:text-[150px] font-bold select-none opacity-20 absolute left-1/2 md:left-0 -translate-x-1/2 md:translate-x-0 md:bottom-1/7 bottom-[-10%] pointer-events-none">
                         <span className="text-[#ff3f81]">E</span>

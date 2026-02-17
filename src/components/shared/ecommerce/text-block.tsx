@@ -17,61 +17,54 @@ export default function EcommerceWebsiteBlock() {
                     <h2 className="text-3xl md:text-4xl font-bold text-[#131632] mb-6 leading-tight">
                         <span className="text-[#ff3f81]">E</span>
                         truend
-                        <span className="text-[#ff3f81]">E</span> <br /> E-commerce Development That Drives Sales
+                        <span className="text-[#ff3f81]">E</span> <br /> Online Stores Built for Performance and Clarity
                     </h2>
 
                     <div className="max-h-[420px] overflow-y-auto pr-4 scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-transparent">
                         <p className="text-base md:text-lg text-gray-700 mb-5">
-                            EtruendE is a web studio specializing in professional e-commerce website
-                            development for businesses that want to sell online effectively. In modern
-                            digital commerce, an online store is not just a catalog — it is a complete
-                            sales system designed to attract customers, build trust, and generate revenue.
+                            An online store is more than a product list - it’s a website where customers browse items,
+                            understand your offer, and place orders on any device.
                         </p>
 
-                        <p className="text-base md:text-lg text-gray-700 mb-5">
-                            We create high-performance e-commerce websites that combine clean design,
-                            intuitive user experience, and powerful functionality. From product catalogs
-                            and secure payment systems to order management and integrations, every detail
-                            is built to support smooth customer journeys and higher conversion rates.
+                        <p className="text-base md:text-lg text-gray-700 mb-6">
+                            We build modern stores with a clear structure, fast performance, and a smooth user experience —
+                            using a transparent process from planning to launch.
                         </p>
 
-                        <p className="text-base md:text-lg text-gray-700 mb-5">
-                            A successful e-commerce website must be fast, reliable, and easy to use.
-                            Our team focuses on responsive design, optimized loading speed, and clear
-                            navigation that works flawlessly on desktop, tablet, and mobile devices.
-                            This ensures your customers can shop comfortably anytime, anywhere.
-                        </p>
+                        <h3 className="text-xl font-semibold text-[#131632] mb-3">
+                            What’s included
+                        </h3>
 
-                        <p className="text-base md:text-lg text-gray-700 mb-5">
-                            SEO is an essential part of e-commerce growth. We build online stores with
-                            SEO-friendly architecture, clean URLs, structured data, and optimized content
-                            that helps your products rank higher in search engines and attract organic
-                            traffic ready to buy.
-                        </p>
+                        <ul className="text-base md:text-lg text-gray-700 mb-6 list-disc list-inside">
+                            <li>Product catalog and category structure</li>
+                            <li>Product pages with clear layout and images</li>
+                            <li>Cart and checkout setup (based on your requirements)</li>
+                            <li>Mobile-first responsive design</li>
+                            <li>Performance optimization (fast loading)</li>
+                            <li>Basic SEO setup (metadata, sitemap, indexing)</li>
+                        </ul>
 
-                        <p className="text-base md:text-lg text-gray-700 mb-5">
-                            Our e-commerce solutions are scalable and future-proof. Whether you are
-                            launching a new online store, expanding your product range, or entering
-                            new markets, we develop platforms that grow together with your business
-                            and adapt to changing demands.
+                        <h3 className="text-xl font-semibold text-[#131632] mb-3">
+                            SEO best practices
+                        </h3>
+
+                        <p className="text-base md:text-lg text-gray-700 mb-6">
+                            We set up a clean structure that’s easy to index and maintain: proper headings, metadata,
+                            sitemap, and consistent URLs - so your store is ready for future content and product updates.
                         </p>
 
                         <p className="text-base md:text-lg text-gray-500">
-                            By choosing EtruendE, you choose a strategic partner focused on results.
-                            We don’t just build e-commerce websites — we create digital sales engines
-                            that help businesses increase revenue, strengthen their brand, and succeed
-                            in competitive online markets.
+                            Need payments, delivery, or other integrations? We’ll confirm everything in the brief and include it in the estimate.
                         </p>
+
                     </div>
                 </div>
 
             </Container>
 
             <p className="sr-only">
-                E-commerce website development by EtruendE.
-                We build custom online stores, scalable e-commerce platforms,
-                SEO-optimized e-commerce websites, and high-converting digital
-                sales solutions for businesses worldwide.
+                EtruendE builds modern online stores with a focus on clear structure, performance, and SEO best practices.
+                Online store features such as catalog, cart, and checkout depend on project requirements.
             </p>
 
         </section>

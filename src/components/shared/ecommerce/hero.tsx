@@ -33,7 +33,7 @@ export default function EcommerceHero() {
                             <BreadcrumbSeparator className="text-white" />
                             <BreadcrumbItem>
                                 <BreadcrumbPage className="text-[#ff3f81] text-sm sm:text-base">
-                                    E-commerce
+                                    Online Store
                                 </BreadcrumbPage>
                             </BreadcrumbItem>
                         </BreadcrumbList>
@@ -42,40 +42,22 @@ export default function EcommerceHero() {
                     <div className="flex flex-col md:flex-row md:justify-between gap-12 mt-6">
                         <div className="w-full md:w-1/2 text-center md:text-left">
                             <h1 className="text-3xl sm:text-5xl md:text-6xl font-bold mb-6 text-white">
-                                E-commerce Website Development for Business
+                                Online Store Development
                             </h1>
 
-                            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-6 text-white">
-                                What Is an E-commerce Website and How It Drives Sales
-                            </h2>
-
-
                             <p className="text-base sm:text-lg md:text-xl opacity-80 mb-8 max-w-full md:max-w-[750px] text-white mx-auto md:mx-0">
-                                An e-commerce website is a powerful digital sales channel that
-                                works for your business 24/7. It allows companies to sell
-                                products and services online, automate processes, scale faster,
-                                and reach a global audience without geographical limitations.
+                                An online store lets customers browse products and place orders - on any device.
+                                We build fast, mobile-first stores with a clean structure, clear product pages, and a smooth checkout setup.
                                 <br /><br />
-                                A professionally developed online store builds customer trust,
-                                increases conversion rates, and provides a seamless shopping
-                                experience across all devices. From intuitive navigation and
-                                secure payment systems to fast loading speeds and SEO-friendly
-                                architecture - every detail directly impacts revenue.
-                                <br /><br />
-                                Investing in a modern e-commerce platform means investing in
-                                long-term growth, brand authority, and measurable results.
-                                Create a scalable and high-performing online store together
-                                with{" "}
-                                <span className="text-[#ff3f81] underline font-bold opacity-100">
-                                    EtruendE
-                                </span>.
+                                You get a transparent process: planning → design approval → development → launch.
+                                We also include performance optimization and SEO best practices (without unrealistic promises).
                             </p>
 
                             <Link
                                 href="/contacts"
                                 className="inline-block select-none px-6 py-3 rounded-xl bg-white/10 backdrop-blur text-white border border-white/20 hover:bg-white/20 transition"
                             >
-                                Get a Custom E-commerce Website
+                                Get a quote
                             </Link>
                         </div>
 
@@ -87,49 +69,41 @@ export default function EcommerceHero() {
                                     7
                                 </p>
                                 <p className="mb-2 font-bold text-lg sm:text-xl">
-                                    ONLINE STORES LAUNCHED
+                                    STORES DELIVERED
                                 </p>
                                 <p className="text-base sm:text-lg opacity-80">
-                                    We have successfully launched e-commerce projects in various
-                                    niches, from startups to large-scale businesses.
+                                    Online stores for small catalogs, services, and local brands.
                                 </p>
                             </div>
 
-                            <div className="bg-[#131632d7] shadow-md backdrop-blur w-full px-4 py-6 sm:p-6 rounded-2xl min-h-[180px] text-white
+                            <div className="bg-[#131632d7] shadow-md backdrop-blur w-full px-4 py-6 sm:p-6 rounded-2xl text-white
                 hover:scale-[1.03] hover:shadow-[0_0_25px_rgba(255,63,129,0.35)]
                 transition-all duration-300">
-                                <p className="text-4xl sm:text-5xl font-bold text-[#ff3f81] mb-4">
-                                    100%
-                                </p>
                                 <p className="mb-2 font-bold text-lg sm:text-xl">
-                                    CLIENT SATISFACTION
+                                    CLEAR PROCESS
                                 </p>
                                 <p className="text-base sm:text-lg opacity-80">
-                                    Our clients value reliability, transparency, and measurable
-                                    business results.
+                                    You approve design first, then we build and launch step by step.
                                 </p>
                             </div>
 
-                            <div className="bg-[#131632d7] shadow-md backdrop-blur w-full px-4 py-6 sm:p-6 rounded-2xl min-h-[180px] text-white
+                            <div className="bg-[#131632d7] shadow-md backdrop-blur w-full px-4 py-6 sm:p-6 rounded-2xl text-white
                 hover:scale-[1.03] hover:shadow-[0_0_25px_rgba(255,63,129,0.35)]
                 transition-all duration-300">
-                                <p className="text-4xl sm:text-5xl font-bold text-[#ff3f81] mb-4">
-                                    3-4x
-                                </p>
                                 <p className="mb-2 font-bold text-lg sm:text-xl">
-                                    SALES GROWTH
+                                    MOBILE-FIRST
                                 </p>
                                 <p className="text-base sm:text-lg opacity-80">
-                                    A well-built e-commerce website increases sales performance
-                                    and returns investment multiple times over.
+                                    Responsive layout and fast loading for a smooth shopping experience.
+
                                 </p>
                             </div>
 
                             <Link
-                                href="/reviews"
+                                href="/portfolio"
                                 className="select-none mb-5 lg:mb-0 px-6 py-3 rounded-xl bg-white text-[#131632] font-semibold shadow-xl hover:bg-gray-200 transition text-center"
                             >
-                                Testimonials
+                                View portfolio
                             </Link>
                         </div>
                     </div>
@@ -137,12 +111,8 @@ export default function EcommerceHero() {
             </Container>
 
             <p className="sr-only">
-                E-commerce website development services by EtruendE.
-                We create custom online stores, scalable ecommerce platforms,
-                SEO optimized shopping websites, Shopify and custom solutions
-                for businesses worldwide. Our ecommerce websites focus on
-                conversion optimization, fast loading speed, secure payments,
-                and long-term growth.
+                EtruendE builds modern online stores with a focus on clear structure, performance, and SEO best practices.
+                We can set up product catalog, cart, and checkout depending on project requirements.
             </p>
 
         </section>

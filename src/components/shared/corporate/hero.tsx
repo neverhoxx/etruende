@@ -33,7 +33,7 @@ export default function CorporateHero() {
                             <BreadcrumbSeparator className="text-white" />
                             <BreadcrumbItem>
                                 <BreadcrumbPage className="text-[#ff3f81] text-sm sm:text-base">
-                                    Corporate Website
+                                    Business Website
                                 </BreadcrumbPage>
                             </BreadcrumbItem>
                         </BreadcrumbList>
@@ -42,7 +42,7 @@ export default function CorporateHero() {
                     <div className="flex flex-col md:flex-row md:justify-between gap-12 mt-6">
                         <div className="w-full md:w-1/2 text-center md:text-left">
                             <h1 className="text-3xl sm:text-5xl md:text-6xl font-bold mb-6 text-white">
-                                Corporate Website Development for Business Growth
+                                Modern business websites built for clarity and performance
                             </h1>
 
                             <p className="sr-only">
@@ -52,25 +52,10 @@ export default function CorporateHero() {
                             </p>
 
 
-                            <h3 className="text-xl sm:text-2xl md:text-3xl font-bold mb-6 text-white">
-                                What Is a Corporate Website and Why Your Business Needs One
-                            </h3>
-
                             <p className="text-base sm:text-lg md:text-xl opacity-80 mb-8 max-w-full md:max-w-[750px] text-white">
-                                A corporate website is a company’s full-fledged
-                                presence in the digital world - the true face of
-                                your business online.
+                                A clear multi-page website that explains what you do, builds trust, and makes it easy for customers to contact you.
                                 <br /><br />
-                                It represents your brand, builds trust, communicates
-                                authority, and helps clients understand your values,
-                                services, and expertise.
-                                <br /><br />
-                                Invest in professional corporate website development
-                                with{" "}
-                                <span className="text-[#ff3f81] underline font-bold">
-                                    EtruendE
-                                </span>{" "}
-                                and turn your website into a powerful business asset.
+                                We handle structure, design, development, and launch - with a transparent process and honest estimates.
                             </p>
 
 
@@ -78,7 +63,7 @@ export default function CorporateHero() {
                                 href="/contacts"
                                 className="inline-block select-none px-6 py-3 rounded-xl bg-white/10 backdrop-blur text-white border border-white/20 hover:bg-white/20 transition"
                             >
-                                Start your project with us
+                                Get a quote
                             </Link>
                         </div>
 
@@ -90,53 +75,40 @@ export default function CorporateHero() {
                                     13
                                 </p>
                                 <p className="mb-2 font-bold text-lg sm:text-xl">
-                                    WEBSITES IMPLEMENTED
+                                    PROJECTS DELIVERED
                                 </p>
                                 <p className="text-base sm:text-lg opacity-80">
-                                    Our extensive experience has taught us to
-                                    create the best corporate websites in any
-                                    niche.
+                                    Websites for small businesses, services, and local brands.
                                 </p>
                             </div>
 
-                            <div className="bg-[#131632d7] shadow-md backdrop-blur w-full px-4 py-6 sm:p-6 rounded-2xl min-h-[180px] text-white
+                            <div className="bg-[#131632d7] shadow-md backdrop-blur w-full px-4 py-6 sm:p-6 rounded-2xl text-white
                                 hover:scale-[1.03] hover:shadow-[0_0_25px_rgba(255,63,129,0.35)]
                                 transition-all duration-300">
-                                <p className="text-4xl sm:text-5xl font-bold text-[#ff3f81] mb-4">
-                                    100%
-                                </p>
                                 <p className="mb-2 font-bold text-lg sm:text-xl">
-                                    SATISFIED CLIENTS
+                                    CLEAR PROCESS
                                 </p>
                                 <p className="text-base sm:text-lg opacity-80">
-                                    Satisfied customers aren't statistics.
-                                    They're people who our website has helped in
-                                    their business.
+                                    Design approval → development → launch. You always see progress.
                                 </p>
                             </div>
 
-                            <div className="bg-[#131632d7] shadow-md backdrop-blur w-full px-4 py-6 sm:p-6 rounded-2xl min-h-[180px] text-white
+                            <div className="bg-[#131632d7] shadow-md backdrop-blur w-full px-4 py-6 sm:p-6 rounded-2xl text-white
                                 hover:scale-[1.03] hover:shadow-[0_0_25px_rgba(255,63,129,0.35)]
                                 transition-all duration-300">
-                                <p className="text-4xl sm:text-5xl font-bold text-[#ff3f81] mb-4">
-                                    3×
-                                </p>
-
                                 <p className="mb-2 font-bold text-lg sm:text-xl">
-                                    RETURN ON INVESTMENT
+                                    FAST DELIVERY
                                 </p>
                                 <p className="text-base sm:text-lg opacity-80">
-                                    Website development is an investment. And
-                                    the return on investment is measured by its
-                                    results.
+                                    Most business websites are delivered in 7-14 days.
                                 </p>
                             </div>
 
                             <Link
-                                href="/reviews"
+                                href="/portfolio"
                                 className="select-none mb-5 lg:mb-0 px-6 py-3 rounded-xl bg-white text-[#131632] font-semibold shadow-xl hover:bg-gray-200 transition text-center"
                             >
-                                Testimonials
+                                View portfolio
                             </Link>
                         </div>
                     </div>

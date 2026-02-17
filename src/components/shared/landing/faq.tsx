@@ -7,35 +7,30 @@ import { HiOutlineSparkles } from "react-icons/hi2";
 const faqs = [
     {
         q: "What is a landing page?",
-        a:
-            "A landing page is a focused web page designed to convert visitors into leads or customers. Unlike a traditional website, a landing page is built around a single goal - such as collecting contact information, promoting a product, or driving sales. Every element is optimized for conversion.",
+        a: "A landing page is a focused one-page website designed around a single offer or action - for example: request a quote, book a call, or leave contact details."
     },
     {
         q: "How is a landing page different from a regular website?",
-        a:
-            "A landing page focuses on one specific action, while a regular website contains multiple pages and goals. Landing pages eliminate distractions, guide users through a clear message, and are commonly used for marketing campaigns, advertising, and lead generation.",
+        a: "A landing page focuses on one message and one call-to-action. A regular website usually has multiple pages and goals (about, services, contacts, etc.)."
     },
     {
-        q: "Do landing pages really increase conversions?",
-        a:
-            "Yes. A professionally designed landing page significantly improves conversion rates by presenting a clear value proposition, strong call to action, and optimized user flow. Landing pages are proven tools for increasing leads, sales, and marketing campaign efficiency.",
+        q: "When should I choose a landing page?",
+        a: "Landing pages work best for a single service, product, or campaign - when you want visitors to quickly understand the offer and take action."
     },
     {
         q: "How long does it take to build a landing page?",
-        a:
-            "The development time for a landing page depends on complexity, content, and integrations. On average, a high-quality landing page takes from a few days to two weeks, including design, development, optimization, and testing.",
+        a: "Most landing pages take from a few days to 1–2 weeks depending on content readiness, design complexity, and integrations."
     },
     {
-        q: "Is a landing page optimized for SEO?",
-        a:
-            "Yes. We build landing pages with SEO-friendly structure, fast loading speed, clean code, and optimized content. This helps landing pages rank in search engines and attract organic traffic in addition to paid advertising.",
+        q: "Is SEO included?",
+        a: "Yes. We include SEO best practices such as clean structure, headings, metadata, and fast performance. For long-term SEO growth, content strategy matters too."
     },
     {
         q: "How much does a landing page cost?",
-        a:
-            "The cost of a landing page depends on design complexity, functionality, and business goals. We offer custom landing page development tailored to your needs, ensuring maximum performance, conversion, and return on investment.",
+        a: "Pricing depends on design complexity, number of sections, and integrations (forms, analytics, tracking). After a short brief, we provide a fixed quote and timeline."
     },
 ];
+
 
 export default function LandingFAQ() {
     const [open, setOpen] = useState<number | null>(null);
@@ -93,10 +88,8 @@ export default function LandingFAQ() {
                 </div>
             </Container>
             <p className="sr-only">
-                Landing page development FAQ by EtruendE.
-                We answer common questions about landing pages,
-                conversion optimization, landing page pricing,
-                SEO optimization, and professional landing page design.
+                Landing page development FAQ by EtruendE. Answers about landing pages, timelines, pricing,
+                and what is included in development (design, performance, and SEO best practices).
             </p>
         </section>
     );

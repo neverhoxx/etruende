@@ -2,13 +2,13 @@ import type { Metadata } from "next";
 import ContactSectionPage from "@/components/shared/contact/contact";
 
 export const metadata: Metadata = {
-    title: "Contact Us | EtruendE - Web Development & SEO Agency",
+    title: "Contact | EtruendE - Web Development Studio",
     description:
-        "Contact EtruendE to discuss web development, SEO promotion, and digital growth. Get a free consultation and start building high-performing digital solutions.",
+        "Contact EtruendE to discuss your website project. We build modern websites with a clear process, timeline, and honest estimates.",
     openGraph: {
         title: "Contact EtruendE",
         description:
-            "Get in touch with EtruendE for web development, SEO promotion, and digital strategy.",
+            "Get in touch with EtruendE to discuss your website, timeline, and project requirements.",
         url: "https://etruende.com/contacts",
         siteName: "EtruendE",
         type: "website",
@@ -17,6 +17,7 @@ export const metadata: Metadata = {
         canonical: "https://etruende.com/contacts",
     },
 };
+
 
 export default function ContactPage() {
     return <ContactSectionPage />;

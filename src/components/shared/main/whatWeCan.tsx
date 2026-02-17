@@ -29,18 +29,18 @@ export default function WhatWeCanBlock() {
                         </span>
                     </div>
 
-                    <h2 className="text-4xl md:text-5xl font-bold text-[#1a1a1a] text-center"
+                    <h2 className="text-4xl md:text-5xl font-bold text-[#131632] text-center"
                         data-aos="fade-up">
                         What <span className="text-[#ff3f81]">we</span> create for business growth
                     </h2>
 
                     <p className="text-center md:text-left" data-aos="fade-up">
-                        From concept to deployment, we build{" "}
-                        <span className="text-[#ff3f81]">Digital Solutions That Drive Traffic, Sales, and Online Growth</span>
+                        From planning to launch,{" "}
+                        <span className="text-[#ff3f81]">we build modern websites designed to support your business as it grows.</span>
                     </p>
 
                     <div className="
-                        md:max-w-[350px] 
+                        md:max-w-[811px] 
                         md:w-full
                         w-1/2
                         h-[3px] 
@@ -66,22 +66,23 @@ export default function WhatWeCanBlock() {
                         </h3>
 
                         <p className="text-[14px] md:text-[18px] text-[#919191] mb-5">
-                            High-converting landing pages built to generate leads, sales,
-                            and real business results. We design fast, SEO-friendly pages
-                            optimized for conversions and performance.
+                            A focused one-page website that clearly explains your offer and makes it easy for customers to contact you.
+                            Fast, mobile-first, and ready to launch.
                         </p>
 
                         <ul className="list-disc marker:text-[#ff3f81] list-inside">
                             <li>
-                                Custom Landing Pages
+                                Clear structure and copy-ready sections
                             </li>
                             <li>
-                                Conversion-Optimized Design
+                                Mobile-first layout
                             </li>
                             <li>
-                                A/B Tested Page Structures
+                                Contact form / WhatsApp / Instagram link
                             </li>
                         </ul>
+
+                        <p className="font-semibold mt-5">Typical timeline: 1-5 days</p>
                     </div>
 
                     <div
@@ -93,26 +94,27 @@ export default function WhatWeCanBlock() {
                             <ImCart className="text-white text-3xl" />
                         </div>
                         <h3 className="text-xl md:text-2xl mb-5">
-                            E-commerce Development
+                            E-commerce Websites
                         </h3>
 
                         <p className="text-[14px] md:text-[18px] text-[#919191] mb-5">
-                            High-performance e-commerce development focused on sales,
-                            scalability, and user experience. We build secure online stores
-                            optimized for SEO, speed, and conversions.
+                            Simple and reliable online stores for small catalogs - products, cart, and a smooth checkout.
+                            Built with performance and maintainability in mind.
                         </p>
 
                         <ul className="list-disc marker:text-[#131632] list-inside">
                             <li>
-                                Custom Online Stores
+                                Product catalog and categories
                             </li>
                             <li>
-                                High-Conversion Product Pages
+                                Cart + checkout setup
                             </li>
                             <li>
-                                Secure & Optimized Checkout Flows
+                                Payments / delivery integrations(if needed)
                             </li>
                         </ul>
+
+                        <p className="font-semibold mt-5">Typical timeline: 1-3 weeks</p>
                     </div>
 
                     <div
@@ -124,20 +126,26 @@ export default function WhatWeCanBlock() {
                             <BsFillRocketTakeoffFill className="text-white text-3xl" />
                         </div>
                         <h3 className="text-xl md:text-2xl mb-5">
-                            SEO Promotion
+                            SEO Setup
                         </h3>
 
                         <p className="text-[14px] md:text-[18px] text-[#919191] mb-5">
-                            Professional SEO promotion services that improve Google rankings,
-                            increase organic traffic, and deliver long-term growth.
-                            From technical SEO to content strategy — we handle everything.
+                            We set up the technical foundation for search visibility: clean structure, metadata, indexing, and performance basics.
                         </p>
 
                         <ul className="list-disc marker:text-[#131632] list-inside">
-                            <li>Full On-Page & Technical Optimization</li>
-                            <li>Keyword Research & Content Strategy</li>
-                            <li>Long-Term Organic Traffic Growth</li>
+                            <li>
+                                Technical SEO basics (structure, metadata, sitemap)
+                            </li>
+                            <li>
+                                Google Search Console setup
+                            </li>
+                            <li>
+                                Recommendations for content and keywords
+                            </li>
                         </ul>
+
+                        <p className="font-semibold mt-5">Typical timeline: 1-2 days</p>
 
                     </div>
 
@@ -150,20 +158,21 @@ export default function WhatWeCanBlock() {
                             <FaBriefcase className="text-white text-3xl" />
                         </div>
                         <h3 className="text-xl md:text-2xl mb-5">
-                            Corporate Page Development
+                            Business Websites
                         </h3>
 
                         <p className="text-[14px] md:text-[18px] text-[#919191] mb-5">
-                            Corporate website development designed to build trust,
-                            brand authority, and online presence. Clean structure,
-                            modern UI/UX, and SEO-ready architecture.
+                            Multi-page websites that build trust and clearly show what you do: services, pricing, portfolio, and contact.
+                            Clean design, strong structure, and mobile-first layout.
                         </p>
 
                         <ul className="list-disc marker:text-[#ff3f81] list-inside">
-                            <li>Custom Corporate Website Design</li>
-                            <li>Brand-Focused UI/UX Architecture</li>
-                            <li>Clear, Well-Structured Content Layouts</li>
+                            <li>4-7 pages (services, about, contact, etc.)</li>
+                            <li>Clear navigation and content structure</li>
+                            <li>Basic SEO setup included</li>
                         </ul>
+
+                        <p className="font-semibold mt-5">Typical timeline: 7-14 days</p>
                     </div>
 
                     <p className="sr-only">

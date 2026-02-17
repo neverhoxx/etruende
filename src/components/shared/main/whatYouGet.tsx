@@ -34,7 +34,7 @@ export default function WhatYouGetBlock() {
                         className="text-4xl md:text-5xl font-bold text-[#1a1a1a] md:text-left text-center"
                     >
                         What You Get with{" "}
-                        <span className="text-[#ff3f81]">EtruendE Web Development & SEO</span>
+                        <span className="text-[#ff3f81]">EtruendE</span>
                     </h2>
 
                     <div
@@ -61,11 +61,11 @@ export default function WhatYouGetBlock() {
                     {[
                         {
                             icon: IoIosRocket,
-                            text: "High-converting websites built to generate leads, sales, and real business growth."
+                            text: "Modern websites built to present your business clearly and get inquiries."
                         },
                         {
                             icon: FaMagnifyingGlassChart,
-                            text: "Advanced SEO optimization that improves Google rankings and drives organic traffic."
+                            text: "Clean layout that looks great on phones and works smoothly on any screen."
                         },
                         {
                             icon: IoIosColorPalette,
@@ -73,15 +73,15 @@ export default function WhatYouGetBlock() {
                         },
                         {
                             icon: IoIosTrendingUp,
-                            text: "Marketing-focused website structure designed to increase sales and engagement."
+                            text: "Simple navigation and content blocks so customers find what they need quickly."
                         },
                         {
                             icon: IoIosFlash,
-                            text: "Fast-loading websites with clean, optimized code and top performance scores."
+                            text: "Proper structure, metadata and indexing setup(SEO best practices included)."
                         },
                         {
                             icon: HiOutlineSparkles,
-                            text: "Ongoing website support, improvements, SEO consulting, and growth strategy."
+                            text: "We can help with updates and improvements after launch when you need it."
                         },
                     ].map((item, i) => {
                         const Icon = item.icon;
@@ -96,7 +96,7 @@ export default function WhatYouGetBlock() {
                                     text-white flex flex-wrap justify-center items-start gap-4 select-none text-lg 
                                     px-3 py-6 md:p-6 rounded-2xl 
                                     bg-[#131632] border border-white/20 backdrop-blur-xl
-                                    hover:scale-[1.03] hover:shadow-[0_0_25px_rgba(255,63,129,0.35)]
+                                     hover:shadow-[0_0_25px_rgba(255,63,129,0.35)]
                                     transition-transform duration-300 ease-out
                                     text-center
                                 "

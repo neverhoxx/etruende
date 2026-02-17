@@ -6,25 +6,30 @@ import { HiOutlineSparkles } from "react-icons/hi2";
 const steps = [
     {
         id: 1,
-        title: "Discovery & Strategy",
-        text: "We analyze goals, define requirements, and build a fast and effective development roadmap."
+        title: "Brief & Planning",
+        text: "We learn about your business, goals, and content. Then we confirm the site pages, structure, and timeline.",
+        timeline: "Typical timeline: 1-2 days for most business websites."
     },
     {
         id: 2,
-        title: "Design & UX Blueprint",
-        text: "We create clean interfaces, intuitive experiences, and a scalable structure for your product."
+        title: "Design & Structure",
+        text: "We prepare the layout and visual style and send it for approval before development starts.",
+        timeline: "Typical timeline: 2-7 days for most business websites."
     },
     {
         id: 3,
-        title: "Development & Build",
-        text: "We implement modern, reliable, and high-performance code with maximum attention to quality."
+        title: "Development",
+        text: "We build the website in Next.js, make it mobile-friendly, and optimize performance.",
+        timeline: "Typical timeline: 2-14 days for most business websites."
     },
     {
         id: 4,
-        title: "Testing & Launch",
-        text: "We polish, test, optimize, and ship your project - fast, stable, and on time."
+        title: "Launch & Handover",
+        text: "We test everything, publish the site, connect analytics, and help you with the first updates if needed.",
+        timeline: "Typical timeline: 1-2 days for most business websites."
     }
 ];
+
 
 export default function OurProcess() {
     return (
@@ -43,20 +48,19 @@ export default function OurProcess() {
                     </div>
 
                     <h2 className="text-4xl md:text-5xl font-bold text-[#1a1a1a] text-center md:text-left">
-                        How <span className="text-[#ff3f81]">EtruendE</span> Transforms Ideas Into High-Performing Websites
+                        How we build <span className="text-[#ff3f81]">your website</span>
                     </h2>
 
                     <p className="text-center md:text-left text-[#444]">
-                        A proven development process that{" "}
-                        <span className="text-[#ff3f81]">ensures quality and timely delivery</span>
+                        A clear step-by-step process,{" "}
+                        <span className="text-[#ff3f81]">you always see progress and know what’s next.</span>
                     </p>
 
-                    <div className="md:max-w-[838px] md:w-full w-1/2 h-[3px] rounded bg-gradient-to-r from-[#ff3f81] to-[#131632] shadow-[0_0_12px_rgba(255,63,129,0.6)]"></div>
+                    <div className="md:max-w-[613px] md:w-full w-1/2 h-[3px] rounded bg-gradient-to-r from-[#ff3f81] to-[#131632] shadow-[0_0_12px_rgba(255,63,129,0.6)]"></div>
 
                     <p className="sr-only">
-                        EtruendE web development process includes discovery, UX design,
-                        modern website development, SEO optimization, testing and launch.
-                        We follow a proven workflow to deliver fast, scalable and conversion-focused websites.
+                        EtruendE follows a clear workflow: brief, design, development, testing and launch.
+                        We focus on structure, performance and SEO best practices.
                     </p>
 
                 </div>
@@ -89,7 +93,7 @@ export default function OurProcess() {
                                     <div className="
                                         absolute 
                                         md:top-[-15px] 
-                                        md:right-[-15px] 
+                                        md:right-0 
                                         top-0
                                         right-0
                                         bg-white 
@@ -111,10 +115,14 @@ export default function OurProcess() {
                                         {step.text}
                                     </p>
 
+                                    <p className="font-semibold mt-5">{step.timeline}</p>
+
                                     <p className="sr-only">
                                         {step.title} is part of EtruendE web development workflow focused on
                                         performance, SEO optimization and business growth.
                                     </p>
+
+
 
                                 </div>
 

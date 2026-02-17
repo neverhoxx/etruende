@@ -9,26 +9,24 @@ import { LandingFAQSchema } from "@/components/shared/landing/FAQSchema";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: "Landing Page Development Services | High-Converting Landing Pages - EtruendE",
+    title: "Landing Page Development | EtruendE - Web Development Studio",
     description:
-        "Professional landing page development focused on conversions. We design fast, SEO-optimized landing pages that generate leads, increase sales, and maximize ROI for businesses worldwide.",
-
+        "EtruendE builds modern landing pages in 1-5 days - clear structure, mobile-first design, and fast performance.",
     keywords: [
         "landing page development",
         "landing page design",
-        "landing page services",
-        "conversion focused landing page",
-        "SEO landing page",
-        "landing page for business",
-        "custom landing page",
-        "high converting landing page",
+        "next.js landing page",
+        "react landing page",
+        "business landing page",
+        "mobile-first landing page",
+        "fast landing page",
+        "EtruendE",
     ],
-
     openGraph: {
-        title: "Landing Page Development Services - EtruendE",
+        title: "Landing Page Development | EtruendE",
         description:
-            "We create high-converting landing pages optimized for SEO, performance, and marketing campaigns. Turn traffic into leads and sales with EtruendE.",
-        url: "https://etruende.com/landing-page-development",
+            "Modern landing pages built with clarity, speed, and a transparent process.",
+        url: "https://etruende.com/landing-page",
         siteName: "EtruendE",
         images: [
             {
@@ -41,19 +39,18 @@ export const metadata: Metadata = {
         locale: "en_US",
         type: "website",
     },
-
     twitter: {
         card: "summary_large_image",
         title: "Landing Page Development | EtruendE",
         description:
-            "High-performing landing pages designed to convert visitors into customers. SEO-friendly, fast, and conversion-focused.",
+            "Modern landing pages built with a clear process, fast performance, and SEO best practices.",
         images: ["https://etruende.com/og-image.png"],
     },
-
     alternates: {
-        canonical: "https://etruende.com/landing-page-development",
+        canonical: "https://etruende.com/landing-page",
     },
 };
+
 
 
 export default function Landing() {

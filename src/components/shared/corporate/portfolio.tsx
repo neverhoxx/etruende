@@ -8,26 +8,19 @@ import Link from 'next/link';
 
 import voltampPic from "@/images/projects/voltamp.png";
 import paikesemajadPic from "@/images/projects/solantra-solarhome.png";
-import pic3dsdom from "@/images/projects/3dsdom.png";
 
 const items = [
     {
         title: 'Voltamp',
-        subtitle: 'Corporate Website & SEO Promotion',
+        subtitle: 'Business website',
         image: voltampPic,
-        alt: 'Voltamp corporate website with SEO Promotion developed by EtruendE Studio',
+        alt: 'Voltamp business website developed by EtruendE Studio'
     },
     {
         title: 'Solantra Solarhome',
-        subtitle: 'Corporate Landing Page',
+        subtitle: 'Business website',
         image: paikesemajadPic,
-        alt: 'Solantra Home сorporate landing page developed by EtruendE Studio',
-    },
-    {
-        title: '3dsdom',
-        subtitle: 'Corporate Landing Page',
-        image: pic3dsdom,
-        alt: '3dsdom сorporate landing page developed by EtruendE Studio',
+        alt: 'Solantra Home сorporate landing page developed by EtruendE Studio'
     }
 ];
 
@@ -100,19 +93,17 @@ export default function CorporatePortfolio() {
                     <div className="flex items-center gap-2 justify-center">
                         <HiOutlineSparkles className="text-[#ff3f81] text-3xl drop-shadow-[0_0_18px_rgba(255,63,129,0.9)] brightness-125" />
                         <span className="uppercase tracking-wide text-sm text-[#ff3f81] font-semibold">
-                            Corporate websites built by EtruendE
+                            Selected projects by EtruendE
                         </span>
                     </div>
 
                     <h2 className="text-4xl md:text-5xl font-bold text-[#131632] text-center">
-                        Corporate Website Projects by{' '}
+                        Website projects by{' '}
                         <span className="text-[#ff3f81]">EtruendE</span>
                     </h2>
 
                     <p className="text-center max-w-[720px] text-[#444]">
-                        Explore real corporate website projects developed by EtruendE. Each
-                        project is designed to strengthen brand image, improve usability,
-                        and support long-term business growth.
+                        A few examples of websites we’ve built for businesses - focused on clear structure, clean design, and fast performance.
                     </p>
 
                     <div className="md:max-w-[390px] md:w-full w-1/2 h-[3px] rounded bg-gradient-to-r from-[#ff3f81] to-[#131632] shadow-[0_0_12px_rgba(255,63,129,0.6)]" />
@@ -135,7 +126,7 @@ export default function CorporatePortfolio() {
                     >
                         {items.map((item, i) => (
                             <Link
-                                href="/portfolio"
+                                href={(item as any).href ?? "/portfolio"}
                                 key={i}
                                 className="
                                     text-center

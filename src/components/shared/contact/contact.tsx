@@ -62,14 +62,13 @@ export default function ContactSectionPage() {
                     </span>
 
                     <h2 className="mt-4 text-4xl sm:text-5xl font-bold leading-tight">
-                        Let’s Build Something <br />
-                        <span className="text-[#ff3f81]">Exceptional</span>
+                        Let’s discuss
+                        <span className="text-[#ff3f81]"> your website</span>
                     </h2>
 
                     <p className="mt-6 text-white/80 max-w-xl text-lg">
-                        Whether you’re planning a new project, scaling your business,
-                        or improving digital performance - our team is ready to help.
-                        Let’s talk strategy, design, and results.
+                        Tell us what you need and we’ll reply with a clear plan, timeline, and estimate.
+                        No pressure - just a quick, honest conversation.
                     </p>
 
                     <div className="mt-14 grid grid-cols-1 sm:grid-cols-2 gap-10 text-white/80">
@@ -86,7 +85,7 @@ export default function ContactSectionPage() {
                             <Mail className="text-[#ff3f81]" />
                             <div>
                                 <p className="font-semibold text-white">Email</p>
-                                <p>hello@etruende.com</p>
+                                <p>etruendewebstudio@gmail.com</p>
                             </div>
                         </div>
 
@@ -149,7 +148,7 @@ export default function ContactSectionPage() {
 
                         <div>
                             <label className="text-sm text-gray-600">
-                                Phone number
+                                Phone number (optional)
                             </label>
                             <input
                                 name="user_phone"
@@ -173,21 +172,40 @@ export default function ContactSectionPage() {
                             />
                         </div>
 
-                        <label className="flex items-start gap-3 text-sm text-gray-500 cursor-pointer">
-                            <input type="checkbox" className="mt-1 accent-[#ff3f81]" />
-                            I agree to the processing of my personal data
-                        </label>
+                        <div>
+                            <label className="text-sm text-gray-600">Project details</label>
+                            <textarea
+                                name="message"
+                                placeholder="What do you need? (type of website, pages, examples, deadline)"
+                                rows={5}
+                                className="w-full border-b border-gray-300 py-3 outline-none resize-none
+               focus:border-[#ff3f81] transition"
+                            />
+                        </div>
+
+                        <div>
+                            <label className="text-sm text-gray-600">Current website (optional)</label>
+                            <input
+                                name="website"
+                                type="url"
+                                placeholder="https://..."
+                                className="w-full border-b border-gray-300 py-3 outline-none
+               focus:border-[#ff3f81] transition"
+                            />
+                        </div>
 
                         <button
                             disabled={loading}
                             type="submit"
-                            className="w-full mt-6 py-4 rounded-full
-                            bg-[#ff3f81] text-white font-semibold text-lg
-                            hover:scale-[1.03] hover:shadow-[0_0_30px_rgba(255,63,129,0.6)]
+                            className="w-full py-4 rounded-full cursor-pointer
+                            bg-[#ff3f81] text-white font-semibold text-lg hover:shadow-[0_0_30px_rgba(255,63,129,0.6)]
                             transition-all"
                         >
                             {loading ? "Sending..." : "Request a Consultation"}
                         </button>
+                        <p>
+                            We usually reply within 24 hours (Mon–Fri).
+                        </p>
                     </form>
                 </div>
 
