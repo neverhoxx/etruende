@@ -182,7 +182,7 @@ export default function HeroParticles() {
             <canvas ref={canvasRef} className="absolute inset-0 w-full h-full" />
 
             <div className="relative z-10 text-white flex flex-col items-center">
-                <h1 className="text-4xl sm:text-6xl font-bold mb-4 text-center ">
+                <h1 className="text-4xl sm:text-6xl font-bold mb-4 text-center">
                     Modern websites built for
 
                     <span className="text-[#ff3f81]"> clarity and performance</span>

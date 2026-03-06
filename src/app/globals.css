@@ -139,5 +139,13 @@ body {
   width: 100%;
 }
 
+html {
+  scroll-behavior: smooth;
+}
 
 
+
+.sideber-container{
+  display: grid;
+  grid-template-columns: minmax(14rem, 30%) 1fr;
+}

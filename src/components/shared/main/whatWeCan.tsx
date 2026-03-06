@@ -80,6 +80,9 @@ export default function WhatWeCanBlock() {
                             <li>
                                 Contact form / WhatsApp / Instagram link
                             </li>
+                            <li>
+                                Admin panel
+                            </li>
                         </ul>
 
                         <p className="font-semibold mt-5">Typical timeline: 1-5 days</p>
@@ -111,6 +114,9 @@ export default function WhatWeCanBlock() {
                             </li>
                             <li>
                                 Payments / delivery integrations(if needed)
+                            </li>
+                            <li>
+                                Admin panel
                             </li>
                         </ul>
 
@@ -170,6 +176,9 @@ export default function WhatWeCanBlock() {
                             <li>4-7 pages (services, about, contact, etc.)</li>
                             <li>Clear navigation and content structure</li>
                             <li>Basic SEO setup included</li>
+                            <li>
+                                Admin panel
+                            </li>
                         </ul>
 
                         <p className="font-semibold mt-5">Typical timeline: 7-14 days</p>

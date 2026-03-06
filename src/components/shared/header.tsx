@@ -22,7 +22,7 @@ export default function Header() {
     const [menuOpen, setMenuOpen] = useState(false);
 
     const pathname = usePathname();
-    const forceDarkHeader = pathname === "/portfolio";
+    const forceDarkHeader = pathname === "/portfolio" || "/blog";
 
     useEffect(() => {
         const handleScroll = () => {
