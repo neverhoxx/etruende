@@ -7,12 +7,7 @@ import { Container } from "../container";
 
 export default function WhatYouGetBlock() {
     return (
-        <div
-            className="py-20"
-            style={{
-                background: "linear-gradient(180deg, #2a2f55 0%, #F9F9FF 10%)"
-            }}
-        >
+        <div className="py-20">
             <Container>
                 <div
                     className="w-full flex flex-col items-center md:items-start gap-3"
@@ -45,7 +40,7 @@ export default function WhatYouGetBlock() {
                             w-1/2
                             h-[3px] 
                             rounded 
-                            bg-gradient-to-r 
+                            bg-linear-to-r 
                             from-[#ff3f81] 
                             to-[#131632] 
                             shadow-[0_0_12px_rgba(255,63,129,0.6)]

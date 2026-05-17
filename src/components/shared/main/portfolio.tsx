@@ -1,10 +1,10 @@
 "use client";
 
 import Image from "next/image";
-import { useRef, useEffect, useState } from "react";
+import { useRef, useEffect, useState, useCallback } from "react";
 import { Container } from "../container";
-
 import { HiOutlineSparkles } from "react-icons/hi2";
+import Link from "next/link";
 
 import voltampPic from "@/images/projects/voltamp.png";
 import paikesemajadPic from "@/images/projects/solantra-solarhome.png";
@@ -12,8 +12,6 @@ import LandingDemo1 from "@/images/projects/LandingDemo1.png";
 import fusion from "@/images/projects/fusion.png";
 import pic3dsdom from "@/images/projects/3dsdom.png";
 import ralest from "@/images/projects/ralest.png";
-
-import Link from "next/link";
 
 const items = [
     {
@@ -31,7 +29,7 @@ const items = [
         href: "/portfolio/solantra-solarhome",
     },
     {
-        title: "Landing Page Demo Project",
+        title: "Landing Page Demo",
         subtitle: "Landing page concept",
         image: LandingDemo1,
         alt: "Landing page concept built by EtruendE",
@@ -66,10 +64,10 @@ export default function PortfolioScrollCustom() {
     const thumbRef = useRef<HTMLDivElement>(null);
 
     const [isDragging, setIsDragging] = useState(false);
-    const [dragStartX, setDragStartX] = useState(0);
-    const [initialThumbLeft, setInitialThumbLeft] = useState(0);
+    const dragStartX = useRef(0);
+    const initialThumbLeft = useRef(0);
 
-    const handleScroll = () => {
+    const handleScroll = useCallback(() => {
         const el = scrollRef.current;
         const thumb = thumbRef.current;
         const bar = barRef.current;
@@ -77,42 +75,36 @@ export default function PortfolioScrollCustom() {
 
         const maxScroll = el.scrollWidth - el.clientWidth;
         const maxThumb = bar.clientWidth - thumb.clientWidth;
-
         const thumbLeft = (el.scrollLeft / maxScroll) * maxThumb;
         thumb.style.left = `${thumbLeft}px`;
-    };
+    }, []);
 
     const handleMouseDown = (e: React.MouseEvent) => {
         const thumb = thumbRef.current;
         if (!thumb) return;
-
         setIsDragging(true);
-        setDragStartX(e.clientX);
-        setInitialThumbLeft(parseFloat(thumb.style.left || "0"));
+        dragStartX.current = e.clientX;
+        initialThumbLeft.current = parseFloat(thumb.style.left || "0");
     };
 
-    const handleMouseMove = (e: MouseEvent) => {
+    const handleMouseMove = useCallback((e: MouseEvent) => {
         if (!isDragging) return;
-
         const bar = barRef.current;
         const thumb = thumbRef.current;
         const el = scrollRef.current;
         if (!bar || !thumb || !el) return;
 
-        const delta = e.clientX - dragStartX;
-
-        let newLeft = initialThumbLeft + delta;
+        const delta = e.clientX - dragStartX.current;
+        let newLeft = initialThumbLeft.current + delta;
         newLeft = Math.max(0, Math.min(newLeft, bar.clientWidth - thumb.clientWidth));
-
         thumb.style.left = `${newLeft}px`;
 
         const maxThumb = bar.clientWidth - thumb.clientWidth;
         const maxScroll = el.scrollWidth - el.clientWidth;
-
         el.scrollLeft = (newLeft / maxThumb) * maxScroll;
-    };
+    }, [isDragging]);
 
-    const handleMouseUp = () => setIsDragging(false);
+    const handleMouseUp = useCallback(() => setIsDragging(false), []);
 
     useEffect(() => {
         window.addEventListener("mousemove", handleMouseMove);
@@ -121,105 +113,122 @@ export default function PortfolioScrollCustom() {
             window.removeEventListener("mousemove", handleMouseMove);
             window.removeEventListener("mouseup", handleMouseUp);
         };
-    });
+    }, [handleMouseMove, handleMouseUp]);
 
     return (
         <div className="py-20 bg-[#131632]">
             <Container>
                 <div className="w-full flex flex-col items-center gap-3">
-
-                    <div className="flex items-center gap-2 justify-center">
+                    <div className="flex items-center gap-2 justify-center" data-aos="fade-up">
                         <HiOutlineSparkles className="text-[#ff3f81] text-3xl drop-shadow-[0_0_18px_rgba(255,63,129,0.9)] brightness-125" />
-                        <span className="uppercase tracking-wide text-sm text-[#ff3f81] font-semibold">
+                        <span className="uppercase tracking-wide text-sm text-[#ff3f81] font-semibold select-none">
                             Our Portfolio
                         </span>
                     </div>
 
-                    <h2 className="text-4xl md:text-5xl font-bold text-[#fff] text-center mb-5">
-                        Selected projects by <span className="text-[#ff3f81]">EtruendE</span>
+                    <h2
+                        className="text-4xl md:text-5xl font-bold text-white text-center"
+                        data-aos="fade-up"
+                    >
+                        Selected projects by{" "}
+                        <span className="text-[#ff3f81]">EtruendE</span>
                     </h2>
 
-                    <div className="md:max-w-[390px] md:w-full w-1/2 h-[3px] rounded bg-gradient-to-r from-[#ff3f81] to-[#fff] shadow-[0_0_12px_rgba(255,63,129,0.6)]"></div>
-
-                    <p className="sr-only">
-                        Portfolio of web development, landing pages, e-commerce websites,
-                        corporate websites and SEO promotion projects created by EtruendE.
+                    <p
+                        className="text-white/50 text-center max-w-lg text-[15px]"
+                        data-aos="fade-up"
+                    >
+                        Real projects for real businesses - landing pages, online stores, and business websites.
                     </p>
+
+                    <div
+                        className="md:max-w-[390px] md:w-full w-1/2 h-[3px] rounded bg-linear-to-r from-[#ff3f81] to-white shadow-[0_0_12px_rgba(255,63,129,0.6)]"
+                        data-aos="fade-up"
+                    />
                 </div>
 
-                <div className="w-full sm:w-[85%] md:w-[70%] my-0 mx-auto select-none mt-10">
+                <div className="w-full sm:w-[90%] md:w-[80%] mx-auto mt-10 select-none">
                     <div
                         ref={scrollRef}
                         onScroll={handleScroll}
                         className="
-                            flex gap-8 sm:gap-12 md:gap-16
-                            p-4 sm:p-6 md:p-10
+                            flex gap-8 sm:gap-10 md:gap-12
+                            px-4 py-6
                             overflow-x-scroll
-                            pb-6 sm:pb-8
                             [&::-webkit-scrollbar]:hidden
                             [scrollbar-width:none]
-                            -ms-overflow-style:none
-                            h-[350px]
+                            [-ms-overflow-style:none]
                         "
                     >
                         {items.map((item, i) => (
                             <Link
-                                href={(item as any).href ?? "/portfolio"}
+                                href={item.href}
                                 key={i}
-                                className="
-                                    text-center
-                                    w-[288px]
-                                    h-[200px]
-                                    shrink-0
-                                    mx-auto
-                                "
+                                className="group shrink-0 text-center w-[280px] md:w-[320px]"
+                                data-aos="fade-up"
+                                data-aos-delay={i * 80}
                             >
-                                <div className="aspect-square w-[288px] h-[200px] rounded-t-[50px] overflow-hidden shadow-lg transition-all duration-300
-                                        hover:scale-[1.03]
-                                        hover:shadow-[0_0_25px_rgba(255,63,129,0.35)]
-                                     "
-                                >
+                                <div className="
+                                    w-full h-[200px] md:h-[220px]
+                                    rounded-t-[40px] overflow-hidden
+                                    shadow-lg
+                                    transition-all duration-300
+                                    group-hover:scale-[1.03]
+                                    group-hover:shadow-[0_0_30px_rgba(255,63,129,0.4)]
+                                ">
                                     <Image
                                         src={item.image}
                                         alt={item.alt}
-                                        className="w-[288px] h-[200px]"
+                                        className="w-full h-full object-cover"
                                         priority={i === 0}
                                     />
                                 </div>
 
-                                <h3 className="mt-4 sm:mt-5 md:mt-6 text-lg sm:text-xl font-semibold text-white">
-                                    {item.title}
-                                </h3>
-                                <p className="text-[#ff3f81] text-sm">{item.subtitle}</p>
+                                <div className="mt-4 px-1">
+                                    <h3 className="text-lg font-semibold text-white group-hover:text-[#ff3f81] transition-colors duration-200">
+                                        {item.title}
+                                    </h3>
+                                    <p className="text-[#ff3f81] text-sm mt-1">{item.subtitle}</p>
+                                </div>
                             </Link>
                         ))}
                     </div>
 
-                    <div className="relative w-full flex justify-center mt-6">
+                    <div className="relative w-full flex justify-center mt-4">
                         <div
                             ref={barRef}
-                            className="relative w-[85%] sm:w-[70%] md:w-[60%] h-1 bg-[#2a2f55]"
+                            className="relative w-[70%] sm:w-[55%] md:w-[45%] h-[3px] bg-white/10 rounded-full"
                         >
                             <div
                                 ref={thumbRef}
                                 onMouseDown={handleMouseDown}
-                                className="absolute top-1/2 -translate-y-1/2 h-3 bg-[#ff3f81] cursor-pointer"
-                                style={{ width: '70px', left: 0 }}
+                                className="absolute top-1/2 -translate-y-1/2 h-1.5 w-[60px] bg-[#ff3f81] rounded-full cursor-grab active:cursor-grabbing transition-colors"
+                                style={{ left: 0 }}
                             />
                         </div>
                     </div>
                 </div>
+
+                <div className="flex justify-center mt-10 select-none" data-aos="fade-up">
+                    <Link
+                        href="/portfolio"
+                        className="
+                            px-8 py-3 border border-[#ff3f81] text-[#ff3f81]
+                            text-sm font-semibold tracking-wide
+                            hover:bg-[#ff3f81] hover:text-white
+                            transition-all duration-300
+                        "
+                    >
+                        View all projects →
+                    </Link>
+                </div>
+
             </Container>
 
-            <div className="sr-only">
-                <p className="sr-only">
-                    Portfolio of websites built by EtruendE: business websites, landing pages, and online stores.
-                </p>
-                <p>
-                    Explore website projects by EtruendE: landing pages, online stores, and business websites.
-                </p>
-            </div>
-
+            <p className="sr-only">
+                Portfolio of websites built by EtruendE: business websites, landing pages, and online stores.
+                Explore website projects by EtruendE: landing pages, online stores, and business websites.
+            </p>
         </div>
     );
 }

@@ -17,8 +17,8 @@ export default function HeroParticles() {
         const particles: any[] = [];
 
         let PARTICLE_COUNT = window.innerWidth < 800 ? 120 : 250;
-        let MAX_CONNECT_DISTANCE = 68;
-        let MOUSE_RADIUS = 20;
+        const MAX_CONNECT_DISTANCE = 68;
+        const MOUSE_RADIUS = 20;
         const MAX_CONNECTIONS = 6;
 
         const mouse = { x: null as number | null, y: null as number | null };
@@ -49,7 +49,6 @@ export default function HeroParticles() {
             update(dt: number, w: number, h: number) {
                 this.x += this.vx * dt;
                 this.y += this.vy * dt;
-
                 if (this.x < 0 || this.x > w) this.vx *= -1;
                 if (this.y < 0 || this.y > h) this.vy *= -1;
             }
@@ -60,7 +59,6 @@ export default function HeroParticles() {
             if (!canvas) return;
 
             DPR = Math.max(1, window.devicePixelRatio || 1);
-
             const w = Math.floor(window.innerWidth * DPR);
             const h = Math.floor(window.innerHeight * DPR);
 
@@ -69,10 +67,10 @@ export default function HeroParticles() {
             canvas.style.width = "100%";
             canvas.style.height = "100%";
 
+            PARTICLE_COUNT = window.innerWidth < 800 ? 120 : 250;
             while (particles.length < PARTICLE_COUNT) particles.push(new Particle(w, h));
             while (particles.length > PARTICLE_COUNT) particles.pop();
         }
-
 
         const updateMouse = (e: any) => {
             const rect = canvas.getBoundingClientRect();
@@ -85,19 +83,17 @@ export default function HeroParticles() {
         window.addEventListener("mousemove", updateMouse);
         window.addEventListener("touchmove", updateMouse);
 
-        let last = performance.now();
         function loop() {
             const dt = 0.3;
             const canvas = canvasRef.current;
-            if (!canvas) return;
-            if (!ctx) return;
+            if (!canvas || !ctx) return;
 
             const w = canvas.width;
             const h = canvas.height;
 
             ctx.clearRect(0, 0, w, h);
 
-            for (let p of particles) {
+            for (const p of particles) {
                 if (mouse.x !== null && mouse.y !== null) {
                     const dx = mouse.x - p.x;
                     const dy = mouse.y - p.y;
@@ -117,7 +113,6 @@ export default function HeroParticles() {
                 p.vx = vxOld * Math.cos(rot) - vyOld * Math.sin(rot);
                 p.vy = vxOld * Math.sin(rot) + vyOld * Math.cos(rot);
 
-
                 p.update(dt, w, h);
             }
 
@@ -126,8 +121,6 @@ export default function HeroParticles() {
 
             for (let i = 0; i < particles.length; i++) {
                 const a = particles[i];
-
-                if (!ctx) return;
 
                 ctx.beginPath();
                 ctx.fillStyle = "rgba(240,240,255,0.9)";
@@ -151,12 +144,10 @@ export default function HeroParticles() {
                         ctx.moveTo(a.x, a.y);
                         ctx.lineTo(b.x, b.y);
                         ctx.stroke();
-
                         connections++;
                     }
                 }
             }
-
 
             requestAnimationFrame(loop);
         }
@@ -164,52 +155,66 @@ export default function HeroParticles() {
         resize();
         window.addEventListener("resize", resize);
         requestAnimationFrame(loop);
+
+        return () => {
+            window.removeEventListener("resize", resize);
+            window.removeEventListener("mousemove", updateMouse);
+            window.removeEventListener("touchmove", updateMouse);
+        };
     }, []);
 
     return (
         <section
-            className="
-    relative w-full min-h-screen overflow-hidden 
-    flex items-center justify-center text-center px-6
-
-    pt-[100px]
-  "
-            style={{
-                background: "linear-gradient(180deg, #131632 0%, #2a2f55 100%)"
-            }}
+            className="relative w-full min-h-screen overflow-hidden flex items-center justify-center text-center px-6 pt-[100px]"
+            style={{ background: "linear-gradient(180deg, #131632 0%, #2a2f55 100%)" }}
         >
-
             <canvas ref={canvasRef} className="absolute inset-0 w-full h-full" />
 
-            <div className="relative z-10 text-white flex flex-col items-center">
-                <h1 className="text-4xl sm:text-6xl font-bold mb-4 text-center">
-                    Modern websites built for
+            <div className="relative z-10 text-white flex flex-col items-center gap-6">
 
+
+                <h1 className="text-4xl sm:text-6xl font-bold text-center leading-tight">
+                    Modern websites built for
                     <span className="text-[#ff3f81]"> clarity and performance</span>
                 </h1>
-                <p className="text-lg sm:text-xl opacity-80 mb-6 max-w-[900px]">
-                    We help businesses present their services online
-                    with fast, scalable and easy-to-use websites.
+
+                <p className="text-lg sm:text-xl text-white/70  leading-relaxed">
+                    We help businesses present their services online with fast,
+                    scalable, and easy-to-manage websites.
                 </p>
 
-                <p className="sr-only">
-                    EtruendE is a professional web development and SEO studio specializing in
-                    custom websites, landing pages, e-commerce platforms, and SEO promotion.
-                    We help businesses grow traffic, improve Google rankings, and increase
-                    conversions through modern web technologies and performance-driven design.
-                </p>
-
-
-                <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-                    <Link href="/contacts" className="select-none px-6 py-3 rounded-xl bg-white/10 backdrop-blur text-white border border-white/20 hover:bg-white/20 transition">
-                        Start your project with us
+                <div className="flex flex-col sm:flex-row items-center justify-center gap-3 mt-2 select-none">
+                    <Link
+                        href="/contacts"
+                        className="select-none px-7 py-3.5 rounded-xl bg-[#ff3f81] text-white font-semibold  hover:bg-[#e8336f] transition-all duration-300"
+                    >
+                        Start your project →
                     </Link>
-                    <Link href="/portfolio" className="select-none px-6 py-3 rounded-xl bg-white text-[#131632] font-semibold shadow-xl hover:bg-gray-200 transition">
+                    <Link
+                        href="/portfolio"
+                        className="select-none px-7 py-3.5 rounded-xl bg-white/10 backdrop-blur text-white border border-white/20 hover:bg-white/20 transition-all duration-300"
+                    >
                         View projects
                     </Link>
                 </div>
+
+                <div className="flex items-center gap-8 mt-4 text-white/40 text-sm select-none">
+                    <span>Next.js</span>
+                    <span className="w-1 h-1 rounded-full bg-white/20" />
+                    <span>TypeScript</span>
+                    <span className="w-1 h-1 rounded-full bg-white/20" />
+                    <span>Tailwind CSS</span>
+                    <span className="w-1 h-1 rounded-full bg-white/20" />
+                    <span>Vercel</span>
+                </div>
             </div>
+
+            <p className="sr-only">
+                EtruendE is a professional web development and SEO studio specializing in
+                custom websites, landing pages, e-commerce platforms, and SEO promotion.
+                We help businesses grow traffic, improve Google rankings, and increase
+                conversions through modern web technologies and performance-driven design.
+            </p>
         </section>
     );
 }
-

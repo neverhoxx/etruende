@@ -16,6 +16,7 @@ export default function AboutPage() {
             <WhatWeDo />
             <OurProcess />
             <FocusOverScale />
+
         </>
     );
 }

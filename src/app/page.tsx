@@ -106,12 +106,12 @@ export default function Home() {
       />
 
       <HeroParticles />
-      <WhatYouGetBlock />
       <WhatWeCanBlock />
+      <WhatYouGetBlock />
       <PortfolioBlock />
       <OurProcces />
-      <ContactForm />
       <HomeFAQ />
+      <ContactForm />
     </>
   );
 }
